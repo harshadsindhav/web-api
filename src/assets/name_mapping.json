@@ -1,0 +1,1820 @@
+[  
+   {  
+      "apiName":"Get all competencies",
+      "fileName":"Get all competencies",
+      "component":"Competency",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of competencies",
+      "fileName":"Find details of competencies",
+      "component":"Competency",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular competency",
+      "fileName":"Get details of a particular competency",
+      "component":"Competency",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get meta details of competencies",
+      "fileName":"Get meta details of competencies",
+      "component":"Competency",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new competency",
+      "fileName":"Create a new competency",
+      "component":"Competency",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a competency",
+      "fileName":"Update details of a competency",
+      "component":"Competency",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of country",
+      "fileName":"Find details of country",
+      "component":"Country",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all countries",
+      "fileName":"Get all countries",
+      "component":"Country",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular country",
+      "fileName":"Get details of a particular country",
+      "component":"Country",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get meta details of country",
+      "fileName":"Get meta details of country",
+      "component":"Country",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new country",
+      "fileName":"Create a new country",
+      "component":"Country",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a country",
+      "fileName":"Update details of a country",
+      "component":"Country",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete country",
+      "fileName":"Delete country",
+      "component":"Country",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of currencies",
+      "fileName":"Find details of currencies",
+      "component":"Currency",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find meta details of currency",
+      "fileName":"Find meta details of currency",
+      "component":"Currency",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all currencies",
+      "fileName":"Get all currencies",
+      "component":"Currency",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular currency",
+      "fileName":"Get details of a particular currency",
+      "component":"Currency",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of currency (using post - range based search)",
+      "fileName":"Find details of currency (using post - range based search)",
+      "component":"Currency",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find meta details of exchange rate",
+      "fileName":"Find meta details of exchange rate",
+      "component":"Currencyexchangerate",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all exchange rates",
+      "fileName":"Get all exchange rates",
+      "component":"Currencyexchangerate",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular exchange rate",
+      "fileName":"Get details of a particular exchange rate",
+      "component":"Currencyexchangerate",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of exchange rate",
+      "fileName":"Find details of exchange rate",
+      "component":"Currencyexchangerate",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of exchange rate (using post - range based search)",
+      "fileName":"Find details of exchange rate (using post - range based search)",
+      "component":"Currencyexchangerate",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new exchange rate",
+      "fileName":"Create a new exchange rate",
+      "component":"Currencyexchangerate",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a exchange rate",
+      "fileName":"Update details of a exchange rate",
+      "component":"Currencyexchangerate",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete a exchange rate",
+      "fileName":"Delete a exchange rate",
+      "component":"Currencyexchangerate",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all facilities",
+      "fileName":"Get all facilities",
+      "component":"Facility",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of facilities",
+      "fileName":"Find details of facilities",
+      "component":"Facility",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular facility",
+      "fileName":"Get details of a particular facility",
+      "component":"Facility",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get meta details of facilities",
+      "fileName":"Get meta details of facilities",
+      "component":"Facility",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new facility",
+      "fileName":"Create a new facility",
+      "component":"Facility",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a facility",
+      "fileName":"Update details of a facility",
+      "component":"Facility",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete a facility",
+      "fileName":"Delete a facility",
+      "component":"Facility",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get group details",
+      "fileName":"Get group details",
+      "component":"Groups",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Search my groups",
+      "fileName":"Search my groups",
+      "component":"Groups",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Search my groups (admin mode)",
+      "fileName":"Search my groups (admin mode)",
+      "component":"Groups",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Search my groups (post based)",
+      "fileName":"Search my groups (post based)",
+      "component":"Groups",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Manage group membership",
+      "fileName":"Manage group membership",
+      "component":"Groups",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all jobfamilies",
+      "fileName":"Get all jobfamilies",
+      "component":"Jobfamily",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of jobfamilies",
+      "fileName":"Find details of jobfamilies",
+      "component":"Jobfamily",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find meta details of job families",
+      "fileName":"Find meta details of job families",
+      "component":"Jobfamily",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular job family",
+      "fileName":"Get details of a particular job family",
+      "component":"Jobfamily",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new job family",
+      "fileName":"Create a new job family",
+      "component":"Jobfamily",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a job family",
+      "fileName":"Update details of a job family",
+      "component":"Jobfamily",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all jobtypes",
+      "fileName":"Get all jobtypes",
+      "component":"Jobtype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of jobtypes",
+      "fileName":"Find details of jobtypes",
+      "component":"Jobtype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find meta details of job types",
+      "fileName":"Find meta details of job types",
+      "component":"Jobtype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of job type",
+      "fileName":"Get details of job type",
+      "component":"Jobtype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new job type",
+      "fileName":"Create a new job type",
+      "component":"Jobtype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a job type",
+      "fileName":"Update details of a job type",
+      "component":"Jobtype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get a particular list value",
+      "fileName":"Get a particular list value",
+      "component":"Listvalue",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get list value by list id and list value name",
+      "fileName":"Get list value by list id and list value name",
+      "component":"Listvalue",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Search list values",
+      "fileName":"Search list values",
+      "component":"Listvalue",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Add value to lov for an attribute",
+      "fileName":"Add value to lov for an attribute",
+      "component":"Listvalue",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update value of list",
+      "fileName":"Update value of list",
+      "component":"Listvalue",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete item from list",
+      "fileName":"Delete item from list",
+      "component":"Listvalue",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete item from list (by listid and name of list value)",
+      "fileName":"Delete item from list (by listid and name of list value)",
+      "component":"Listvalue",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all locations",
+      "fileName":"Get all locations",
+      "component":"Location",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of locations",
+      "fileName":"Find details of locations",
+      "component":"Location",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find meta details of locations",
+      "fileName":"Find meta details of locations",
+      "component":"Location",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular location",
+      "fileName":"Get details of a particular location",
+      "component":"Location",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new location",
+      "fileName":"Create a new location",
+      "component":"Location",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a particular location",
+      "fileName":"Update details of a particular location",
+      "component":"Location",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of notes",
+      "fileName":"Find details of notes",
+      "component":"Notes",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of notes for given note id",
+      "fileName":"Find details of notes for given note id",
+      "component":"Notes",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of notes for given reference id",
+      "fileName":"Find details of notes for given reference id",
+      "component":"Notes",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find meta details of notes",
+      "fileName":"Find meta details of notes",
+      "component":"Notes",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new note",
+      "fileName":"Create a new note",
+      "component":"Notes",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get meta details of positions",
+      "fileName":"Get meta details of positions",
+      "component":"Positions",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of positions",
+      "fileName":"Find details of positions",
+      "component":"Positions",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of positions (using post - range based search)",
+      "fileName":"Find details of positions (using post - range based search)",
+      "component":"Positions",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all positions",
+      "fileName":"Get all positions",
+      "component":"Positions",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular position",
+      "fileName":"Get details of a particular position",
+      "component":"Positions",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new position",
+      "fileName":"Create a new position",
+      "component":"Positions",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a position",
+      "fileName":"Update details of a position",
+      "component":"Positions",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete position of a person",
+      "fileName":"Delete position of a person",
+      "component":"Positions",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Assign position for a person",
+      "fileName":"Assign position for a person",
+      "component":"Positions",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all roles",
+      "fileName":"Get all roles",
+      "component":"Roles",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of roles",
+      "fileName":"Find details of roles",
+      "component":"Roles",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get meta details of available roles",
+      "fileName":"Get meta details of available roles",
+      "component":"Roles",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular role",
+      "fileName":"Get details of a particular role",
+      "component":"Roles",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new role",
+      "fileName":"Create a new role",
+      "component":"Roles",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a role",
+      "fileName":"Update details of a role",
+      "component":"Roles",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a social resource",
+      "fileName":"Get details of a social resource",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find social resources",
+      "fileName":"Find social resources",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find social resources (using post - range based search)",
+      "fileName":"Find social resources (using post - range based search)",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find social resource of a group",
+      "fileName":"Find social resource of a group",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find social resource of a group (using post - range based search)",
+      "fileName":"Find social resource of a group (using post - range based search)",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Post idea to saba activity stream",
+      "fileName":"Post idea to saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Post issue to saba activity stream",
+      "fileName":"Post issue to saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Post link to saba activity stream",
+      "fileName":"Post link to saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Post file to saba activity stream",
+      "fileName":"Post file to saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update idea posted on saba activity stream",
+      "fileName":"Update idea posted on saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update issue posted on saba activity stream",
+      "fileName":"Update issue posted on saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update link posted on saba activity stream",
+      "fileName":"Update link posted on saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update file posted on saba activity stream",
+      "fileName":"Update file posted on saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete idea posted on saba activity stream",
+      "fileName":"Delete idea posted on saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete issue posted on saba activity stream",
+      "fileName":"Delete issue posted on saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete link posted on saba activity stream",
+      "fileName":"Delete link posted on saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete file posted on saba activity stream",
+      "fileName":"Delete file posted on saba activity stream",
+      "component":"Sabaactivitystream",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Like or dislike a resource",
+      "fileName":"Like or dislike a resource",
+      "component":"Sabasocial",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete likes or dislikes of a resource",
+      "fileName":"Delete likes or dislikes of a resource",
+      "component":"Sabasocial",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get comment details of a resource",
+      "fileName":"Get comment details of a resource",
+      "component":"Sabasocial",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get like details of a resource",
+      "fileName":"Get like details of a resource",
+      "component":"Sabasocial",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Post a comment on a resource",
+      "fileName":"Post a comment on a resource",
+      "component":"Sabasocial",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get social interactions of a user",
+      "fileName":"Get social interactions of a user",
+      "component":"Sabasocial",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get security domain's metadata",
+      "fileName":"Get security domain's metadata",
+      "component":"Securitydomains",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all security domains",
+      "fileName":"Get all security domains",
+      "component":"Securitydomains",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular security domain",
+      "fileName":"Get details of a particular security domain",
+      "component":"Securitydomains",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get security role's metadata",
+      "fileName":"Get security role's metadata",
+      "component":"Securityroles",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all security roles",
+      "fileName":"Get all security roles",
+      "component":"Securityroles",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular security role",
+      "fileName":"Get details of a particular security role",
+      "component":"Securityroles",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of security roles",
+      "fileName":"Find details of security roles",
+      "component":"Securityroles",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all smartlists",
+      "fileName":"Get all smartlists",
+      "component":"Smartlist",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find meta details of smartlists",
+      "fileName":"Find meta details of smartlists",
+      "component":"Smartlist",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular smartlist",
+      "fileName":"Get details of a particular smartlist",
+      "component":"Smartlist",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get person's matching criteria of a particular smartlist",
+      "fileName":"Get person's matching criteria of a particular smartlist",
+      "component":"Smartlist",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new smartlist",
+      "fileName":"Create a new smartlist",
+      "component":"Smartlist",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a smartlist",
+      "fileName":"Update details of a smartlist",
+      "component":"Smartlist",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete a smartlist",
+      "fileName":"Delete a smartlist",
+      "component":"Smartlist",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of state",
+      "fileName":"Find details of state",
+      "component":"State",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all states",
+      "fileName":"Get all states",
+      "component":"State",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular state",
+      "fileName":"Get details of a particular state",
+      "component":"State",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get meta details of state",
+      "fileName":"Get meta details of state",
+      "component":"State",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new state",
+      "fileName":"Create a new state",
+      "component":"State",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a state",
+      "fileName":"Update details of a state",
+      "component":"State",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Delete state",
+      "fileName":"Delete state",
+      "component":"State",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find details of sub audience types",
+      "fileName":"Find details of sub audience types",
+      "component":"Subaudiencetype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find meta details of sub audience types",
+      "fileName":"Find meta details of sub audience types",
+      "component":"Subaudiencetype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all sub audience types",
+      "fileName":"Get all sub audience types",
+      "component":"Subaudiencetype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular sub audience type",
+      "fileName":"Get details of a particular sub audience type",
+      "component":"Subaudiencetype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Create a new sub audience type",
+      "fileName":"Create a new sub audience type",
+      "component":"Subaudiencetype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Find the details of sub audience type (using post - range based search)",
+      "fileName":"Find the details of sub audience type (using post - range based search)",
+      "component":"Subaudiencetype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Update details of a sub audience type",
+      "fileName":"Update details of a sub audience type",
+      "component":"Subaudiencetype",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get timezone's metadata",
+      "fileName":"Get timezone's metadata",
+      "component":"Timezone",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get all timezones",
+      "fileName":"Get all timezones",
+      "component":"Timezone",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get details of a particular timezone",
+      "fileName":"Get details of a particular timezone",
+      "component":"Timezone",
+      "module":"Foundation"
+   },
+   {  
+      "apiName":"Get meta details of attendance",
+      "fileName":"Get meta details of attendance",
+      "component":"Attendance",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular attendance",
+      "fileName":"Get details of a particular attendance",
+      "component":"Attendance",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Mark attendance for a learner",
+      "fileName":"Mark attendance for a learner",
+      "component":"Attendance",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find calendar events",
+      "fileName":"Find calendar events",
+      "component":"Calendar",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all categories",
+      "fileName":"Get all categories",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular category",
+      "fileName":"Get details of a particular category",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular category along with its hierarchy (sub-categories)",
+      "fileName":"Get details of a particular category along with its hierarchy (sub-categories)",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Remove a category",
+      "fileName":"Remove a category",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Add categories to a course",
+      "fileName":"Add categories to a course",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Add categories to a course (lookup based)",
+      "fileName":"Add categories to a course (lookup based)",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Remove category from a course",
+      "fileName":"Remove category from a course",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new category",
+      "fileName":"Create a new category",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update category",
+      "fileName":"Update category",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of categories",
+      "fileName":"Find details of categories",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Add tags to category",
+      "fileName":"Add tags to category",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Remove tags from category",
+      "fileName":"Remove tags from category",
+      "component":"Category",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all records of a component",
+      "fileName":"Get all records of a component",
+      "component":"Common",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular component",
+      "fileName":"Get details of a particular component",
+      "component":"Common",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of a component",
+      "fileName":"Get meta details of a component",
+      "component":"Common",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Delete a path, module or intervention",
+      "fileName":"Delete a path, module or intervention",
+      "component":"Common",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all courses",
+      "fileName":"Get all courses",
+      "component":"Course",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of courses",
+      "fileName":"Find details of courses",
+      "component":"Course",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of course (using post - range based search)",
+      "fileName":"Find details of course (using post - range based search)",
+      "component":"Course",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular course",
+      "fileName":"Get details of a particular course",
+      "component":"Course",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of course",
+      "fileName":"Get meta details of course",
+      "component":"Course",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new course",
+      "fileName":"Create a new course",
+      "component":"Course",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update details of a course",
+      "fileName":"Update details of a course",
+      "component":"Course",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get the meta details of the course activity",
+      "fileName":"Get the meta details of the course activity",
+      "component":"Courseactivity",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get the details of a particular course activity",
+      "fileName":"Get the details of a particular course activity",
+      "component":"Courseactivity",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all the course activities of the logged in user",
+      "fileName":"Get all the course activities of the logged in user",
+      "component":"Courseactivity",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find the details of the course activities based on criteria",
+      "fileName":"Find the details of the course activities based on criteria",
+      "component":"Courseactivity",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Assign a course to a person",
+      "fileName":"Assign a course to a person",
+      "component":"Courseactivity",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update the details of a course activity",
+      "fileName":"Update the details of a course activity",
+      "component":"Courseactivity",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Remove a course from a learner",
+      "fileName":"Remove a course from a learner",
+      "component":"Courseactivity",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of delivery mode",
+      "fileName":"Get meta details of delivery mode",
+      "component":"Devlierymode",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all delivery mode",
+      "fileName":"Get all delivery mode",
+      "component":"Devlierymode",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular delivery mode",
+      "fileName":"Get details of a particular delivery mode",
+      "component":"Devlierymode",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of delivery mode",
+      "fileName":"Find details of delivery mode",
+      "component":"Devlierymode",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of delivery mode (using post - range based search)",
+      "fileName":"Find details of delivery mode (using post - range based search)",
+      "component":"Devlierymode",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new delivery mode",
+      "fileName":"Create a new delivery mode",
+      "component":"Devlierymode",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update details of a delivery mode",
+      "fileName":"Update details of a delivery mode",
+      "component":"Devlierymode",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of field of study",
+      "fileName":"Get meta details of field of study",
+      "component":"Fos",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all fields of study",
+      "fileName":"Get all fields of study",
+      "component":"Fos",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular field of study",
+      "fileName":"Get details of a particular field of study",
+      "component":"Fos",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of fields of study",
+      "fileName":"Find details of fields of study",
+      "component":"Fos",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of field of study (using post - range based search)",
+      "fileName":"Find details of field of study (using post - range based search)",
+      "component":"Fos",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update details of a learning module",
+      "fileName":"Update details of a learning module",
+      "component":"Learningmodule",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all classes",
+      "fileName":"Get all classes",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of classes",
+      "fileName":"Find details of classes",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of a blended class",
+      "fileName":"Get meta details of a blended class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of an ilt class",
+      "fileName":"Get meta details of an ilt class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a class",
+      "fileName":"Get details of a class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of a virtual class",
+      "fileName":"Get meta details of a virtual class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of a wbt class",
+      "fileName":"Get meta details of a wbt class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new blended class",
+      "fileName":"Create a new blended class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new ilt class",
+      "fileName":"Create a new ilt class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new virtual class",
+      "fileName":"Create a new virtual class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new wbt class",
+      "fileName":"Create a new wbt class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update a blended class",
+      "fileName":"Update a blended class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update an ilt class",
+      "fileName":"Update an ilt class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update a virtual class",
+      "fileName":"Update a virtual class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update a wbt class",
+      "fileName":"Update a wbt class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all offerings of instructor",
+      "fileName":"Get all offerings of instructor",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Retrieve all learning assignments of a class",
+      "fileName":"Retrieve all learning assignments of a class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Add learning assignments to a class",
+      "fileName":"Add learning assignments to a class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update learning assignments of a class",
+      "fileName":"Update learning assignments of a class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Publish learning assignments",
+      "fileName":"Publish learning assignments",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Mark class as delivered cancelled",
+      "fileName":"Mark class as delivered cancelled",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Cancel all enrollments of a class",
+      "fileName":"Cancel all enrollments of a class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Retrieve all sessions of an offering",
+      "fileName":"Retrieve all sessions of an offering",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Mark class registration as no_show walk_in",
+      "fileName":"Mark class registration as no_show walk_in",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Add drop policy to class",
+      "fileName":"Add drop policy to class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Delete drop policy from class",
+      "fileName":"Delete drop policy from class",
+      "component":"Offering",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all orders",
+      "fileName":"Get all orders",
+      "component":"Orders",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of orders",
+      "fileName":"Find details of orders",
+      "component":"Orders",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Approve reject an order item",
+      "fileName":"Approve reject an order item",
+      "component":"Orders",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update order's custom fields",
+      "fileName":"Update order's custom fields",
+      "component":"Orders",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get order details of a particular order",
+      "fileName":"Get order details of a particular order",
+      "component":"Orders",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update details of a path",
+      "fileName":"Update details of a path",
+      "component":"Path",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all purchase orders",
+      "fileName":"Get all purchase orders",
+      "component":"Purchaseorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of purchase order",
+      "fileName":"Find details of purchase order",
+      "component":"Purchaseorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of purchase order (using post - range based search)",
+      "fileName":"Find details of purchase order (using post - range based search)",
+      "component":"Purchaseorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular purchase order",
+      "fileName":"Get details of a particular purchase order",
+      "component":"Purchaseorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of purchase order",
+      "fileName":"Get meta details of purchase order",
+      "component":"Purchaseorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new purchase order",
+      "fileName":"Create a new purchase order",
+      "component":"Purchaseorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update details of a purchase order",
+      "fileName":"Update details of a purchase order",
+      "component":"Purchaseorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Delete details of a particular purchase order",
+      "fileName":"Delete details of a particular purchase order",
+      "component":"Purchaseorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of recurring course completions",
+      "fileName":"Find details of recurring course completions",
+      "component":"Recurringcompletions",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of recurring course completions (using post - range based search)",
+      "fileName":"Find details of recurring course completions (using post - range based search)",
+      "component":"Recurringcompletions",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Search resource based on type",
+      "fileName":"Search resource based on type",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Search resource based on type and criteria",
+      "fileName":"Search resource based on type and criteria",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get resource details",
+      "fileName":"Get resource details",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Search purpose list",
+      "fileName":"Search purpose list",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get purpose details",
+      "fileName":"Get purpose details",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get resource for a given offering",
+      "fileName":"Get resource for a given offering",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get session for a given offering",
+      "fileName":"Get session for a given offering",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Retrieve details of an individual session",
+      "fileName":"Retrieve details of an individual session",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Retrieve assignment details",
+      "fileName":"Retrieve assignment details",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Assign a resource to an offering",
+      "fileName":"Assign a resource to an offering",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update an existing resource assignment",
+      "fileName":"Update an existing resource assignment",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Remove an existing assigned resource",
+      "fileName":"Remove an existing assigned resource",
+      "component":"Resource",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of session templates",
+      "fileName":"Find details of session templates",
+      "component":"Sessiontemplate",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of session template (using post - range based search)",
+      "fileName":"Find details of session template (using post - range based search)",
+      "component":"Sessiontemplate",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all session templates",
+      "fileName":"Get all session templates",
+      "component":"Sessiontemplate",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a sessiontemplate",
+      "fileName":"Get details of a sessiontemplate",
+      "component":"Sessiontemplate",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of sessiontemplate",
+      "fileName":"Get meta details of sessiontemplate",
+      "component":"Sessiontemplate",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new session template",
+      "fileName":"Create a new session template",
+      "component":"Sessiontemplate",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update details of a session template",
+      "fileName":"Update details of a session template",
+      "component":"Sessiontemplate",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Delete a sessiontemplate",
+      "fileName":"Delete a sessiontemplate",
+      "component":"Sessiontemplate",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of subscription",
+      "fileName":"Get meta details of subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular subscription",
+      "fileName":"Get details of a particular subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all subscriptions",
+      "fileName":"Get all subscriptions",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of subscription",
+      "fileName":"Find details of subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new subscription",
+      "fileName":"Create a new subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update details of a subscription",
+      "fileName":"Update details of a subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of subscription (using post - range based search)",
+      "fileName":"Find details of subscription (using post - range based search)",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Add audience type to a subscription",
+      "fileName":"Add audience type to a subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Remove audience type from a subscription",
+      "fileName":"Remove audience type from a subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Add delivery type / subscription item to a subscription",
+      "fileName":"Add delivery type   subscription item to a subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Remove delivery type / subscription item from a subscription",
+      "fileName":"Remove delivery type   subscription item from a subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Add subscription price to a subscription",
+      "fileName":"Add subscription price to a subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Add cost limit price to a subscription",
+      "fileName":"Add cost limit price to a subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Remove subscription price / cost limit price from a subscription",
+      "fileName":"Remove subscription price   cost limit price from a subscription",
+      "component":"Subscription",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of subscription orders",
+      "fileName":"Find details of subscription orders",
+      "component":"Subscriptionorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get order details of a particular subscription order",
+      "fileName":"Get order details of a particular subscription order",
+      "component":"Subscriptionorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Search all subscription orders",
+      "fileName":"Search all subscription orders",
+      "component":"Subscriptionorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Search subscription order - all (order history flow)",
+      "fileName":"Search subscription order - all (order history flow)",
+      "component":"Subscriptionorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Search subscription order - with search criteria",
+      "fileName":"Search subscription order - with search criteria",
+      "component":"Subscriptionorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Search subscription order - with search criteria (order history flow)",
+      "fileName":"Search subscription order - with search criteria (order history flow)",
+      "component":"Subscriptionorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a subscription order",
+      "fileName":"Create a subscription order",
+      "component":"Subscriptionorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update subscription order's custom fields",
+      "fileName":"Update subscription order's custom fields",
+      "component":"Subscriptionorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular learning subscription",
+      "fileName":"Get details of a particular learning subscription",
+      "component":"Subscriptionorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Change learner of a particular learning subscription",
+      "fileName":"Change learner of a particular learning subscription",
+      "component":"Subscriptionorder",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all training units",
+      "fileName":"Get all training units",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of training unit",
+      "fileName":"Find details of training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of training unit (using post - range based search)",
+      "fileName":"Find details of training unit (using post - range based search)",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of training unit",
+      "fileName":"Get meta details of training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular training unit",
+      "fileName":"Get details of a particular training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new training unit",
+      "fileName":"Create a new training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update details of a training unit",
+      "fileName":"Update details of a training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Delete a particular training unit",
+      "fileName":"Delete a particular training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular discount entry for training unit",
+      "fileName":"Get details of a particular discount entry for training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new discount entry for training unit",
+      "fileName":"Create a new discount entry for training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Delete a particular discount entry for training unit",
+      "fileName":"Delete a particular discount entry for training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular pricelist entry for training unit",
+      "fileName":"Get details of a particular pricelist entry for training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new pricelist entry for training unit",
+      "fileName":"Create a new pricelist entry for training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update details of a particular pricelist entry for training unit",
+      "fileName":"Update details of a particular pricelist entry for training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Delete a particular pricelist entry for training unit",
+      "fileName":"Delete a particular pricelist entry for training unit",
+      "component":"Trainingunit",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all training unit agreements",
+      "fileName":"Get all training unit agreements",
+      "component":"Trainingunitagreement",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of a particular training unit agreement",
+      "fileName":"Get details of a particular training unit agreement",
+      "component":"Trainingunitagreement",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of training unit agreement",
+      "fileName":"Get meta details of training unit agreement",
+      "component":"Trainingunitagreement",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of training unit agreement",
+      "fileName":"Find details of training unit agreement",
+      "component":"Trainingunitagreement",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new training unit agreement",
+      "fileName":"Create a new training unit agreement",
+      "component":"Trainingunitagreement",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update details of a training unit agreement",
+      "fileName":"Update details of a training unit agreement",
+      "component":"Trainingunitagreement",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Delete a particular training unit agreement",
+      "fileName":"Delete a particular training unit agreement",
+      "component":"Trainingunitagreement",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get all transcripts",
+      "fileName":"Get all transcripts",
+      "component":"Transcript",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of transcripts",
+      "fileName":"Find details of transcripts",
+      "component":"Transcript",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find transcripts that have changed over a given period of time",
+      "fileName":"Find transcripts that have changed over a given period of time",
+      "component":"Transcript",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Find details of transcripts (using post - range based search)",
+      "fileName":"Find details of transcripts (using post - range based search)",
+      "component":"Transcript",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of transcript (using the component framework)",
+      "fileName":"Get details of transcript (using the component framework)",
+      "component":"Transcript",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get details of transcript",
+      "fileName":"Get details of transcript",
+      "component":"Transcript",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Get meta details of transcript",
+      "fileName":"Get meta details of transcript",
+      "component":"Transcript",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Create a new transcript",
+      "fileName":"Create a new transcript",
+      "component":"Transcript",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update a transcript",
+      "fileName":"Update a transcript",
+      "component":"Transcript",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Update custom fields of a transcript",
+      "fileName":"Update custom fields of a transcript",
+      "component":"Transcript",
+      "module":"Learning"
+   },
+   {  
+      "apiName":"Delete a transcript",
+      "fileName":"Delete a transcript",
+      "component":"Transcript",
+      "module":"Learning"
+   }
+]

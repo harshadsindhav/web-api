@@ -1,0 +1,24 @@
+
+.component-apis-breadcrumb ol li:last-child a {
+  color:grey;
+  pointer-events: none;
+}
+
+.component-apis-breadcrumb ol li > a, .module-components-breadcrumb ol li > a {
+  cursor: pointer;
+}
+.module-components-breadcrumb ol li:last-child a {
+  color:grey;
+  pointer-events: none;
+}
+
+.table tr td > a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.breadcrumb > li + li:before {
+  color: #ccc;
+  content: "> ";
+  padding: 0 5px;
+}

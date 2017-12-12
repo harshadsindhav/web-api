@@ -1,0 +1,9 @@
+
+<div class="main-content">
+  <h3 (click)="toggleState()">
+      <span id="tgSpan1" [ngClass]="stateIcon"></span>
+    {{mainCategory.category}}</h3>
+  <div [@slideHeight]="state" *ngFor="let subCategory of mainCategory.sub_categories | categoryfilter : searchText">
+      <app-child-category [apis]="subCategory" [searchText]="searchText" (onApiClick)="onApiClick($event)"></app-child-category>
+  </div>
+</div>

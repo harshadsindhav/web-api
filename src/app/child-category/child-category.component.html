@@ -1,0 +1,8 @@
+<div class="child-content">
+      <h4 (click)="toggleState()">
+          <span id="tgSpan1" [ngClass]="stateIcon"></span>
+        {{apis.category}}</h4>
+      <div class="api-listing" [@slideHeight]="state">
+          <p (click)="showApiDetail($event)" *ngFor="let api of apis.api_list">{{api.title}}</p>
+      </div>
+</div>

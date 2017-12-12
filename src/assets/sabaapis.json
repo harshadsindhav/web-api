@@ -1,0 +1,1269 @@
+{  
+   "sub_categories":[  
+      {  
+         "sub_categories":[  
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all competencies"
+                  },
+                  {  
+                     "title":"Find details of competencies"
+                  },
+                  {  
+                     "title":"Get details of a particular competency"
+                  },
+                  {  
+                     "title":"Get meta details of competencies"
+                  },
+                  {  
+                     "title":"Create a new competency"
+                  },
+                  {  
+                     "title":"Update details of a competency"
+                  }
+               ],
+               "category":"Competency"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Find details of country"
+                  },
+                  {  
+                     "title":"Get all countries"
+                  },
+                  {  
+                     "title":"Get details of a particular country"
+                  },
+                  {  
+                     "title":"Get meta details of country"
+                  },
+                  {  
+                     "title":"Create a new country"
+                  },
+                  {  
+                     "title":"Update details of a country"
+                  },
+                  {  
+                     "title":"Delete country"
+                  }
+               ],
+               "category":"Country"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Find details of currencies"
+                  },
+                  {  
+                     "title":"Find meta details of currency"
+                  },
+                  {  
+                     "title":"Get all currencies"
+                  },
+                  {  
+                     "title":"Get details of a particular currency"
+                  },
+                  {  
+                     "title":"Find details of currency (using post - range based search)"
+                  }
+               ],
+               "category":"Currency"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Find meta details of exchange rate"
+                  },
+                  {  
+                     "title":"Get all exchange rates"
+                  },
+                  {  
+                     "title":"Get details of a particular exchange rate"
+                  },
+                  {  
+                     "title":"Find details of exchange rate"
+                  },
+                  {  
+                     "title":"Find details of exchange rate (using post - range based search)"
+                  },
+                  {  
+                     "title":"Create a new exchange rate"
+                  },
+                  {  
+                     "title":"Update details of a exchange rate"
+                  },
+                  {  
+                     "title":"Delete a exchange rate"
+                  }
+               ],
+               "category":"Currencyexchangerate"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all facilities"
+                  },
+                  {  
+                     "title":"Find details of facilities"
+                  },
+                  {  
+                     "title":"Get details of a particular facility"
+                  },
+                  {  
+                     "title":"Get meta details of facilities"
+                  },
+                  {  
+                     "title":"Create a new facility"
+                  },
+                  {  
+                     "title":"Update details of a facility"
+                  },
+                  {  
+                     "title":"Delete a facility"
+                  }
+               ],
+               "category":"Facility"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get group details"
+                  },
+                  {  
+                     "title":"Search my groups"
+                  },
+                  {  
+                     "title":"Search my groups (admin mode)"
+                  },
+                  {  
+                     "title":"Search my groups (post based)"
+                  },
+                  {  
+                     "title":"Manage group membership"
+                  }
+               ],
+               "category":"Groups"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all jobfamilies"
+                  },
+                  {  
+                     "title":"Find details of jobfamilies"
+                  },
+                  {  
+                     "title":"Find meta details of job families"
+                  },
+                  {  
+                     "title":"Get details of a particular job family"
+                  },
+                  {  
+                     "title":"Create a new job family"
+                  },
+                  {  
+                     "title":"Update details of a job family"
+                  }
+               ],
+               "category":"Jobfamily"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all jobtypes"
+                  },
+                  {  
+                     "title":"Find details of jobtypes"
+                  },
+                  {  
+                     "title":"Find meta details of job types"
+                  },
+                  {  
+                     "title":"Get details of job type"
+                  },
+                  {  
+                     "title":"Create a new job type"
+                  },
+                  {  
+                     "title":"Update details of a job type"
+                  }
+               ],
+               "category":"Jobtype"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get a particular list value"
+                  },
+                  {  
+                     "title":"Get list value by list id and list value name"
+                  },
+                  {  
+                     "title":"Search list values"
+                  },
+                  {  
+                     "title":"Add value to lov for an attribute"
+                  },
+                  {  
+                     "title":"Update value of list"
+                  },
+                  {  
+                     "title":"Delete item from list"
+                  },
+                  {  
+                     "title":"Delete item from list (by listid and name of list value)"
+                  }
+               ],
+               "category":"Listvalue"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all locations"
+                  },
+                  {  
+                     "title":"Find details of locations"
+                  },
+                  {  
+                     "title":"Find meta details of locations"
+                  },
+                  {  
+                     "title":"Get details of a particular location"
+                  },
+                  {  
+                     "title":"Create a new location"
+                  },
+                  {  
+                     "title":"Update details of a particular location"
+                  }
+               ],
+               "category":"Location"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Find details of notes"
+                  },
+                  {  
+                     "title":"Find details of notes for given note id"
+                  },
+                  {  
+                     "title":"Find details of notes for given reference id"
+                  },
+                  {  
+                     "title":"Find meta details of notes"
+                  },
+                  {  
+                     "title":"Create a new note"
+                  }
+               ],
+               "category":"Notes"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get meta details of positions"
+                  },
+                  {  
+                     "title":"Find details of positions"
+                  },
+                  {  
+                     "title":"Find details of positions (using post - range based search)"
+                  },
+                  {  
+                     "title":"Get all positions"
+                  },
+                  {  
+                     "title":"Get details of a particular position"
+                  },
+                  {  
+                     "title":"Create a new position"
+                  },
+                  {  
+                     "title":"Update details of a position"
+                  },
+                  {  
+                     "title":"Delete position of a person"
+                  },
+                  {  
+                     "title":"Assign position for a person"
+                  }
+               ],
+               "category":"Positions"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all roles"
+                  },
+                  {  
+                     "title":"Find details of roles"
+                  },
+                  {  
+                     "title":"Get meta details of available roles"
+                  },
+                  {  
+                     "title":"Get details of a particular role"
+                  },
+                  {  
+                     "title":"Create a new role"
+                  },
+                  {  
+                     "title":"Update details of a role"
+                  }
+               ],
+               "category":"Roles"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get details of a social resource"
+                  },
+                  {  
+                     "title":"Find social resources"
+                  },
+                  {  
+                     "title":"Find social resources (using post - range based search)"
+                  },
+                  {  
+                     "title":"Find social resource of a group"
+                  },
+                  {  
+                     "title":"Find social resource of a group (using post - range based search)"
+                  },
+                  {  
+                     "title":"Post idea to saba activity stream"
+                  },
+                  {  
+                     "title":"Post issue to saba activity stream"
+                  },
+                  {  
+                     "title":"Post link to saba activity stream"
+                  },
+                  {  
+                     "title":"Post file to saba activity stream"
+                  },
+                  {  
+                     "title":"Update idea posted on saba activity stream"
+                  },
+                  {  
+                     "title":"Update issue posted on saba activity stream"
+                  },
+                  {  
+                     "title":"Update link posted on saba activity stream"
+                  },
+                  {  
+                     "title":"Update file posted on saba activity stream"
+                  },
+                  {  
+                     "title":"Delete idea posted on saba activity stream"
+                  },
+                  {  
+                     "title":"Delete issue posted on saba activity stream"
+                  },
+                  {  
+                     "title":"Delete link posted on saba activity stream"
+                  },
+                  {  
+                     "title":"Delete file posted on saba activity stream"
+                  }
+               ],
+               "category":"Sabaactivitystream"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Like or dislike a resource"
+                  },
+                  {  
+                     "title":"Delete likes or dislikes of a resource"
+                  },
+                  {  
+                     "title":"Get comment details of a resource"
+                  },
+                  {  
+                     "title":"Get like details of a resource"
+                  },
+                  {  
+                     "title":"Post a comment on a resource"
+                  },
+                  {  
+                     "title":"Get social interactions of a user"
+                  }
+               ],
+               "category":"Sabasocial"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get security domain's metadata"
+                  },
+                  {  
+                     "title":"Get all security domains"
+                  },
+                  {  
+                     "title":"Get details of a particular security domain"
+                  }
+               ],
+               "category":"Securitydomains"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get security role's metadata"
+                  },
+                  {  
+                     "title":"Get all security roles"
+                  },
+                  {  
+                     "title":"Get details of a particular security role"
+                  },
+                  {  
+                     "title":"Find details of security roles"
+                  }
+               ],
+               "category":"Securityroles"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all smartlists"
+                  },
+                  {  
+                     "title":"Find meta details of smartlists"
+                  },
+                  {  
+                     "title":"Get details of a particular smartlist"
+                  },
+                  {  
+                     "title":"Get person's matching criteria of a particular smartlist"
+                  },
+                  {  
+                     "title":"Create a new smartlist"
+                  },
+                  {  
+                     "title":"Update details of a smartlist"
+                  },
+                  {  
+                     "title":"Delete a smartlist"
+                  }
+               ],
+               "category":"Smartlist"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Find details of state"
+                  },
+                  {  
+                     "title":"Get all states"
+                  },
+                  {  
+                     "title":"Get details of a particular state"
+                  },
+                  {  
+                     "title":"Get meta details of state"
+                  },
+                  {  
+                     "title":"Create a new state"
+                  },
+                  {  
+                     "title":"Update details of a state"
+                  },
+                  {  
+                     "title":"Delete state"
+                  }
+               ],
+               "category":"State"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Find details of sub audience types"
+                  },
+                  {  
+                     "title":"Find meta details of sub audience types"
+                  },
+                  {  
+                     "title":"Get all sub audience types"
+                  },
+                  {  
+                     "title":"Get details of a particular sub audience type"
+                  },
+                  {  
+                     "title":"Create a new sub audience type"
+                  },
+                  {  
+                     "title":"Find the details of sub audience type (using post - range based search)"
+                  },
+                  {  
+                     "title":"Update details of a sub audience type"
+                  }
+               ],
+               "category":"Subaudiencetype"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get timezone's metadata"
+                  },
+                  {  
+                     "title":"Get all timezones"
+                  },
+                  {  
+                     "title":"Get details of a particular timezone"
+                  }
+               ],
+               "category":"Timezone"
+            }
+         ],
+         "api_list":[  
+
+         ],
+         "category":"Foundation"
+      },
+      {  
+         "sub_categories":[  
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get meta details of attendance"
+                  },
+                  {  
+                     "title":"Get details of a particular attendance"
+                  },
+                  {  
+                     "title":"Mark attendance for a learner"
+                  }
+               ],
+               "category":"Attendance"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Find calendar events"
+                  }
+               ],
+               "category":"Calendar"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all categories"
+                  },
+                  {  
+                     "title":"Get details of a particular category"
+                  },
+                  {  
+                     "title":"Get details of a particular category along with its hierarchy (sub-categories)"
+                  },
+                  {  
+                     "title":"Remove a category"
+                  },
+                  {  
+                     "title":"Add categories to a course"
+                  },
+                  {  
+                     "title":"Add categories to a course (lookup based)"
+                  },
+                  {  
+                     "title":"Remove category from a course"
+                  },
+                  {  
+                     "title":"Create a new category"
+                  },
+                  {  
+                     "title":"Update category"
+                  },
+                  {  
+                     "title":"Find details of categories"
+                  },
+                  {  
+                     "title":"Add tags to category"
+                  },
+                  {  
+                     "title":"Remove tags from category"
+                  }
+               ],
+               "category":"Category"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all records of a component"
+                  },
+                  {  
+                     "title":"Get details of a particular component"
+                  },
+                  {  
+                     "title":"Get meta details of a component"
+                  },
+                  {  
+                     "title":"Delete a path, module or intervention"
+                  }
+               ],
+               "category":"Common"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all courses"
+                  },
+                  {  
+                     "title":"Find details of courses"
+                  },
+                  {  
+                     "title":"Find details of course (using post - range based search)"
+                  },
+                  {  
+                     "title":"Get details of a particular course"
+                  },
+                  {  
+                     "title":"Get meta details of course"
+                  },
+                  {  
+                     "title":"Create a new course"
+                  },
+                  {  
+                     "title":"Update details of a course"
+                  }
+               ],
+               "category":"Course"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get the meta details of the course activity"
+                  },
+                  {  
+                     "title":"Get the details of a particular course activity"
+                  },
+                  {  
+                     "title":"Get all the course activities of the logged in user"
+                  },
+                  {  
+                     "title":"Find the details of the course activities based on criteria"
+                  },
+                  {  
+                     "title":"Assign a course to a person"
+                  },
+                  {  
+                     "title":"Update the details of a course activity"
+                  },
+                  {  
+                     "title":"Remove a course from a learner"
+                  }
+               ],
+               "category":"Courseactivity"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get meta details of delivery mode"
+                  },
+                  {  
+                     "title":"Get all delivery mode"
+                  },
+                  {  
+                     "title":"Get details of a particular delivery mode"
+                  },
+                  {  
+                     "title":"Find details of delivery mode"
+                  },
+                  {  
+                     "title":"Find details of delivery mode (using post - range based search)"
+                  },
+                  {  
+                     "title":"Create a new delivery mode"
+                  },
+                  {  
+                     "title":"Update details of a delivery mode"
+                  }
+               ],
+               "category":"Devlierymode"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get meta details of field of study"
+                  },
+                  {  
+                     "title":"Get all fields of study"
+                  },
+                  {  
+                     "title":"Get details of a particular field of study"
+                  },
+                  {  
+                     "title":"Find details of fields of study"
+                  },
+                  {  
+                     "title":"Find details of field of study (using post - range based search)"
+                  }
+               ],
+               "category":"Fos"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Update details of a learning module"
+                  }
+               ],
+               "category":"Learningmodule"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all classes"
+                  },
+                  {  
+                     "title":"Find details of classes"
+                  },
+                  {  
+                     "title":"Get meta details of a blended class"
+                  },
+                  {  
+                     "title":"Get meta details of an ilt class"
+                  },
+                  {  
+                     "title":"Get details of a class"
+                  },
+                  {  
+                     "title":"Get meta details of a virtual class"
+                  },
+                  {  
+                     "title":"Get meta details of a wbt class"
+                  },
+                  {  
+                     "title":"Create a new blended class"
+                  },
+                  {  
+                     "title":"Create a new ilt class"
+                  },
+                  {  
+                     "title":"Create a new virtual class"
+                  },
+                  {  
+                     "title":"Create a new wbt class"
+                  },
+                  {  
+                     "title":"Update a blended class"
+                  },
+                  {  
+                     "title":"Update an ilt class"
+                  },
+                  {  
+                     "title":"Update a virtual class"
+                  },
+                  {  
+                     "title":"Update a wbt class"
+                  },
+                  {  
+                     "title":"Get all offerings of instructor"
+                  },
+                  {  
+                     "title":"Retrieve all learning assignments of a class"
+                  },
+                  {  
+                     "title":"Add learning assignments to a class"
+                  },
+                  {  
+                     "title":"Update learning assignments of a class"
+                  },
+                  {  
+                     "title":"Publish learning assignments"
+                  },
+                  {  
+                     "title":"Mark class as delivered cancelled"
+                  },
+                  {  
+                     "title":"Cancel all enrollments of a class"
+                  },
+                  {  
+                     "title":"Retrieve all sessions of an offering"
+                  },
+                  {  
+                     "title":"Mark class registration as no_show walk_in"
+                  },
+                  {  
+                     "title":"Add drop policy to class"
+                  },
+                  {  
+                     "title":"Delete drop policy from class"
+                  }
+               ],
+               "category":"Offering"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all orders"
+                  },
+                  {  
+                     "title":"Find details of orders"
+                  },
+                  {  
+                     "title":"Approve reject an order item"
+                  },
+                  {  
+                     "title":"Update order's custom fields"
+                  },
+                  {  
+                     "title":"Get order details of a particular order"
+                  }
+               ],
+               "category":"Orders"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Update details of a path"
+                  }
+               ],
+               "category":"Path"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all purchase orders"
+                  },
+                  {  
+                     "title":"Find details of purchase order"
+                  },
+                  {  
+                     "title":"Find details of purchase order (using post - range based search)"
+                  },
+                  {  
+                     "title":"Get details of a particular purchase order"
+                  },
+                  {  
+                     "title":"Get meta details of purchase order"
+                  },
+                  {  
+                     "title":"Create a new purchase order"
+                  },
+                  {  
+                     "title":"Update details of a purchase order"
+                  },
+                  {  
+                     "title":"Delete details of a particular purchase order"
+                  }
+               ],
+               "category":"Purchaseorder"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Find details of recurring course completions"
+                  },
+                  {  
+                     "title":"Find details of recurring course completions (using post - range based search)"
+                  }
+               ],
+               "category":"Recurringcompletions"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Search resource based on type"
+                  },
+                  {  
+                     "title":"Search resource based on type and criteria"
+                  },
+                  {  
+                     "title":"Get resource details"
+                  },
+                  {  
+                     "title":"Search purpose list"
+                  },
+                  {  
+                     "title":"Get purpose details"
+                  },
+                  {  
+                     "title":"Get resource for a given offering"
+                  },
+                  {  
+                     "title":"Get session for a given offering"
+                  },
+                  {  
+                     "title":"Retrieve details of an individual session"
+                  },
+                  {  
+                     "title":"Retrieve assignment details"
+                  },
+                  {  
+                     "title":"Assign a resource to an offering"
+                  },
+                  {  
+                     "title":"Update an existing resource assignment"
+                  },
+                  {  
+                     "title":"Remove an existing assigned resource"
+                  }
+               ],
+               "category":"Resource"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Find details of session templates"
+                  },
+                  {  
+                     "title":"Find details of session template (using post - range based search)"
+                  },
+                  {  
+                     "title":"Get all session templates"
+                  },
+                  {  
+                     "title":"Get details of a sessiontemplate"
+                  },
+                  {  
+                     "title":"Get meta details of sessiontemplate"
+                  },
+                  {  
+                     "title":"Create a new session template"
+                  },
+                  {  
+                     "title":"Update details of a session template"
+                  },
+                  {  
+                     "title":"Delete a sessiontemplate"
+                  }
+               ],
+               "category":"Sessiontemplate"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get meta details of subscription"
+                  },
+                  {  
+                     "title":"Get details of a particular subscription"
+                  },
+                  {  
+                     "title":"Get all subscriptions"
+                  },
+                  {  
+                     "title":"Find details of subscription"
+                  },
+                  {  
+                     "title":"Create a new subscription"
+                  },
+                  {  
+                     "title":"Update details of a subscription"
+                  },
+                  {  
+                     "title":"Find details of subscription (using post - range based search)"
+                  },
+                  {  
+                     "title":"Add audience type to a subscription"
+                  },
+                  {  
+                     "title":"Remove audience type from a subscription"
+                  },
+                  {  
+                     "title":"Add delivery type / subscription item to a subscription"
+                  },
+                  {  
+                     "title":"Remove delivery type / subscription item from a subscription"
+                  },
+                  {  
+                     "title":"Add subscription price to a subscription"
+                  },
+                  {  
+                     "title":"Add cost limit price to a subscription"
+                  },
+                  {  
+                     "title":"Remove subscription price / cost limit price from a subscription"
+                  }
+               ],
+               "category":"Subscription"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Find details of subscription orders"
+                  },
+                  {  
+                     "title":"Get order details of a particular subscription order"
+                  },
+                  {  
+                     "title":"Search all subscription orders"
+                  },
+                  {  
+                     "title":"Search subscription order - all (order history flow)"
+                  },
+                  {  
+                     "title":"Search subscription order - with search criteria"
+                  },
+                  {  
+                     "title":"Search subscription order - with search criteria (order history flow)"
+                  },
+                  {  
+                     "title":"Create a subscription order"
+                  },
+                  {  
+                     "title":"Update subscription order's custom fields"
+                  },
+                  {  
+                     "title":"Get details of a particular learning subscription"
+                  },
+                  {  
+                     "title":"Change learner of a particular learning subscription"
+                  }
+               ],
+               "category":"Subscriptionorder"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all training units"
+                  },
+                  {  
+                     "title":"Find details of training unit"
+                  },
+                  {  
+                     "title":"Find details of training unit (using post - range based search)"
+                  },
+                  {  
+                     "title":"Get meta details of training unit"
+                  },
+                  {  
+                     "title":"Get details of a particular training unit"
+                  },
+                  {  
+                     "title":"Create a new training unit"
+                  },
+                  {  
+                     "title":"Update details of a training unit"
+                  },
+                  {  
+                     "title":"Delete a particular training unit"
+                  },
+                  {  
+                     "title":"Get details of a particular discount entry for training unit"
+                  },
+                  {  
+                     "title":"Create a new discount entry for training unit"
+                  },
+                  {  
+                     "title":"Delete a particular discount entry for training unit"
+                  },
+                  {  
+                     "title":"Get details of a particular pricelist entry for training unit"
+                  },
+                  {  
+                     "title":"Create a new pricelist entry for training unit"
+                  },
+                  {  
+                     "title":"Update details of a particular pricelist entry for training unit"
+                  },
+                  {  
+                     "title":"Delete a particular pricelist entry for training unit"
+                  }
+               ],
+               "category":"Trainingunit"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all training unit agreements"
+                  },
+                  {  
+                     "title":"Get details of a particular training unit agreement"
+                  },
+                  {  
+                     "title":"Get meta details of training unit agreement"
+                  },
+                  {  
+                     "title":"Find details of training unit agreement"
+                  },
+                  {  
+                     "title":"Create a new training unit agreement"
+                  },
+                  {  
+                     "title":"Update details of a training unit agreement"
+                  },
+                  {  
+                     "title":"Delete a particular training unit agreement"
+                  }
+               ],
+               "category":"Trainingunitagreement"
+            },
+            {  
+               "sub_categories":[  
+
+               ],
+               "api_list":[  
+                  {  
+                     "title":"Get all transcripts"
+                  },
+                  {  
+                     "title":"Find details of transcripts"
+                  },
+                  {  
+                     "title":"Find transcripts that have changed over a given period of time"
+                  },
+                  {  
+                     "title":"Find details of transcripts (using post - range based search)"
+                  },
+                  {  
+                     "title":"Get details of transcript (using the component framework)"
+                  },
+                  {  
+                     "title":"Get details of transcript"
+                  },
+                  {  
+                     "title":"Get meta details of transcript"
+                  },
+                  {  
+                     "title":"Create a new transcript"
+                  },
+                  {  
+                     "title":"Update a transcript"
+                  },
+                  {  
+                     "title":"Update custom fields of a transcript"
+                  },
+                  {  
+                     "title":"Delete a transcript"
+                  }
+               ],
+               "category":"Transcript"
+            }
+         ],
+         "api_list":[  
+
+         ],
+         "category":"Learning"
+      }
+   ],
+   "api_list":[  
+
+   ],
+   "category":"Restwebservices"
+}
