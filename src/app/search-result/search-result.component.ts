@@ -7,7 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class SearchResultComponent implements OnInit {
 
-  @Input() searchResults: [any];
+  @Input() searchResults: any[] = [];
   @Output() searchedApi = new EventEmitter<any>();
   constructor() { }
 

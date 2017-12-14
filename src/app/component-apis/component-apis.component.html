@@ -1,26 +1,36 @@
 <div *ngIf="isComponentApiDetail">
   <div class="component-apis-breadcrumb">
     <ol class="breadcrumb">
-      <li><a>{{apiDetail.module}}</a></li>
+      <li><a (click)="getModuleComponents(apiDetail)">{{apiDetail.module}}</a></li>
       <li><a>{{apiDetail.component}}</a></li>
     </ol>
   </div>
   <table class="table table-bordered">
     <tr *ngFor="let api of apis">
-      <td><a (click)="getDetailOfApi(api)">{{api.apiName}}</a></td>
+      <td><span class="method" [appHttpMethod]="api.method">{{api.method}}</span></td>
+      <td>
+        <div class="component-api-meta">
+          <div class="api-name">
+            <a (click)="getDetailOfApi(api)">{{api.apiName}}</a>
+          </div>
+          <div class="api-url">
+            <span>{{api.url}}</span>
+          </div>
+        </div>
+      </td>
     </tr>
   </table>
 </div>
 <div *ngIf="!isComponentApiDetail">
   <div class="module-components-breadcrumb">
     <ol class="breadcrumb">
-      <li><a>Foundation</a></li>
+      <li><a (click)="getModuleComponents(apiDetail)">{{apiDetail.module}}</a></li>
     </ol>
   </div>
   <div>
     <table class="table table-bordered">
       <tr *ngFor="let category of categories">
-        <td><a href="#">{{category.component}}</a></td>
+        <td><a (click)="getComponentApis(category)">{{category.component}}</a></td>
       </tr>
     </table>
   </div>

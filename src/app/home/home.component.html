@@ -1,52 +1,85 @@
 <div id="main-container">
   <div class="nav-header">
-    <div class="api-reference-main">
-      <div class="left-navigation">
-        <!--<h2>Search APIS</h2>-->
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="input-group">
-              <input type="input" class="form-control" placeholder="Search API" [(ngModel)]="searchtext">
-              <!--<span class="input-group-button">
-            <button class="btn btn-primary" type="button" (click)="searchInAllApis()">Search</button>
-          </span>
-        -->
-            </div>
+    <div>
+      <img alt="Brand" src="../assets/images/logo.jpg">
+      <div id="saba-navbar" class="navbar navbar-default">
+        <h1>SABA</h1>
+        <div>
+          <div class="web-api-subtitle">
+            <h2>Rest API Documentation</h2>
           </div>
-        </div>
-        <div class="row api-list-navigation">
-          <div class="col-lg-6">
-            <div class="list-group">
-              <div *ngFor="let category of apiCategories.sub_categories">
-                <app-main-category (onApiClickFromGrandChild)="onApiClickFromGrandChild($event)" [searchText]="searchtext" [mainCategory]="category"></app-main-category>
+          <div class="global-search-placeholder">
+            <div>
+              <div class="global-search-text-area">
+                <input class="form-control" placeholder="Search globally here" type="text" [(ngModel)]="globalSearchText">
+              </div>
+              <div class="global-search-icon-area">
+                <i class="fa fa-search" aria-hidden="true" (click)="searchInAllApis()"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="content-data">
-        <div *ngIf="contentPageName === kSearchResultPage">
-          <app-search-result [searchResults]="resultApis" (searchedApi)="searchedApi($event)"></app-search-result>
-        </div>
-        <div *ngIf="contentPageName === kComponentApiPage">
-          <app-component-apis (getApiDetail)="onApiClickFromGrandChild($event)" [apiNameMapping]="apiNameMapping" [isComponentApiDetail]="isComponentApiDetail"
-            [apiDetail]="currentApi"></app-component-apis>
-        </div>
-        <div class="iframe-area" *ngIf="contentPageName === 'apiDetailPage'">
-          <div class="category-breadcrum">
-            <ol class="breadcrumb">
-              <li>
-                <a (click)="displayModuleComponents($event)">{{currentApi.module}}</a>
-              </li>
-              <li>
-                <a (click)="displayComponentApis($event)">{{currentApi.component}}</a>
-              </li>
-              <li>
-                <a>{{currentApi.apiName}}</a>
-              </li>
-            </ol>
+    </div>
+    <!--Actual home component tempalte -->
+    <div>
+      <div class="nav-header">
+        <div class="api-reference-main">
+          <div class="left-navigation">
+            <!--<h2>Search APIS</h2>-->
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="input-group">
+                  <input type="input" class="form-control" placeholder="Search API" [(ngModel)]="searchtext">
+                </div>
+              </div>
+            </div>
+            <div class="row api-list-navigation">
+              <div class="col-lg-6">
+                <div class="list-group">
+                  <div *ngFor="let category of apiCategories.sub_categories">
+                    <app-main-category (onApiClickFromGrandChild)="onApiClickFromGrandChild($event)" [searchText]="searchtext" [mainCategory]="category"></app-main-category>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <iframe [src]="myurl"></iframe>
+          <div class="content-data">
+            <div *ngIf="contentPageName === kSearchResultPage">
+              <app-search-result [searchResults]="resultApis" (searchedApi)="searchedApi($event)"></app-search-result>
+            </div>
+            <div *ngIf="contentPageName === kComponentApiPage">
+              <app-component-apis (getApiDetail)="onApiClickFromGrandChild($event)" [apiNameMapping]="apiNameMapping" [isComponentApiDetail]="isComponentApiDetail"
+                [apiDetail]="currentApi"></app-component-apis>
+            </div>
+            <div class="iframe-area" *ngIf="contentPageName === 'apiDetailPage'">
+              <div class="category-breadcrum">
+                <ol class="breadcrumb">
+                  <li>
+                    <a (click)="displayModuleComponents($event)">{{currentApi.module}}</a>
+                  </li>
+                  <li>
+                    <a (click)="displayComponentApis($event)">{{currentApi.component}}</a>
+                  </li>
+                  <li>
+                    <a>{{currentApi.apiName}}</a>
+                  </li>
+                </ol>
+              </div>
+              <iframe [src]="myurl"></iframe>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="footer">
+        <!-- <ul>
+          <li>Limitations on Warranties and Liability</li>
+          <li>Contents</li>
+          <li>About This Guide</li>
+          <li>Index</li>
+        </ul> -->
+        <h3>This is Footer</h3>
+      </div>
     </div>
+  </div>
+</div>
