@@ -2,6 +2,9 @@
 <div class="panel panel-default search-result-main">
   <div class="panel-heading">Search Results : </div>
   <div class="search-result panel-body">
+    <div *ngIf="searchResults.length === 0">
+      <p>No records found !!</p>
+    </div>
     <div id="result-item" *ngFor="let resultApi of searchResults">
       <a class="search-item-heading" (click)="renderSearchedApi(resultApi)" >{{resultApi.apiName}}</a>
       <p class="search-item-body">{{resultApi.fileName}}</p>

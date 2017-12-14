@@ -17,6 +17,29 @@
   text-decoration: none;
 }
 
+.table tr td  {
+
+  span.method {
+    font-size: 12px;
+    //background-color: green;
+    color:white;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-left:10px;
+  }
+  .component-api-meta {
+    .api-name {
+      display: -webkit-inline-box;
+      cursor: pointer;
+    }
+    .api-url {
+      float:right;
+      margin-right: 25px;
+      color: gray;
+    }
+  }
+}
+
 .breadcrumb > li + li:before {
   color: #ccc;
   content: "> ";

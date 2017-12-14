@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
 
   apiCategories: any;
   searchtext: string = '';
+  globalSearchText: string = '';
   iframeurl: string = './assets/Find details of facilities.html';
   myurl: any;
   categoryExpanded: boolean = true;
@@ -65,21 +66,20 @@ export class HomeComponent implements OnInit {
   }
 
   public searchInAllApis() {
-    console.log('search in all apis called');
     for (let apiEntry of this.apiNameMapping) {
       if (apiEntry.apiName) {
         this.apiDocService.readFile(apiEntry.fileName)
           .subscribe(response => {
             let fileBody = response.text();
-            if (fileBody.toLowerCase().includes(this.searchtext.toLowerCase())) {
+            if (fileBody.toLowerCase().includes(this.globalSearchText.toLowerCase())) {
               this.resultApis.push({
                 'apiName': apiEntry.apiName,
                 'fileName': apiEntry.fileName,
                 'component': apiEntry.component,
                 'module': apiEntry.module
               });
-              this.contentPageName = this.kSearchResultPage;
             }
+            this.contentPageName = this.kSearchResultPage;
           });
       }
     }

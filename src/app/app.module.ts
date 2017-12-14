@@ -16,6 +16,7 @@ import { MainCategoryComponent } from './main-category/main-category.component';
 import { ChildCategoryComponent } from './child-category/child-category.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { ComponentApisComponent } from './component-apis/component-apis.component';
+import { HttpMethodDirective } from './http-method.directive';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ComponentApisComponent } from './component-apis/component-apis.componen
     ChildCategoryComponent,
     CategoryfilterPipe,
     SearchResultComponent,
-    ComponentApisComponent
+    ComponentApisComponent,
+    HttpMethodDirective
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,7 @@ export class ComponentApisComponent implements OnInit {
   apis: any[] = [];
   categories: any[] = [];
   @Output() getApiDetail = new EventEmitter<any>();
+  mymethod: string = 'PUT';
   constructor() {
 
   }
@@ -48,4 +49,17 @@ export class ComponentApisComponent implements OnInit {
     this.getApiDetail.emit(api);
   }
 
+  getComponentApis(category: any) {
+    this.isComponentApiDetail = true;
+    this.apiDetail = category;
+    this.ngOnInit();
+  }
+
+  getModuleComponents(apiDetail: any) {
+    console.log('getmodule components');
+    console.log(apiDetail);
+    this.isComponentApiDetail = false;
+    this.apiDetail = apiDetail;
+    this.ngOnInit();
+  }
 }
