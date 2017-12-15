@@ -1,5 +1,333 @@
 [  
    {  
+      "apiName":"Get report definition",
+      "fileName":"Get report definition.html",
+      "component":"Reports",
+      "method":"GET",
+      "module":"Analytics",
+      "url":"https://<hostname-api.sabacloud.com>/v1/report/list/:reportId"
+   },
+   {  
+      "apiName":"Get report list",
+      "fileName":"Get report list.html",
+      "component":"Reports",
+      "method":"GET",
+      "module":"Analytics",
+      "url":"https://<hostname-api.sabacloud.com>/v1/report/list"
+   },
+   {  
+      "apiName":"Report async execution status",
+      "fileName":"Report async execution status.html",
+      "component":"Reports",
+      "method":"GET/POST",
+      "module":"Analytics",
+      "url":"https://<hostname-api.sabacloud.com>/v1/report/execution/status/:reportRunId"
+   },
+   {  
+      "apiName":"Execute async report",
+      "fileName":"Execute async report.html",
+      "component":"Reports",
+      "method":"POST",
+      "module":"Analytics",
+      "url":"https://<hostname-api.sabacloud.com>/v1/report/execute/:reportId/:chartId"
+   },
+   {  
+      "apiName":"Execute report",
+      "fileName":"Execute report.html",
+      "component":"Reports",
+      "method":"POST",
+      "module":"Analytics",
+      "url":"https://<hostname-api.sabacloud.com>/v1/report/execute/:reportId/:chartId"
+   },
+   {  
+      "apiName":"Using certificate based authentication",
+      "fileName":"Using certificate based authentication.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Authentication",
+      "url":""
+   },
+   {  
+      "apiName":"Using oauth 2.0",
+      "fileName":"Using oauth 2.0.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Authentication",
+      "url":""
+   },
+   {  
+      "apiName":"Content inventory",
+      "fileName":"Content inventory.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Cif",
+      "url":""
+   },
+   {  
+      "apiName":"Content folder",
+      "fileName":"Content folder.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Cif",
+      "url":""
+   },
+   {  
+      "apiName":"Core services",
+      "fileName":"Core services.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Cif",
+      "url":""
+   },
+   {  
+      "apiName":"Get all content folder",
+      "fileName":"Get all content folder.html",
+      "component":"Contentfolder",
+      "method":"GET",
+      "module":"Cif",
+      "url":"https://<hostname-api.sabacloud.com>/v1/contentfolder"
+   },
+   {  
+      "apiName":"Find details of content folder",
+      "fileName":"Find details of content folder.html",
+      "component":"Contentfolder",
+      "method":"GET",
+      "module":"Cif",
+      "url":"https://<hostname-api.sabacloud.com>/v1/contentfolder?q=(:criteria_field==:field_value)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Get details of a particular content folder, root folders, or a list of all the subfolders",
+      "fileName":"Get details of a particular content folder, root folders, or a list of all the subfolders.html",
+      "component":"Contentfolder",
+      "method":"GET",
+      "module":"Cif",
+      "url":"https://<hostname-api.sabacloud.com>/Saba/component/contentfolder/:id:(searchFields)"
+   },
+   {  
+      "apiName":"Create a new content folder",
+      "fileName":"Create a new content folder.html",
+      "component":"Contentfolder",
+      "method":"POST",
+      "module":"Cif",
+      "url":"https://<hostname-api.sabacloud.com>/v1/contentfolder/"
+   },
+   {  
+      "apiName":"Get all content inventory",
+      "fileName":"Get all content inventory.html",
+      "component":"Contentinventory",
+      "method":"GET",
+      "module":"Cif",
+      "url":"https://<hostname-api.sabacloud.com>/v1/content"
+   },
+   {  
+      "apiName":"Find details of content inventory",
+      "fileName":"Find details of content inventory.html",
+      "component":"Contentinventory",
+      "method":"GET",
+      "module":"Cif",
+      "url":"https://<hostname-api.sabacloud.com>/v1/content?q=(:criteria_field==:field_value)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Get content's details along with the metadata",
+      "fileName":"Get content's details along with the metadata.html",
+      "component":"Contentinventory",
+      "method":"GET",
+      "module":"Cif",
+      "url":"https://<hostname-api.sabacloud.com>/v1/content/:id"
+   },
+   {  
+      "apiName":"Publish content",
+      "fileName":"Publish content.html",
+      "component":"Contentinventory",
+      "method":"POST",
+      "module":"Cif",
+      "url":"The following is a deprecated URL for this REST Web service and will be discontinued in the next few updates:"
+   },
+   {  
+      "apiName":"Get version details of product",
+      "fileName":"Get version details of product.html",
+      "component":"Coreservices",
+      "method":"GET",
+      "module":"Cif",
+      "url":"The following is a deprecated URL for this REST Web service and will be discontinued in the next few updates:"
+   },
+   {  
+      "apiName":"Get a list of sites",
+      "fileName":"Get a list of sites.html",
+      "component":"Coreservices",
+      "method":"GET",
+      "module":"Cif",
+      "url":"The following is a deprecated URL for this REST Web service and will be discontinued in the next few updates:"
+   },
+   {  
+      "apiName":"Get a cif certificate",
+      "fileName":"Get a cif certificate.html",
+      "component":"Coreservices",
+      "method":"GET",
+      "module":"Cif",
+      "url":"The following is a deprecated URL for this REST Web service and will be discontinued in the next few updates:"
+   },
+   {  
+      "apiName":"Get initial system values for contenttypes, contentformats, contentservers",
+      "fileName":"Get initial system values for contenttypes, contentformats, contentservers.html",
+      "component":"Coreservices",
+      "method":"GET",
+      "module":"Cif",
+      "url":"The following is a deprecated URL for this REST Web service and will be discontinued in the next few updates:"
+   },
+   {  
+      "apiName":"Report result",
+      "fileName":"Report result.html",
+      "component":"Partner",
+      "method":"POST",
+      "module":"Cif",
+      "url":"http://<hostname-api.sabacloud.com>/v1/partner/reportResult"
+   },
+   {  
+      "apiName":"Extracting component privileges",
+      "fileName":"Extracting component privileges.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Common",
+      "url":""
+   },
+   {  
+      "apiName":"Find details of attachment for a given id",
+      "fileName":"Find details of attachment for a given id.html",
+      "component":"Attachment",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"This API does not support retrieving additional details using Field Selectors."
+   },
+   {  
+      "apiName":"Get actual content of an attachment",
+      "fileName":"Get actual content of an attachment.html",
+      "component":"Attachment",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/attachments/attachment/:id"
+   },
+   {  
+      "apiName":"Find all attachments",
+      "fileName":"Find all attachments.html",
+      "component":"Attachment",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/attachments?ownerName=:ownerName&ownerId=:ownerId"
+   },
+   {  
+      "apiName":"Find all public/private attachments",
+      "fileName":"Find all public private attachments.html",
+      "component":"Attachment",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/attachments?ownerName=:ownerName&ownerId=:ownerId&isPrivate=:isPrivate"
+   },
+   {  
+      "apiName":"Create a new attachment (file)",
+      "fileName":"Create a new attachment (file).html",
+      "component":"Attachment",
+      "method":"POST",
+      "module":"Foundation",
+      "url":"The following is a deprecated URL for this REST Web service and will be discontinued in the next few updates:"
+   },
+   {  
+      "apiName":"Create a new attachment (url)",
+      "fileName":"Create a new attachment (url).html",
+      "component":"Attachment",
+      "method":"POST",
+      "module":"Foundation",
+      "url":"The following is a deprecated URL for this REST Web service and will be discontinued in the next few updates:"
+   },
+   {  
+      "apiName":"Update an attachment",
+      "fileName":"Update an attachment.html",
+      "component":"Attachment",
+      "method":"PUT",
+      "module":"Foundation",
+      "url":"The following is a deprecated URL for this REST Web service and will be discontinued in the next few updates:"
+   },
+   {  
+      "apiName":"Get all audiencetypes",
+      "fileName":"Get all audiencetypes.html",
+      "component":"Audiencetype",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/audiencetype"
+   },
+   {  
+      "apiName":"Find meta details of audience types",
+      "fileName":"Find meta details of audience types.html",
+      "component":"Audiencetype",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/audiencetype/meta"
+   },
+   {  
+      "apiName":"Find details of audiencetypes",
+      "fileName":"Find details of audiencetypes.html",
+      "component":"Audiencetype",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/audiencetype?q=(:criteria_field==:field_value)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Get details of a particular audience type",
+      "fileName":"Get details of a particular audience type.html",
+      "component":"Audiencetype",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/audiencetype/:id"
+   },
+   {  
+      "apiName":"Create a new audience type",
+      "fileName":"Create a new audience type.html",
+      "component":"Audiencetype",
+      "method":"POST",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/audiencetype"
+   },
+   {  
+      "apiName":"Update details of an audience type",
+      "fileName":"Update details of an audience type.html",
+      "component":"Audiencetype",
+      "method":"PUT",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/audiencetype/:id"
+   },
+   {  
+      "apiName":"Get persons assigned to audience type",
+      "fileName":"Get persons assigned to audience type.html",
+      "component":"Audiencetype",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/learning/audiencetype/{audienceTypeID}/person"
+   },
+   {  
+      "apiName":"Assign persons to audience type",
+      "fileName":"Assign persons to audience type.html",
+      "component":"Audiencetype",
+      "method":"POST",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/learning/audiencetype/{audienceTypeID}/person"
+   },
+   {  
+      "apiName":"Delete persons from audience type",
+      "fileName":"Delete persons from audience type.html",
+      "component":"Audiencetype",
+      "method":"DELETE",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/learning/audiencetype/{audienceTypeID}/person"
+   },
+   {  
+      "apiName":"Global search",
+      "fileName":"Global search.html",
+      "component":"Common",
+      "method":"POST",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/globalsearch?count=<count>&startpage=<startpage>"
+   },
+   {  
       "apiName":"Get all competencies",
       "fileName":"Get all competencies.html",
       "component":"Competency",
@@ -542,6 +870,70 @@
       "method":"POST",
       "module":"Foundation",
       "url":"https://<hostname-api.sabacloud.com>/v1/note/"
+   },
+   {  
+      "apiName":"Get all organizations",
+      "fileName":"Get all organizations.html",
+      "component":"Organization",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/organization?type=:type&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Find details of internal/external organizations",
+      "fileName":"Find details of internal external organizations.html",
+      "component":"Organization",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/organization?type=:type&q=(:criteria_field==:field_value)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Get details of an organization",
+      "fileName":"Get details of an organization.html",
+      "component":"Organization",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/organization/:id?includeassociation=true"
+   },
+   {  
+      "apiName":"Get meta details of an organization",
+      "fileName":"Get meta details of an organization.html",
+      "component":"Organization",
+      "method":"GET",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/organization/meta?type=:type"
+   },
+   {  
+      "apiName":"Create a new internal organization",
+      "fileName":"Create a new internal organization.html",
+      "component":"Organization",
+      "method":"POST",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/organization?type=internal"
+   },
+   {  
+      "apiName":"Update details of an internal organization",
+      "fileName":"Update details of an internal organization.html",
+      "component":"Organization",
+      "method":"PUT",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/organization/:id"
+   },
+   {  
+      "apiName":"Create a new external organization",
+      "fileName":"Create a new external organization.html",
+      "component":"Organization",
+      "method":"POST",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/organization?type=external"
+   },
+   {  
+      "apiName":"Update details of an external organization",
+      "fileName":"Update details of an external organization.html",
+      "component":"Organization",
+      "method":"PUT",
+      "module":"Foundation",
+      "url":"https://<hostname-api.sabacloud.com>/v1/organization/:id"
    },
    {  
       "apiName":"Get meta details of positions",
@@ -1096,6 +1488,38 @@
       "url":"https://<hostname-api.sabacloud.com>/v1/timezone/:id:(:searchFields)"
    },
    {  
+      "apiName":"Before you begin",
+      "fileName":"Before you begin.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Introduction",
+      "url":""
+   },
+   {  
+      "apiName":"Usage",
+      "fileName":"Usage.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Introduction",
+      "url":""
+   },
+   {  
+      "apiName":"Example (a typical client side program)",
+      "fileName":"Example (a typical client side program).html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Introduction",
+      "url":""
+   },
+   {  
+      "apiName":"Some quick info",
+      "fileName":"Some quick info.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Introduction",
+      "url":""
+   },
+   {  
       "apiName":"Get meta details of attendance",
       "fileName":"Get meta details of attendance.html",
       "component":"Attendance",
@@ -1222,6 +1646,46 @@
       "method":"DELETE",
       "module":"Learning",
       "url":"http://<hostname-api.sabacloud.com>/v1/learning/category/:categoryId/tags/:tagId"
+   },
+   {  
+      "apiName":"Get details of a certification",
+      "fileName":"Get details of a certification.html",
+      "component":"Certification",
+      "method":"",
+      "module":"Learning",
+      "url":""
+   },
+   {  
+      "apiName":"Find details of certification/curriculum",
+      "fileName":"Find details of certification curriculum.html",
+      "component":"Certification",
+      "method":"GET",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/:componentName?q=(:criteria_field==:field_value)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Find details of certification/curriculum (using post - range based search)",
+      "fileName":"Find details of certification curriculum (using post - range based search).html",
+      "component":"Certification",
+      "method":"POST",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/:componentName/searchQuery?count=:count&startPage=:startPage&includeDetails=:includeDetails"
+   },
+   {  
+      "apiName":"Create a new certification",
+      "fileName":"Create a new certification.html",
+      "component":"Certification",
+      "method":"POST",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/certification"
+   },
+   {  
+      "apiName":"Update details of a certification",
+      "fileName":"Update details of a certification.html",
+      "component":"Certification",
+      "method":"PUT",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/certification/:id"
    },
    {  
       "apiName":"Get all records of a component",
@@ -1368,6 +1832,46 @@
       "url":"http://<hostname-api.sabacloud.com>/v1/courseactivity/:id"
    },
    {  
+      "apiName":"Get details of a curriculum",
+      "fileName":"Get details of a curriculum.html",
+      "component":"Curriculum",
+      "method":"",
+      "module":"Learning",
+      "url":""
+   },
+   {  
+      "apiName":"Find details of certification/curriculum",
+      "fileName":"Find details of certification curriculum.html",
+      "component":"Curriculum",
+      "method":"GET",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/:componentName?q=(:criteria_field==:field_value)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Find details of certification/curriculum (using post - range based search)",
+      "fileName":"Find details of certification curriculum (using post - range based search).html",
+      "component":"Curriculum",
+      "method":"POST",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/:componentName/searchQuery?count=:count&startPage=:startPage&includeDetails=:includeDetails"
+   },
+   {  
+      "apiName":"Create a new curriculum",
+      "fileName":"Create a new curriculum.html",
+      "component":"Curriculum",
+      "method":"POST",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/curriculum"
+   },
+   {  
+      "apiName":"Update details of a curriculum",
+      "fileName":"Update details of a curriculum.html",
+      "component":"Curriculum",
+      "method":"PUT",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/curriculum/:id"
+   },
+   {  
       "apiName":"Get meta details of delivery mode",
       "fileName":"Get meta details of delivery mode.html",
       "component":"Devlierymode",
@@ -1424,6 +1928,110 @@
       "url":"https://<hostname-api.sabacloud.com>/v1/deliverymode/:id"
    },
    {  
+      "apiName":"Get all enrollments",
+      "fileName":"Get all enrollments.html",
+      "component":"Enrollment",
+      "method":"GET",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/enrollment"
+   },
+   {  
+      "apiName":"Find details of enrollments",
+      "fileName":"Find details of enrollments.html",
+      "component":"Enrollment",
+      "method":"GET",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/enrollment?q=(:criteria_field==:field_value)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Search enrollments based on given criteria",
+      "fileName":"Search enrollments based on given criteria.html",
+      "component":"Enrollment",
+      "method":"GET",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/learning/enroll/search"
+   },
+   {  
+      "apiName":"Search enrollments based on given criteria (using post - range based search)",
+      "fileName":"Search enrollments based on given criteria (using post - range based search).html",
+      "component":"Enrollment",
+      "method":"POST",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/learning/enroll/search"
+   },
+   {  
+      "apiName":"Get details of an enrollment",
+      "fileName":"Get details of an enrollment.html",
+      "component":"Enrollment",
+      "method":"GET",
+      "module":"Learning",
+      "url":"The following table indicates the attribute mapping for the lessonDetail section:"
+   },
+   {  
+      "apiName":"Get existing registration details or auto enroll user and get registration details",
+      "fileName":"Get existing registration details or auto enroll user and get registration details.html",
+      "component":"Enrollment",
+      "method":"POST",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/learning/enroll/:learner/:offering/autoenroll"
+   },
+   {  
+      "apiName":"Create a new enrollment (self registration)",
+      "fileName":"Create a new enrollment (self registration).html",
+      "component":"Enrollment",
+      "method":"POST",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/enrollments"
+   },
+   {  
+      "apiName":"Enroll for other users/self",
+      "fileName":"Enroll for other users self.html",
+      "component":"Enrollment",
+      "method":"POST",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/enrollments"
+   },
+   {  
+      "apiName":"Enroll for other users/self with payment",
+      "fileName":"Enroll for other users self with payment.html",
+      "component":"Enrollment",
+      "method":"POST",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/enroll"
+   },
+   {  
+      "apiName":"Mark an enrollment complete",
+      "fileName":"Mark an enrollment complete.html",
+      "component":"Enrollment",
+      "method":"PUT",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/learning/enroll/:regId/status"
+   },
+   {  
+      "apiName":"Cancel an enrollment",
+      "fileName":"Cancel an enrollment.html",
+      "component":"Enrollment",
+      "method":"PUT",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/learning/enroll/:regId?action=cancel"
+   },
+   {  
+      "apiName":"Add or update custom fields of an enrollment",
+      "fileName":"Add or update custom fields of an enrollment.html",
+      "component":"Enrollment",
+      "method":"PUT",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/learning/enroll/:regId/custom"
+   },
+   {  
+      "apiName":"Mark a task / registration module complete",
+      "fileName":"Mark a task   registration module complete.html",
+      "component":"Enrollment",
+      "method":"PUT",
+      "module":"Learning",
+      "url":"https://<hostname-api.sabacloud.com>/v1/learning/enroll/assignments/action/:regModuleId?action=:actionName"
+   },
+   {  
       "apiName":"Get meta details of field of study",
       "fileName":"Get meta details of field of study.html",
       "component":"Fos",
@@ -1462,6 +2070,150 @@
       "method":"POST",
       "module":"Learning",
       "url":"https://<hostname-api.sabacloud.com>/v1/fieldofstudy/searchQuery?count=:count&startPage=:startPage&includeDetails=:includeDetails"
+   },
+   {  
+      "apiName":"Get held certification/curriculum activity details",
+      "fileName":"Get held certification curriculum activity details.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"GET",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/learning/heldlearningevent/activity/:activityId"
+   },
+   {  
+      "apiName":"Get completion and lesson details of the learning event",
+      "fileName":"Get completion and lesson details of the learning event.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"GET",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/learning/heldlearningevent/:heldCertId/:pathId/sections:(:searchFields)"
+   },
+   {  
+      "apiName":"Get held certification/curriculum details along with all the activities",
+      "fileName":"Get held certification curriculum details along with all the activities.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"GET",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/learning/heldlearningevent/:heldCertId"
+   },
+   {  
+      "apiName":"Search all the certifications/curricula assigned to a learner based on the status, timestamp",
+      "fileName":"Search all the certifications curricula assigned to a learner based on the status, timestamp.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"GET",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/learning/heldlearningevent?type=:type&q=(:criteria)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Search certifications/curricula of logged in user",
+      "fileName":"Search certifications curricula of logged in user.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"GET",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/learning/heldlearningevent?type=:type"
+   },
+   {  
+      "apiName":"Auto-enroll learners into courses inside the certification/curriculum",
+      "fileName":"Auto-enroll learners into courses inside the certification curriculum.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"POST",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/learning/heldlearningevent/autoenroll"
+   },
+   {  
+      "apiName":"Assign certification/curriculum to a person",
+      "fileName":"Assign certification curriculum to a person.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"POST",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/learning/heldlearningevent/{certId}/person"
+   },
+   {  
+      "apiName":"Grant certification/curriculum to a learner",
+      "fileName":"Grant certification curriculum to a learner.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"POST",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/learning/heldlearningevent/:cert_curr_Id/person?action=grant"
+   },
+   {  
+      "apiName":"Update target days/date for assigned certification/curriculum activity",
+      "fileName":"Update target days date for assigned certification curriculum activity.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"PUT",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/learning/heldlearningevent/activity/:activityId"
+   },
+   {  
+      "apiName":"Update expiration date of held certification",
+      "fileName":"Update expiration date of held certification.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"PUT",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/learning/heldlearningevent/expiry"
+   },
+   {  
+      "apiName":"Remove certification/curriculum activity of a learner",
+      "fileName":"Remove certification curriculum activity of a learner.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"DELETE",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/learning/heldlearningevent/activity/:activityId"
+   },
+   {  
+      "apiName":"Get meta details of course activity",
+      "fileName":"Get meta details of course activity.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"GET",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/courseactivity/meta"
+   },
+   {  
+      "apiName":"Get details of a particular course activity",
+      "fileName":"Get details of a particular course activity.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"GET",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/courseactivity/:id"
+   },
+   {  
+      "apiName":"Get all course activities of logged in user",
+      "fileName":"Get all course activities of logged in user.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"GET",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/courseactivity"
+   },
+   {  
+      "apiName":"Find details of course activities based on criteria",
+      "fileName":"Find details of course activities based on criteria.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"GET",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/courseactivity?q=(:criteria)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Assign a course to a person",
+      "fileName":"Assign a course to a person.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"POST",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/courseactivity/"
+   },
+   {  
+      "apiName":"Update details of a course activity",
+      "fileName":"Update details of a course activity.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"PUT",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/courseactivity/:id"
+   },
+   {  
+      "apiName":"Remove a course from a learner",
+      "fileName":"Remove a course from a learner.html",
+      "component":"Heldcertificationcurriculum",
+      "method":"DELETE",
+      "module":"Learning",
+      "url":"http://<hostname-api.sabacloud.com>/v1/courseactivity/:id"
    },
    {  
       "apiName":"Update details of a learning module",
@@ -1632,7 +2384,7 @@
       "url":"http://<hostname-api.sabacloud.com>/v1/offering/publishassignment"
    },
    {  
-      "apiName":"Mark class as delivered cancelled",
+      "apiName":"Mark class as delivered/cancelled",
       "fileName":"Mark class as delivered cancelled.html",
       "component":"Offering",
       "method":"POST",
@@ -1656,7 +2408,7 @@
       "url":"http://<hostname-api.sabacloud.com>/v1/offering/:offeringId/session"
    },
    {  
-      "apiName":"Mark class registration as no_show walk_in",
+      "apiName":"Mark class registration as no_show/walk_in",
       "fileName":"Mark class registration as no_show walk_in.html",
       "component":"Offering",
       "method":"PUT",
@@ -1696,8 +2448,8 @@
       "url":"Examples:"
    },
    {  
-      "apiName":"Approve reject an order item",
-      "fileName":"Approve reject an order item.html",
+      "apiName":"Approve / reject an order item",
+      "fileName":"Approve   reject an order item.html",
       "component":"Orders",
       "method":"PUT",
       "module":"Learning",
@@ -2422,5 +3174,1053 @@
       "method":"DELETE",
       "module":"Learning",
       "url":"https://<hostname-api.sabacloud.com>/v1/transcripts/:transcriptId"
+   },
+   {  
+      "apiName":"Delete a specific component from a person",
+      "fileName":"Delete a specific component from a person.html",
+      "component":"Delete",
+      "method":"DELETE",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/:component_name/:component_id"
+   },
+   {  
+      "apiName":"Delete a security role from a person",
+      "fileName":"Delete a security role from a person.html",
+      "component":"Delete",
+      "method":"DELETE",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:empid/securityRole/:secroleid"
+   },
+   {  
+      "apiName":"Delete a required job role from a person",
+      "fileName":"Delete a required job role from a person.html",
+      "component":"Delete",
+      "method":"DELETE",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personid/requiredjobrole/:jobid"
+   },
+   {  
+      "apiName":"Delete an optional job role from a person",
+      "fileName":"Delete an optional job role from a person.html",
+      "component":"Delete",
+      "method":"DELETE",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personid/optionaljobrole/:jobid"
+   },
+   {  
+      "apiName":"Delete an audience type / audience sub types assigned to a person",
+      "fileName":"Delete an audience type   audience sub types assigned to a person.html",
+      "component":"Delete",
+      "method":"DELETE",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/audiencetype/{audId}"
+   },
+   {  
+      "apiName":"Delete person's qualified learning information",
+      "fileName":"Delete person's qualified learning information.html",
+      "component":"Delete",
+      "method":"DELETE",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/common/profile/:personId/qualifiedlearning/:courseId/:deliveryTypeId"
+   },
+   {  
+      "apiName":"Delete person's rate information",
+      "fileName":"Delete person's rate information.html",
+      "component":"Delete",
+      "method":"DELETE",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/common/profile/:personId/rate/:currencyId"
+   },
+   {  
+      "apiName":"Delete person's spoken language information",
+      "fileName":"Delete person's spoken language information.html",
+      "component":"Delete",
+      "method":"DELETE",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/common/profile/:personId/languagespoken/:languageId"
+   },
+   {  
+      "apiName":"Delete person's currency",
+      "fileName":"Delete person's currency.html",
+      "component":"Delete",
+      "method":"",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/currencyList/:currencyId"
+   },
+   {  
+      "apiName":"Delete person's currency based on currency isocode lookup",
+      "fileName":"Delete person's currency based on currency isocode lookup.html",
+      "component":"Delete",
+      "method":"",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/currencyList/name=:isoCode"
+   },
+   {  
+      "apiName":"Purge person's profile",
+      "fileName":"Purge person's profile.html",
+      "component":"Delete",
+      "method":"DELETE",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/common/profile/:personId/action/purge"
+   },
+   {  
+      "apiName":"Cancel all enrollments of a learner",
+      "fileName":"Cancel all enrollments of a learner.html",
+      "component":"Delete",
+      "method":"DELETE",
+      "module":"People",
+      "url":"http://<hostname-api.sabacloud.com>/v1/common/profile/learner/:learnerId/enrollments?action=:action&applyCharge=:applyCharge"
+   },
+   {  
+      "apiName":"Extracting metadata of the available attributes",
+      "fileName":"Extracting metadata of the available attributes.html",
+      "component":"Started",
+      "method":"",
+      "module":"Get",
+      "url":""
+   },
+   {  
+      "apiName":"Searching people data",
+      "fileName":"Searching people data.html",
+      "component":"Started",
+      "method":"",
+      "module":"Get",
+      "url":""
+   },
+   {  
+      "apiName":"Using get to retrieve people data",
+      "fileName":"Using get to retrieve people data.html",
+      "component":"Started",
+      "method":"",
+      "module":"Get",
+      "url":""
+   },
+   {  
+      "apiName":"Using post to create people data",
+      "fileName":"Using post to create people data.html",
+      "component":"Started",
+      "method":"",
+      "module":"Get",
+      "url":""
+   },
+   {  
+      "apiName":"Using put to update people data",
+      "fileName":"Using put to update people data.html",
+      "component":"Started",
+      "method":"",
+      "module":"Get",
+      "url":""
+   },
+   {  
+      "apiName":"Using delete to delete a sub object of people data",
+      "fileName":"Using delete to delete a sub object of people data.html",
+      "component":"Started",
+      "method":"",
+      "module":"Get",
+      "url":""
+   },
+   {  
+      "apiName":"Attributes for the people end point",
+      "fileName":"Attributes for the people end point.html",
+      "component":"Started",
+      "method":"",
+      "module":"Get",
+      "url":""
+   },
+   {  
+      "apiName":"Find profile information",
+      "fileName":"Find profile information.html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people?type=:type&f=(:searchFields)&q=(:query)"
+   },
+   {  
+      "apiName":"Get all persons (internal/external)",
+      "fileName":"Get all persons (internal external).html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people?type=:type"
+   },
+   {  
+      "apiName":"Get certifications/enrollments/transcripts for a person",
+      "fileName":"Get certifications enrollments transcripts for a person.html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:id/:attributeName/search?q=(:criteria_field%3D%3D:field_value)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Get details of desired component for a person",
+      "fileName":"Get details of desired component for a person.html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/:component_name/:component_id:(:searchFields)"
+   },
+   {  
+      "apiName":"Get metadata of specific people attributes",
+      "fileName":"Get metadata of specific people attributes.html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/meta:(:searchFields)?type=:type"
+   },
+   {  
+      "apiName":"Get required profile details of a particular person",
+      "fileName":"Get required profile details of a particular person.html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:id:(:searchFields)"
+   },
+   {  
+      "apiName":"Get job / security roles of a particular person",
+      "fileName":"Get job   security roles of a particular person.html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:id:(securityRoles,requiredJobRoles,optionalJobRoles)"
+   },
+   {  
+      "apiName":"Get audience type / audience sub types assigned to a person (deprecated)",
+      "fileName":"Get audience type   audience sub types assigned to a person (deprecated).html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/audiencetypes/search"
+   },
+   {  
+      "apiName":"Get audience type / audience sub types assigned to a person",
+      "fileName":"Get audience type   audience sub types assigned to a person.html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/audiencetypes/search"
+   },
+   {  
+      "apiName":"Get profile pic url",
+      "fileName":"Get profile pic url.html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/common/profile/:personId/profilePicURL"
+   },
+   {  
+      "apiName":"Get profile pic",
+      "fileName":"Get profile pic.html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/common/profile/:personId/profilePic"
+   },
+   {  
+      "apiName":"Get person's resource details",
+      "fileName":"Get person's resource details.html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/common/profile/:personId/resource"
+   },
+   {  
+      "apiName":"Get required profile details of a particular person (internal/external)",
+      "fileName":"Get required profile details of a particular person (internal external).html",
+      "component":"Get",
+      "method":"GET",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/username=:name:(:searchFields)?type=:type"
+   },
+   {  
+      "apiName":"Search profile information",
+      "fileName":"Search profile information.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/searchQuery?type=:type&f=(:searchFields)"
+   },
+   {  
+      "apiName":"Add education details for a person",
+      "fileName":"Add education details for a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/education"
+   },
+   {  
+      "apiName":"Add flightrisk details for a person",
+      "fileName":"Add flightrisk details for a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/flightRisk"
+   },
+   {  
+      "apiName":"Add language details for a person",
+      "fileName":"Add language details for a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/languages"
+   },
+   {  
+      "apiName":"Add potential positions details of a person",
+      "fileName":"Add potential positions details of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/potentialPositions"
+   },
+   {  
+      "apiName":"Add retirement risk details of a person",
+      "fileName":"Add retirement risk details of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/retirementRisk"
+   },
+   {  
+      "apiName":"Add career interests details of a person",
+      "fileName":"Add career interests details of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/careerInterests"
+   },
+   {  
+      "apiName":"Add external certifications details of a person",
+      "fileName":"Add external certifications details of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/externalCertifications"
+   },
+   {  
+      "apiName":"Add im profile details of a person",
+      "fileName":"Add im profile details of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/imProfile"
+   },
+   {  
+      "apiName":"Add internal work history details of a person",
+      "fileName":"Add internal work history details of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/internalWorkHistory"
+   },
+   {  
+      "apiName":"Add external work history details of a person",
+      "fileName":"Add external work history details of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/externalWorkHistory"
+   },
+   {  
+      "apiName":"Add mobility details of a person",
+      "fileName":"Add mobility details of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/mobility"
+   },
+   {  
+      "apiName":"Add potential rating details of a person",
+      "fileName":"Add potential rating details of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/potentialRating"
+   },
+   {  
+      "apiName":"Add security roles of a person",
+      "fileName":"Add security roles of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>//v1/people/:empid/securityRole"
+   },
+   {  
+      "apiName":"Add required job roles of a person",
+      "fileName":"Add required job roles of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personid/requiredjobrole"
+   },
+   {  
+      "apiName":"Add optional job roles of a person",
+      "fileName":"Add optional job roles of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personid/optionaljobrole"
+   },
+   {  
+      "apiName":"Assign audience type / sub audience type to a person",
+      "fileName":"Assign audience type   sub audience type to a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/audiencetype"
+   },
+   {  
+      "apiName":"Assign person as a resource",
+      "fileName":"Assign person as a resource.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/common/profile/:personId/resource"
+   },
+   {  
+      "apiName":"Add secondary address for a person",
+      "fileName":"Add secondary address for a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/secondaryAddress"
+   },
+   {  
+      "apiName":"Add currency to person",
+      "fileName":"Add currency to person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/currencyList"
+   },
+   {  
+      "apiName":"Add job / security roles of a person",
+      "fileName":"Add job   security roles of a person.html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people?type=:type"
+   },
+   {  
+      "apiName":"Create a profile [external person]",
+      "fileName":"Create a profile [external person].html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people?type=external"
+   },
+   {  
+      "apiName":"Create a profile [internal person]",
+      "fileName":"Create a profile [internal person].html",
+      "component":"Post",
+      "method":"POST",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people?type=internal"
+   },
+   {  
+      "apiName":"Update a person's flightrisk details",
+      "fileName":"Update a person's flightrisk details.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/flightRisk/:id"
+   },
+   {  
+      "apiName":"Update person's resource and rate details",
+      "fileName":"Update person's resource and rate details.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/common/profile/:personId/resource"
+   },
+   {  
+      "apiName":"Update a profile for given person id [external]",
+      "fileName":"Update a profile for given person id [external].html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:id"
+   },
+   {  
+      "apiName":"Update a profile for given person id [internal]",
+      "fileName":"Update a profile for given person id [internal].html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:id"
+   },
+   {  
+      "apiName":"Update a profile for given person name [external]",
+      "fileName":"Update a profile for given person name [external].html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/username=:username?type=external"
+   },
+   {  
+      "apiName":"Update a profile for given person name [internal]",
+      "fileName":"Update a profile for given person name [internal].html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/username=:username?type=internal"
+   },
+   {  
+      "apiName":"Update coreprofile details of a person",
+      "fileName":"Update coreprofile details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/coreProfile/:id"
+   },
+   {  
+      "apiName":"Update languages details of a person",
+      "fileName":"Update languages details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/languages/:id"
+   },
+   {  
+      "apiName":"Update career interests details of a person",
+      "fileName":"Update career interests details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/careerInterests/:id"
+   },
+   {  
+      "apiName":"Update education details of a person",
+      "fileName":"Update education details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/education/:id"
+   },
+   {  
+      "apiName":"Update external certifications details of a person",
+      "fileName":"Update external certifications details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/externalCertifications/:id"
+   },
+   {  
+      "apiName":"Update im profile details of a person",
+      "fileName":"Update im profile details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/imProfile/:id"
+   },
+   {  
+      "apiName":"Update interests details of a person",
+      "fileName":"Update interests details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/interests/:personId"
+   },
+   {  
+      "apiName":"Update internal work history details of a person",
+      "fileName":"Update internal work history details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/internalWorkHistory/:id"
+   },
+   {  
+      "apiName":"Update external work history details of a person",
+      "fileName":"Update external work history details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/externalWorkHistory/:id"
+   },
+   {  
+      "apiName":"Update mobility details of a person",
+      "fileName":"Update mobility details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/mobility/:id"
+   },
+   {  
+      "apiName":"Update network info details of a person",
+      "fileName":"Update network info details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/networkInfo/:personId"
+   },
+   {  
+      "apiName":"Update potential positions details of a person",
+      "fileName":"Update potential positions details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/potentialPositions/:id"
+   },
+   {  
+      "apiName":"Update potential rating details of a person",
+      "fileName":"Update potential rating details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/potentialRating/:id"
+   },
+   {  
+      "apiName":"Update retirement risk details of a person",
+      "fileName":"Update retirement risk details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/retirementRisk/:id"
+   },
+   {  
+      "apiName":"Update saba meeting profile details of a person",
+      "fileName":"Update saba meeting profile details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/centraProfile/:id"
+   },
+   {  
+      "apiName":"Update secondary address details of a person",
+      "fileName":"Update secondary address details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/secondaryAddress/:id"
+   },
+   {  
+      "apiName":"Update audience types / audience sub types assigned to a person",
+      "fileName":"Update audience types   audience sub types assigned to a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id"
+   },
+   {  
+      "apiName":"Remove/update job / security roles of a person",
+      "fileName":"Remove update job   security roles of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id"
+   },
+   {  
+      "apiName":"Update team details of a person",
+      "fileName":"Update team details of a person.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:person_id/teamInfo/:personId"
+   },
+   {  
+      "apiName":"Mark currency active/inactive",
+      "fileName":"Mark currency active inactive.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/people/:personId/currencyList/:currencyId"
+   },
+   {  
+      "apiName":"Merge person's profile",
+      "fileName":"Merge person's profile.html",
+      "component":"Put",
+      "method":"PUT",
+      "module":"People",
+      "url":"https://<hostname-api.sabacloud.com>/v1/common/profile/:personId/action/merge"
+   },
+   {  
+      "apiName":"Get all competencies for a person",
+      "fileName":"Get all competencies for a person.html",
+      "component":"Compentencies",
+      "method":"GET",
+      "module":"Performance",
+      "url":"http://<hostname-api.sabacloud.com>/v1/performance/competencies"
+   },
+   {  
+      "apiName":"Get details of a particular competency of a particular person",
+      "fileName":"Get details of a particular competency of a particular person.html",
+      "component":"Compentencies",
+      "method":"GET",
+      "module":"Performance",
+      "url":"http://<hostname-api.sabacloud.com>/v1/performance/competencies/:id?assignee=:assignee"
+   },
+   {  
+      "apiName":"Get all goals for a person",
+      "fileName":"Get all goals for a person.html",
+      "component":"Goals",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/performance/goals"
+   },
+   {  
+      "apiName":"Get details of a particular goal",
+      "fileName":"Get details of a particular goal.html",
+      "component":"Goals",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/performance/goals/:id"
+   },
+   {  
+      "apiName":"Create goal for self/team",
+      "fileName":"Create goal for self team.html",
+      "component":"Goals",
+      "method":"POST",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/performance/goals"
+   },
+   {  
+      "apiName":"Create progress of a goal",
+      "fileName":"Create progress of a goal.html",
+      "component":"Goals",
+      "method":"POST",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/performance/goals/:goalId/createProgress"
+   },
+   {  
+      "apiName":"Change status of a goal",
+      "fileName":"Change status of a goal.html",
+      "component":"Goals",
+      "method":"PUT",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/performance/goals/:goalId/changeStatus"
+   },
+   {  
+      "apiName":"Update approver of goal",
+      "fileName":"Update approver of goal.html",
+      "component":"Goals",
+      "method":"PUT",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/performance/goals/:goalId/approvers"
+   },
+   {  
+      "apiName":"Update goal for self/team",
+      "fileName":"Update goal for self team.html",
+      "component":"Goals",
+      "method":"PUT",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/performance/goals/:goalId"
+   },
+   {  
+      "apiName":"Find all reviews",
+      "fileName":"Find all reviews.html",
+      "component":"Review",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/review?f=(:display)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Find details of review cycles",
+      "fileName":"Find details of review cycles.html",
+      "component":"Review",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/review-cycle?q=(:criteria)&f=(:display)&count=:count&startPage=:startPage&includeDetails=:detailsFlag"
+   },
+   {  
+      "apiName":"Find details of reviews",
+      "fileName":"Find details of reviews.html",
+      "component":"Review",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/review?q=(:criteria)&f=(:display)&count=:count&startPage=:startPage&includeDetails=:detailsFlag"
+   },
+   {  
+      "apiName":"Get all review cycles",
+      "fileName":"Get all review cycles.html",
+      "component":"Review",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/review-cycle?count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Get details of a particular review",
+      "fileName":"Get details of a particular review.html",
+      "component":"Review",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/review/:id:(:searchFields)"
+   },
+   {  
+      "apiName":"Get details of a particular review cycle",
+      "fileName":"Get details of a particular review cycle.html",
+      "component":"Review",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/review-cycle/:id:(:searchFields)"
+   },
+   {  
+      "apiName":"Get extended details of a particular review",
+      "fileName":"Get extended details of a particular review.html",
+      "component":"Review",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/Saba/api/performance/reviews/:id"
+   },
+   {  
+      "apiName":"Get extended details of a particular review cycle",
+      "fileName":"Get extended details of a particular review cycle.html",
+      "component":"Review",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/Saba/api/performance/reviews/reviewCycle/:id?expand=:searchFields"
+   },
+   {  
+      "apiName":"Get meta details of a review-cycle",
+      "fileName":"Get meta details of a review-cycle.html",
+      "component":"Review",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/review-cycle/meta:(:searchFields)"
+   },
+   {  
+      "apiName":"Get meta details of a review",
+      "fileName":"Get meta details of a review.html",
+      "component":"Review",
+      "method":"GET",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/review/meta:(:searchFields)"
+   },
+   {  
+      "apiName":"Find details of reviews with post based search",
+      "fileName":"Find details of reviews with post based search.html",
+      "component":"Review",
+      "method":"POST",
+      "module":"Performance",
+      "url":"https://<hostname-api.sabacloud.com>/v1/review/searchQuery?f=(:display)&count=:count&startPage=:startPage&includeDetails=:detailsFlag"
+   },
+   {  
+      "apiName":"Get list of data extract jobs",
+      "fileName":"Get list of data extract jobs.html",
+      "component":"Extract",
+      "method":"GET",
+      "module":"Platform",
+      "url":"https://<hostname-api.sabacloud.com>/v1/dataextract/jobsList?count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Schedule data extract job",
+      "fileName":"Schedule data extract job.html",
+      "component":"Extract",
+      "method":"POST",
+      "module":"Platform",
+      "url":"https://<hostname-api.sabacloud.com>/v1/dataextract/job/:id/scheduleJob"
+   },
+   {  
+      "apiName":"Getting started with the people web services",
+      "fileName":"Getting started with the people web services.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Poeple",
+      "url":""
+   },
+   {  
+      "apiName":"Get methods",
+      "fileName":"Get methods.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Poeple",
+      "url":""
+   },
+   {  
+      "apiName":"Post methods",
+      "fileName":"Post methods.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Poeple",
+      "url":""
+   },
+   {  
+      "apiName":"Put methods",
+      "fileName":"Put methods.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Poeple",
+      "url":""
+   },
+   {  
+      "apiName":"Delete methods",
+      "fileName":"Delete methods.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Poeple",
+      "url":""
+   },
+   {  
+      "apiName":"Find details of job requisition",
+      "fileName":"Find details of job requisition.html",
+      "component":"Requisition",
+      "method":"GET",
+      "module":"Job",
+      "url":"https://<hostname-api.sabacloud.com>/v1/job-requisition?q=(:criteria)&count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Find details of job requisition (using post - range based search)",
+      "fileName":"Find details of job requisition (using post - range based search).html",
+      "component":"Requisition",
+      "method":"POST",
+      "module":"Job",
+      "url":"https://<hostname-api.sabacloud.com>/v1/job-requisition/searchQuery?count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Get all job requisitions",
+      "fileName":"Get all job requisitions.html",
+      "component":"Requisition",
+      "method":"GET",
+      "module":"Job",
+      "url":"https://<hostname-api.sabacloud.com>/v1/job-requisition?count=:count&startPage=:startPage"
+   },
+   {  
+      "apiName":"Get details of a particular job requisition",
+      "fileName":"Get details of a particular job requisition.html",
+      "component":"Requisition",
+      "method":"GET",
+      "module":"Job",
+      "url":"https://<hostname-api.sabacloud.com>/v1/job-requisition/:id:(:searchFields)"
+   },
+   {  
+      "apiName":"Get meta details of job requisition",
+      "fileName":"Get meta details of job requisition.html",
+      "component":"Requisition",
+      "method":"GET",
+      "module":"Job",
+      "url":"https://<hostname-api.sabacloud.com>/v1/job-requisition/meta"
+   },
+   {  
+      "apiName":"Create a new job requisition",
+      "fileName":"Create a new job requisition.html",
+      "component":"Requisition",
+      "method":"POST",
+      "module":"Job",
+      "url":"https://<hostname-api.sabacloud.com>/v1/job-requisition"
+   },
+   {  
+      "apiName":"Update job requisition",
+      "fileName":"Update job requisition.html",
+      "component":"Requisition",
+      "method":"PUT",
+      "module":"Job",
+      "url":"http://<hostname-api.sabacloud.com>/v1/job-requisition/:id"
+   },
+   {  
+      "apiName":"Overview",
+      "fileName":"Overview.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Vle",
+      "url":""
+   },
+   {  
+      "apiName":"Adapter configuration",
+      "fileName":"Adapter configuration.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Vle",
+      "url":""
+   },
+   {  
+      "apiName":"Create meeting",
+      "fileName":"Create meeting.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Vle",
+      "url":""
+   },
+   {  
+      "apiName":"Update meeting",
+      "fileName":"Update meeting.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Vle",
+      "url":""
+   },
+   {  
+      "apiName":"Delete meeting",
+      "fileName":"Delete meeting.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Vle",
+      "url":""
+   },
+   {  
+      "apiName":"Get meeting",
+      "fileName":"Get meeting.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Vle",
+      "url":""
+   },
+   {  
+      "apiName":"Create meeting attendee",
+      "fileName":"Create meeting attendee.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Vle",
+      "url":""
+   },
+   {  
+      "apiName":"Delete meeting attendee",
+      "fileName":"Delete meeting attendee.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Vle",
+      "url":""
+   },
+   {  
+      "apiName":"Get host url",
+      "fileName":"Get host url.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Vle",
+      "url":""
+   },
+   {  
+      "apiName":"Get attendee url",
+      "fileName":"Get attendee url.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Vle",
+      "url":""
+   },
+   {  
+      "apiName":"Meeting attendance",
+      "fileName":"Meeting attendance.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Vle",
+      "url":""
+   },
+   {  
+      "apiName":"Before you begin",
+      "fileName":"Before you begin.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Introduction",
+      "url":""
+   },
+   {  
+      "apiName":"Usage",
+      "fileName":"Usage.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Introduction",
+      "url":""
+   },
+   {  
+      "apiName":"Example (a typical client side program)",
+      "fileName":"Example (a typical client side program).html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Introduction",
+      "url":""
+   },
+   {  
+      "apiName":"Some quick info",
+      "fileName":"Some quick info.html",
+      "component":"Concepts",
+      "method":"",
+      "module":"Introduction",
+      "url":""
    }
 ]

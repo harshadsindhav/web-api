@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   apiCategories: any;
   searchtext: string = '';
   globalSearchText: string = '';
-  iframeurl: string = './assets/Find details of facilities.html';
+  iframeurl: string = './assets/saba-copyright-topic.html';
   myurl: any;
   categoryExpanded: boolean = true;
   contentPageName: string = 'apiDetailPage';
@@ -66,6 +66,7 @@ export class HomeComponent implements OnInit {
   }
 
   public searchInAllApis() {
+    console.log('searching');
     for (let apiEntry of this.apiNameMapping) {
       if (apiEntry.apiName) {
         this.apiDocService.readFile(apiEntry.fileName)
@@ -78,6 +79,7 @@ export class HomeComponent implements OnInit {
                 'component': apiEntry.component,
                 'module': apiEntry.module
               });
+              console.log('search text found');
             }
             this.contentPageName = this.kSearchResultPage;
           });

@@ -1,0 +1,72 @@
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="copyright" content="(C) Copyright 2017">
+  <meta name="DC.rights.owner" content="(C) Copyright 2017">
+  <meta name="DC.Type" content="topic">
+  <meta name="DC.Format" content="XHTML">
+  <meta name="DC.Identifier" content="d0e430">
+  <link rel="stylesheet" type="text/css" href="commonltr.css">
+  <title>Introduction</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
+ </head>
+ <body>
+  <h4 class="title topictitle2" id="ariaid-title10">Some Quick Info</h4>
+  <div class="body"> 
+   <div class="p">
+    The following are the status codes that the REST web services listed in this document return.
+    <table id="topic_qjc_4yv_cn__table_shx_rvw_rh">
+     <caption>
+      <span class="table--title-label">Table 1. </span>
+      <span class="title">Status Codes</span>
+     </caption>
+     <colgroup>
+      <col style="width:26%">
+      <col style="width:74%">
+     </colgroup>
+     <thead class="thead"> 
+      <tr> 
+       <th class="entry colsep-1 rowsep-1" id="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__1">Status Code</th> 
+       <th class="entry colsep-1 rowsep-1" id="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__2">Description</th> 
+      </tr> 
+     </thead>
+     <tbody class="tbody"> 
+      <tr> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__1 "> <p class="p">200</p> </td> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__2 "> <p class="p"><strong class="ph b">OK</strong> - The request has succeeded.&nbsp; </p> </td> 
+      </tr> 
+      <tr> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__1 ">201</td> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__2 "><strong class="ph b">Created</strong> - The request has been fulfilled and resulted in a new resource being created. </td> 
+      </tr> 
+      <tr> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__1 ">204</td> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__2 "><strong class="ph b">No Content</strong> - The server has fulfilled the request but does not need to return an entity-body.</td> 
+      </tr> 
+      <tr> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__1 ">401</td> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__2 "><strong class="ph b">Unauthorized</strong> - The request requires user authentication.&nbsp; </td> 
+      </tr> 
+      <tr> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__1 ">403</td> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__2 "><strong class="ph b">Forbidden</strong> - The server understood the request, but is refusing to fulfill it.&nbsp; </td> 
+      </tr> 
+      <tr> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__1 ">500</td> 
+       <td class="entry colsep-1 rowsep-1" headers="topic_qjc_4yv_cn__table_shx_rvw_rh__entry__2 "><strong class="ph b">Internal Server Error</strong> - The server encountered an unexpected condition which prevented it from fulfilling the request. </td> 
+      </tr> 
+     </tbody>
+    </table>
+    <div class="note note note_note">
+     <span class="note__title">Note:</span> For any REST web service that uses the 
+     <strong class="ph b">PUT</strong> method, you can pass an additional GET param 
+     <strong class="ph b">?return_body=true</strong> when invoking it to force that REST web service to return the content. For example: 
+     <pre class="pre codeblock"><code>https://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/course/:courseid<strong class="ph b">?return_body=true</strong></code></pre>
+    </div>
+   </div> 
+  </div>
+ </body>
+</html>

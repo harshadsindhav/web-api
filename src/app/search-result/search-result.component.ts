@@ -12,7 +12,8 @@ export class SearchResultComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
+    console.log('testtt');
+    console.log(this.searchResults);
   }
 
   renderSearchedApi(resultApi: any) {

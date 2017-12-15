@@ -45,11 +45,12 @@ export class MainCategoryComponent implements OnInit {
   }
 
   @Input() mainCategory: any;
+  @Input() mainCategoryEleRef: ElementRef;
   @Output() onApiClickFromGrandChild = new EventEmitter<any>();
 
   stateIcon: string = 'fa fa-angle-up';
 
-  constructor(private elementRef: ElementRef) {
+  constructor() {
 
   }
   toggleState() {

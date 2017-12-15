@@ -21,65 +21,75 @@
         </div>
       </div>
     </div>
-    <!--Actual home component tempalte -->
+  </div>
+  <!--Actual home component tempalte -->
+  <div>
     <div>
-      <div class="nav-header">
-        <div class="api-reference-main">
-          <div class="left-navigation">
-            <!--<h2>Search APIS</h2>-->
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="input-group">
-                  <input type="input" class="form-control" placeholder="Search API" [(ngModel)]="searchtext">
-                </div>
-              </div>
-            </div>
-            <div class="row api-list-navigation">
-              <div class="col-lg-6">
-                <div class="list-group">
-                  <div *ngFor="let category of apiCategories.sub_categories">
-                    <app-main-category (onApiClickFromGrandChild)="onApiClickFromGrandChild($event)" [searchText]="searchtext" [mainCategory]="category"></app-main-category>
-                  </div>
-                </div>
+      <div class="api-reference-main">
+        <div class="left-navigation">
+          <!--<h2>Search APIS</h2>-->
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="input-group">
+                <input type="input" class="form-control" placeholder="Search API" [(ngModel)]="searchtext">
               </div>
             </div>
           </div>
-          <div class="content-data">
-            <div *ngIf="contentPageName === kSearchResultPage">
-              <app-search-result [searchResults]="resultApis" (searchedApi)="searchedApi($event)"></app-search-result>
-            </div>
-            <div *ngIf="contentPageName === kComponentApiPage">
-              <app-component-apis (getApiDetail)="onApiClickFromGrandChild($event)" [apiNameMapping]="apiNameMapping" [isComponentApiDetail]="isComponentApiDetail"
-                [apiDetail]="currentApi"></app-component-apis>
-            </div>
-            <div class="iframe-area" *ngIf="contentPageName === 'apiDetailPage'">
-              <div class="category-breadcrum">
-                <ol class="breadcrumb">
-                  <li>
-                    <a (click)="displayModuleComponents($event)">{{currentApi.module}}</a>
-                  </li>
-                  <li>
-                    <a (click)="displayComponentApis($event)">{{currentApi.component}}</a>
-                  </li>
-                  <li>
-                    <a>{{currentApi.apiName}}</a>
-                  </li>
-                </ol>
+          <div class="row api-list-navigation">
+            <div class="col-lg-6">
+              <div class="list-group">
+                <div *ngFor="let category of apiCategories.sub_categories">
+                  <app-main-category (onApiClickFromGrandChild)="onApiClickFromGrandChild($event)" [searchText]="searchtext" [mainCategory]="category"
+                    [mainCategoryEleRef]="eleRef"></app-main-category>
+                </div>
               </div>
-              <iframe [src]="myurl"></iframe>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
-        <!-- <ul>
-          <li>Limitations on Warranties and Liability</li>
-          <li>Contents</li>
-          <li>About This Guide</li>
-          <li>Index</li>
-        </ul> -->
-        <h3>This is Footer</h3>
+        <div class="content-data">
+          <div *ngIf="contentPageName === kSearchResultPage">
+            <app-search-result [searchResults]="resultApis" (searchedApi)="searchedApi($event)"></app-search-result>
+          </div>
+          <div *ngIf="contentPageName === kComponentApiPage">
+            <app-component-apis (getApiDetail)="onApiClickFromGrandChild($event)" [apiNameMapping]="apiNameMapping" [isComponentApiDetail]="isComponentApiDetail"
+              [apiDetail]="currentApi"></app-component-apis>
+          </div>
+          <div class="iframe-area" *ngIf="contentPageName === 'apiDetailPage'">
+            <div class="category-breadcrum">
+              <ol class="breadcrumb">
+                <li>
+                  <a (click)="displayModuleComponents($event)">{{currentApi.module}}</a>
+                </li>
+                <li>
+                  <a (click)="displayComponentApis($event)">{{currentApi.component}}</a>
+                </li>
+                <li>
+                  <a>{{currentApi.apiName}}</a>
+                </li>
+              </ol>
+            </div>
+            <iframe [src]="myurl"></iframe>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div class="panel panel-default">
+      <div class="panel-footer">
+        <ul>
+          <li>
+            <a href="#">Limitations on Warranties and Liability Saba</a>
+          </li>
+          <li>
+            <a href="#">Contents</a>
+          </li>
+          <li>
+            <a href="#">About This Guide</a>
+          </li>
+          <li>
+            <a href="#">Index</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 </div>

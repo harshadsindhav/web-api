@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { trigger, state, style, transition, animate, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-child-category',
@@ -38,11 +38,12 @@ export class ChildCategoryComponent implements OnInit {
     }
   }
   @Input() apis: any;
+  @Input() mainCategoryEleRef: ElementRef;
   @Output() onApiClick = new EventEmitter<any>();
 
   stateIcon: string = 'fa fa-angle-up';
 
-  constructor() {
+  constructor(private eleRef: ElementRef) {
     this.state = 'closed';
   }
   toggleState() {
@@ -55,11 +56,23 @@ export class ChildCategoryComponent implements OnInit {
   showApiDetail(event) {
     let targetApiTitle = event.target.innerHTML;
     if (targetApiTitle) {
+      this.removeSelectedApiElement();
+      event.target.className = 'selected';
       targetApiTitle = targetApiTitle.trim();
       this.onApiClick.emit({
         'apiName': targetApiTitle,
-        'component': this.apis.category
+        'component': this.apis.category,
+        'selectedApiEleRef': this.eleRef
       });
+    }
+  }
+
+  removeSelectedApiElement() {
+    let selectedElements = this.mainCategoryEleRef.nativeElement.getElementsByClassName('selected');
+    if (selectedElements && selectedElements.length && selectedElements.length > 0) {
+      for (let element of selectedElements) {
+        element.className = '';
+      }
     }
   }
 

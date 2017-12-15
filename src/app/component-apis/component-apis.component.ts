@@ -13,7 +13,7 @@ export class ComponentApisComponent implements OnInit {
   apis: any[] = [];
   categories: any[] = [];
   @Output() getApiDetail = new EventEmitter<any>();
-  mymethod: string = 'PUT';
+
   constructor() {
 
   }
