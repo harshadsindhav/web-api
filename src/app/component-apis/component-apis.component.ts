@@ -20,10 +20,13 @@ export class ComponentApisComponent implements OnInit {
 
   ngOnInit() {
     if (this.apiNameMapping) {
+      console.log(this.apiDetail);
+      console.log(this.isComponentApiDetail);
       for (let entry of this.apiNameMapping) {
         if (this.isComponentApiDetail && this.apiDetail && this.apiDetail.component &&
           this.apiDetail.component === entry.component) {
           this.apis.push(entry);
+          console.log('result found');
         } else {
         if (this.apiDetail && this.apiDetail.module && this.apiDetail.module.toLowerCase() === entry.module.toLowerCase() &&
           this.isUnique(entry)) {

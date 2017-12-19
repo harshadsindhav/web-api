@@ -1,12 +1,13 @@
 <div id="main-container">
   <div class="nav-header">
-    <div>
-      <img alt="Brand" src="../assets/images/logo.jpg">
+    <div class="nav-banner">
+      <!--<img alt="Brand" src="../assets/images/logo.jpg"> -->
       <div id="saba-navbar" class="navbar navbar-default">
-        <h1>SABA</h1>
+        <img alt="Brand" src="../assets/images/logo.png">
+        <h2>SABA</h2>
         <div>
           <div class="web-api-subtitle">
-            <h2>Rest API Documentation</h2>
+            <h3>Rest API Documentation</h3>
           </div>
           <div class="global-search-placeholder">
             <div>
@@ -20,6 +21,25 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="user-nav">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" (click)="navigationItemOnClick($event)">About This Guide</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" (click)="navigationItemOnClick($event)">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="navigationItemOnClick($event)">Authentication</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" (click)="navigationItemOnClick($event)">Limitations on Warranties and Liability</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" (click)="navigationItemOnClick($event)">How to Contact Saba</a>
+              </li>
+          </ul>
     </div>
   </div>
   <!--Actual home component tempalte -->
@@ -36,8 +56,13 @@
             </div>
           </div>
           <div class="row api-list-navigation">
-            <div class="col-lg-6">
+            <div>
               <div class="list-group">
+              <!--
+                <div *ngIf="apiCategories.api_list.length > 0">
+                  <p *ngFor="let api of apiCategories.api_list">{{api.title}}</p>
+                </div>
+              -->
                 <div *ngFor="let category of apiCategories.sub_categories">
                   <app-main-category (onApiClickFromGrandChild)="onApiClickFromGrandChild($event)" [searchText]="searchtext" [mainCategory]="category"
                     [mainCategoryEleRef]="eleRef"></app-main-category>
@@ -55,7 +80,7 @@
               [apiDetail]="currentApi"></app-component-apis>
           </div>
           <div class="iframe-area" *ngIf="contentPageName === 'apiDetailPage'">
-            <div class="category-breadcrum">
+            <div class="category-breadcrum" *ngIf="!isUserNavigation">
               <ol class="breadcrumb">
                 <li>
                   <a (click)="displayModuleComponents($event)">{{currentApi.module}}</a>
@@ -74,20 +99,24 @@
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
+  <div class="panel panel-default" id="footer-panel">
       <div class="panel-footer">
         <ul>
+
           <li>
-            <a href="#">Limitations on Warranties and Liability Saba</a>
-          </li>
-          <li>
-            <a href="#">Contents</a>
+            <a href="#">Introduction</a>
           </li>
           <li>
             <a href="#">About This Guide</a>
           </li>
           <li>
-            <a href="#">Index</a>
+              <a href="#">Authentication</a>
+            </li>
+          <li>
+              <a href="#">Limitations on Warranties and Liability Saba</a>
+            </li>
+          <li>
+            <a href="#">How to Contact Saba</a>
           </li>
         </ul>
       </div>

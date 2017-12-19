@@ -41,13 +41,13 @@ export class ChildCategoryComponent implements OnInit {
   @Input() mainCategoryEleRef: ElementRef;
   @Output() onApiClick = new EventEmitter<any>();
 
-  stateIcon: string = 'fa fa-angle-up';
+  stateIcon: string = 'fa fa-angle-down';
 
   constructor(private eleRef: ElementRef) {
     this.state = 'closed';
   }
   toggleState() {
-    this.stateIcon = this.state === 'closed' ? 'fa fa-angle-down' : 'fa fa-angle-up';
+    this.stateIcon = this.state === 'closed' ? 'fa fa-angle-up' : 'fa fa-angle-down';
     this.state = this.state === 'closed' ? 'open' : 'closed';
   }
   ngOnInit() {
@@ -59,12 +59,26 @@ export class ChildCategoryComponent implements OnInit {
       this.removeSelectedApiElement();
       event.target.className = 'selected';
       targetApiTitle = targetApiTitle.trim();
+      let filePath = this.getFileNameForTitle(targetApiTitle);
       this.onApiClick.emit({
         'apiName': targetApiTitle,
         'component': this.apis.category,
+        'apiFilePath' : filePath,
         'selectedApiEleRef': this.eleRef
       });
     }
+  }
+
+  getFileNameForTitle(title: string) {
+    let tempApis = this.apis.api_list;
+      console.log(this.apis.api_list);
+      for (let api of tempApis) {
+        let apiTitle = api.title;
+        console.log(apiTitle);
+        if (apiTitle === title) {
+          return api.apiFilePath;
+        }
+      }
   }
 
   removeSelectedApiElement() {

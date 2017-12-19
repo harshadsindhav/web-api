@@ -1,5 +1,10 @@
 
 <div class="main-content">
+  <!--
+  <div *ngIf="mainCategory.api_list.length > 0">
+    <p *ngFor="let api of mainCategory.api_list">{{api.title}}</p>
+  </div>
+  -->
   <h3 (click)="toggleState()">
       <span id="tgSpan1" [ngClass]="stateIcon"></span>
     {{mainCategory.category}}</h3>
