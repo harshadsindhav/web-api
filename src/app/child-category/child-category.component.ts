@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { trigger, state, style, transition, animate, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-child-category',
@@ -38,15 +38,16 @@ export class ChildCategoryComponent implements OnInit {
     }
   }
   @Input() apis: any;
+  @Input() mainCategoryEleRef: ElementRef;
   @Output() onApiClick = new EventEmitter<any>();
 
-  stateIcon: string = 'fa fa-angle-up';
+  stateIcon: string = 'fa fa-angle-down';
 
-  constructor() {
+  constructor(private eleRef: ElementRef) {
     this.state = 'closed';
   }
   toggleState() {
-    this.stateIcon = this.state === 'closed' ? 'fa fa-angle-down' : 'fa fa-angle-up';
+    this.stateIcon = this.state === 'closed' ? 'fa fa-angle-up' : 'fa fa-angle-down';
     this.state = this.state === 'closed' ? 'open' : 'closed';
   }
   ngOnInit() {
@@ -55,11 +56,37 @@ export class ChildCategoryComponent implements OnInit {
   showApiDetail(event) {
     let targetApiTitle = event.target.innerHTML;
     if (targetApiTitle) {
+      this.removeSelectedApiElement();
+      event.target.className = 'selected';
       targetApiTitle = targetApiTitle.trim();
+      let filePath = this.getFileNameForTitle(targetApiTitle);
       this.onApiClick.emit({
         'apiName': targetApiTitle,
-        'component': this.apis.category
+        'component': this.apis.category,
+        'apiFilePath' : filePath,
+        'selectedApiEleRef': this.eleRef
       });
+    }
+  }
+
+  getFileNameForTitle(title: string) {
+    let tempApis = this.apis.api_list;
+      console.log(this.apis.api_list);
+      for (let api of tempApis) {
+        let apiTitle = api.title;
+        console.log(apiTitle);
+        if (apiTitle === title) {
+          return api.apiFilePath;
+        }
+      }
+  }
+
+  removeSelectedApiElement() {
+    let selectedElements = this.mainCategoryEleRef.nativeElement.getElementsByClassName('selected');
+    if (selectedElements && selectedElements.length && selectedElements.length > 0) {
+      for (let element of selectedElements) {
+        element.className = '';
+      }
     }
   }
 

@@ -12,7 +12,6 @@ export class SearchResultComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
   }
 
   renderSearchedApi(resultApi: any) {

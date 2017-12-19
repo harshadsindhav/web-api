@@ -45,15 +45,16 @@ export class MainCategoryComponent implements OnInit {
   }
 
   @Input() mainCategory: any;
+  @Input() mainCategoryEleRef: ElementRef;
   @Output() onApiClickFromGrandChild = new EventEmitter<any>();
 
-  stateIcon: string = 'fa fa-angle-up';
+  stateIcon: string = 'fa fa-angle-down';
 
-  constructor(private elementRef: ElementRef) {
+  constructor() {
 
   }
   toggleState() {
-    this.stateIcon = this.state === 'closed' ? 'fa fa-angle-down' : 'fa fa-angle-up';
+    this.stateIcon = this.state === 'closed' ? 'fa fa-angle-up' : 'fa fa-angle-down';
     this.state = this.state === 'closed' ? 'open' : 'closed';
   }
 

@@ -64,7 +64,7 @@ export class ApiDocService {
     }
 
     public readFile(fileName: string): Observable<any> {
-      return this._http.get("./assets/" + fileName + ".html");
+      return this._http.get("./assets/" + fileName);
     }
 
 }

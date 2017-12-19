@@ -6,6 +6,7 @@
     margin-left: 10px;
     cursor: pointer;
     display: flex;
+    max-width: 250px;
     span {
       margin-right: 10px;
     }
@@ -17,4 +18,10 @@
       cursor: pointer;
     }
   }
+}
+.selected {
+  font-weight: bold;
+  background-color: #DEEAF4;
+  border-left: 2px solid;
+  padding-left: 10px;
 }

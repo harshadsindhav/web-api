@@ -1,4 +1,6 @@
-
+.component-apis-main {
+  height:1000px;
+}
 .component-apis-breadcrumb ol li:last-child a {
   color:grey;
   pointer-events: none;
@@ -17,25 +19,29 @@
   text-decoration: none;
 }
 
-.table tr td  {
-
-  span.method {
-    font-size: 12px;
-    //background-color: green;
-    color:white;
-    font-weight: bold;
-    padding: 5px 10px;
-    margin-left:10px;
+.table tr  {
+  td:first-child {
+    width:20px;
   }
-  .component-api-meta {
-    .api-name {
-      display: -webkit-inline-box;
-      cursor: pointer;
+  td {
+    span.method {
+      font-size: 12px;
+      //background-color: green;
+      color:white;
+      font-weight: bold;
+      padding: 5px 10px;
+      margin-left:10px;
     }
-    .api-url {
-      float:right;
-      margin-right: 25px;
-      color: gray;
+    .component-api-meta {
+      .api-name {
+        display: -webkit-inline-box;
+        cursor: pointer;
+      }
+      .api-url {
+        float:right;
+        margin-right: 25px;
+        color: gray;
+      }
     }
   }
 }
