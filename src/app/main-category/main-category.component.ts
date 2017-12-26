@@ -29,12 +29,10 @@ import { trigger, state, style, transition, animate, EventEmitter, Output } from
   ]
 })
 export class MainCategoryComponent implements OnInit {
-
   state: string;
 
   searchText: string;
   @Input('searchText') set value(val: string) {
-    console.log('testttt');
     if (!val || val.length === 0) {
       this.state = 'closed';
       this.searchText = val;
@@ -48,11 +46,10 @@ export class MainCategoryComponent implements OnInit {
   @Input() mainCategoryEleRef: ElementRef;
   @Output() onApiClickFromGrandChild = new EventEmitter<any>();
 
-  stateIcon: string = 'fa fa-angle-down';
+  stateIcon = 'fa fa-angle-down';
 
-  constructor() {
+  constructor() {}
 
-  }
   toggleState() {
     this.stateIcon = this.state === 'closed' ? 'fa fa-angle-up' : 'fa fa-angle-down';
     this.state = this.state === 'closed' ? 'open' : 'closed';
@@ -65,5 +62,4 @@ export class MainCategoryComponent implements OnInit {
     targetApi.module = this.mainCategory.category;
     this.onApiClickFromGrandChild.emit(targetApi);
   }
-
 }

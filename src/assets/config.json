@@ -1,0 +1,30 @@
+{
+  "configs": [
+    {
+      "apisJsonFileConfig": {
+        "fileName":"",
+        "filePath":"",
+        "configLabel":""
+      },
+      "fileNameMappingConfig": {
+        "fileName":"",
+        "filePath":"",
+        "configLabel":""
+      },
+     "breadCrumbConfig": {
+       "status":"",
+       "saperator":""
+     },
+     "globalSearchConfig": {
+      "status":""
+     },
+     "userNavigationConfig": {
+       "status":""
+     },
+     "assetConfig": {
+      "assetRootFolder":"",
+       "saperator":""
+     }
+    }
+  ]
+}

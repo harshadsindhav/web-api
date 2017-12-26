@@ -1,5 +1,6 @@
 body {
   font-family: Roboto !important;
+  min-height: 100%;
 }
 
 table {
@@ -19,7 +20,7 @@ h5 {
 }
 
 table thead tr {
-  border-bottom: 1px dashed; 
+  border-bottom: 1px dashed;
 }
 table tbody tr td:nth-child(3), table tbody tr td:nth-child(4), table tbody tr td:nth-child(5){
   text-align: center;
@@ -32,163 +33,3 @@ table thead tr th:nth-child(3), table thead tr th:nth-child(4), table thead tr t
 table thead tr th {
   font-weight: 300;
 }
-/* References 
-#content {
-  padding: 20px;
-  padding-left: 260px;
-  max-width: 70%;
-}
-
-#content .control {
-  cursor: pointer;
-  font-size: 12px;
-  margin-left: 15px;
-}
-
-#content article {
-  clear: both;
-  margin: 15px 0;
-}
-
-#content article > a {
-  background: #333;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  cursor: pointer;
-  display: block;
-  padding: 15px;
-}
-#content article > a:hover {
-  background: #222;
-  text-decoration: none;
-}
-
-#content a h2 {
-  color: #fff;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0;
-}
-
-#content a h2 code {
-  float: right;
-  font-size: 14px;
-}
-
-#content a h2 code b {
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  color: #fff;
-  font-weight: normal;
-  padding: 3px 6px;
-}
-
-#content article {
-  border-color: #e2e7ea;
-}
-
-#content article a h2 code {
-  color: #657e8b;
-}
-
-#content article a h2 code b {
-  background: #657e8b;
-  text-transform: uppercase;
-}
-
-#content article.GET a h2 code {
-  color: #119bdf;
-}
-
-#content article.GET a h2 code b {
-  background: #119bdf;
-}
-
-
-#content article.POST a h2 code {
-  color: #52ce0e;
-}
-
-#content article.POST a h2 code b {
-  background: #52ce0e;
-}
-
-
-#content article.PUT a h2 code {
-  color: #e08f10;
-}
-
-#content article.PUT a h2 code b {
-  background: #e08f10;
-}
-
-
-#content article.DELETE a h2 code {
-  color: #e02a10;
-}
-
-#content article.DELETE a h2 code b {
-  background: #e02a10;
-}
-
-
-#content h3 {
-}
-
-#content .body {
-  border-top: 1px solid #eef1f2;
-  display: block;
-  padding: 15px 15px 0;
-}
-
-#content .body code {
-  border: 1px solid #e2e7ea;
-  background: #eef1f2;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  color: #546974;
-  padding: 0 1px;
-}
-
-#content .body p > code {
-  display: block;
-  padding: 15px;
-  white-space: pre;
-}
-
-
-table {
-  margin-bottom: 50px;
-}
-table > thead {
-  bottom: 10px;
-  text-align: left;
-  
-} */
-/*
-h4 {
-		display: block;
-		font-size: 1.5rem;
-		-webkit-margin-before: 0.83em;
-		-webkit-margin-after: 0.83em;
-		-webkit-margin-start: 0px;
-		-webkit-margin-end: 0px;
-		font-weight:bold;
-		padding-top:10px;
-	} 
-	p {
-		    font-size: 12px;
-	}
-	table {
-		margin-botton : 50px;
-	}
-	table thead tr th {
-		text-align:center;
-	}
-	table tbody tr {
-		padding-top : 20px;
-	}
-*/

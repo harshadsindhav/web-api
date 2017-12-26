@@ -17,6 +17,8 @@ import { ChildCategoryComponent } from './child-category/child-category.componen
 import { SearchResultComponent } from './search-result/search-result.component';
 import { ComponentApisComponent } from './component-apis/component-apis.component';
 import { HttpMethodDirective } from './http-method.directive';
+import { IFrameResizerDirective } from './iframe-auto-height.directive';
+import { ConfigResolver } from './config-resolver';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { HttpMethodDirective } from './http-method.directive';
     CategoryfilterPipe,
     SearchResultComponent,
     ComponentApisComponent,
-    HttpMethodDirective
+    HttpMethodDirective,
+    IFrameResizerDirective
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,7 @@ import { HttpMethodDirective } from './http-method.directive';
     HttpModule,
     RouterModule.forRoot(STOREROUTES)
   ],
-  providers: [ApiDocService, HomeResolver],
+  providers: [ApiDocService, HomeResolver, ConfigResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,8 +8,8 @@ import 'rxjs/add/operator/do';
 
 @Injectable()
 export class ApiDocService {
-    kNameMappingFile: string = "./assets/name_mapping.json";
-    kApiListingFile: string = "./assets/sabaapis.json";
+    kNameMappingFile = './assets/name_mapping.json';
+    kApiListingFile = './assets/sabaapis.json';
 
     constructor(private _http: Http) {
     }
@@ -24,38 +24,6 @@ export class ApiDocService {
         .map(response => {
           console.log(response.json());
         });
-    }
-    private getApiFiles() {
-      return [
-        {
-          "apiName": "Find details of country",
-          "apiFileName": "Find details of country"
-        },
-        {
-            "apiName": "Get all countries",
-            "apiFileName": ""
-        },
-        {
-          "apiName": "Get details of a particular country",
-          "apiFileName": "Get details of a particular country"
-        },
-        {
-          "apiName": "Get meta details of country",
-          "apiFileName": "Get meta details of country"
-        },
-        {
-          "apiName": "Create a new country",
-          "apiFileName": "Create a new country"
-        },
-        {
-          "apiName": "Delete country",
-          "apiFileName": "Delete country"
-        },
-        {
-          "apiName": "Update details of a country",
-          "apiFileName": "Update details of a country"
-        }
-      ];
     }
 
     public readNameMapping(): Observable<any> {

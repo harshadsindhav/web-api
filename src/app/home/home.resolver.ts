@@ -7,13 +7,13 @@ import {Observable} from 'rxjs/Observable';
 @Injectable()
 export class HomeResolver implements Resolve<any> {
 
-    constructor(private apiDocService : ApiDocService) {
+    constructor(private apiDocService: ApiDocService) {
 
     }
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> {
-        console.log('resolver called.');
-        return this.apiDocService.readApiListing();
+      console.log('home resolver called');
+      return this.apiDocService.readApiListing();
     }
 
 }
