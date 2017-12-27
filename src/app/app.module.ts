@@ -18,6 +18,7 @@ import { SearchResultComponent } from './search-result/search-result.component';
 import { ComponentApisComponent } from './component-apis/component-apis.component';
 import { HttpMethodDirective } from './http-method.directive';
 import { ConfigResolver } from './config-resolver';
+import { ApiTemplateComponent } from './api-template/api-template.component';
 
 
 @NgModule({
@@ -30,6 +31,8 @@ import { ConfigResolver } from './config-resolver';
     SearchResultComponent,
     ComponentApisComponent,
     HttpMethodDirective,
+    IFrameResizerDirective,
+    ApiTemplateComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { ConfigResolver } from './config-resolver';
     RouterModule.forRoot(STOREROUTES)
   ],
   providers: [ApiDocService, HomeResolver, ConfigResolver],
+  entryComponents: [ ApiTemplateComponent ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
