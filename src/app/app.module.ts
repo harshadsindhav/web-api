@@ -17,7 +17,6 @@ import { ChildCategoryComponent } from './child-category/child-category.componen
 import { SearchResultComponent } from './search-result/search-result.component';
 import { ComponentApisComponent } from './component-apis/component-apis.component';
 import { HttpMethodDirective } from './http-method.directive';
-import { IFrameResizerDirective } from './iframe-auto-height.directive';
 import { ConfigResolver } from './config-resolver';
 
 
@@ -31,7 +30,6 @@ import { ConfigResolver } from './config-resolver';
     SearchResultComponent,
     ComponentApisComponent,
     HttpMethodDirective,
-    IFrameResizerDirective
   ],
   imports: [
     BrowserModule,

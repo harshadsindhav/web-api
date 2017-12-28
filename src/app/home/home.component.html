@@ -37,11 +37,6 @@
           <div class="row api-list-navigation">
             <div>
               <div class="list-group">
-                <!--
-                <div *ngIf="apiCategories.api_list.length > 0">
-                  <p *ngFor="let api of apiCategories.api_list">{{api.title}}</p>
-                </div>
-              -->
                 <div *ngFor="let category of apiCategories.sub_categories">
                   <app-main-category (onApiClickFromGrandChild)="onApiClickFromGrandChild($event)" [searchText]="searchtext" [mainCategory]="category"
                     [mainCategoryEleRef]="eleRef"></app-main-category>
@@ -79,24 +74,4 @@
       </div>
     </div>
   </div>
-  <!--
-  <div class="panel panel-default" id="footer-panel">
-    <div class="panel-footer">
-      <ul>
-        <li>
-          <a href="#">Introduction</a>
-        </li>
-        <li>
-          <a href="#">About This Guide</a>
-        </li>
-        <li>
-          <a href="#">Limitations on Warranties and Liability Saba</a>
-        </li>
-        <li>
-          <a href="#">How to Contact Saba</a>
-        </li>
-      </ul>
-    </div>
-  </div>
--->
 </div>

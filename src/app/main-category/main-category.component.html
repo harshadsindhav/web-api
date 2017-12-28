@@ -3,10 +3,14 @@
     <span id="tgSpan1" [ngClass]="stateIcon"></span>
     {{mainCategory.category}}
   </h3>
-  <div [@slideHeight]="state"  *ngIf="mainCategory.api_list.length > 0">
-    <app-child-category [apis]="mainCategory" [mainCategoryEleRef]="mainCategoryEleRef" (onApiClick)="onApiClick($event)"></app-child-category>
-  </div>
-  <div [@slideHeight]="state" *ngFor="let subCategory of mainCategory.sub_categories | categoryfilter : searchText" >
-    <app-child-category [apis]="subCategory" [mainCategoryEleRef]="mainCategoryEleRef" [searchText]="searchText" (onApiClick)="onApiClick($event)"></app-child-category>
+  <div [@slideHeight]="state">
+    <div *ngIf="mainCategory.api_list.length > 0">
+      <div class="api-listing">
+        <p (click)="showApiDetail($event)" *ngFor="let api of mainCategory.api_list">{{api.title}}</p>
+      </div>
+    </div>
+    <div *ngFor="let subCategory of mainCategory.sub_categories | categoryfilter : searchText">
+      <app-child-category [apis]="subCategory" [mainCategoryEleRef]="mainCategoryEleRef" [searchText]="searchText" (onApiClick)="onApiClick($event)"></app-child-category>
+    </div>
   </div>
 </div>

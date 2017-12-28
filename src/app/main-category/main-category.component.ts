@@ -62,4 +62,38 @@ export class MainCategoryComponent implements OnInit {
     targetApi.module = this.mainCategory.category;
     this.onApiClickFromGrandChild.emit(targetApi);
   }
+  showApiDetail(event) {
+    let targetApiTitle = event.target.innerHTML;
+    if (targetApiTitle) {
+      this.removeSelectedElement();
+      event.target.className = 'selected';
+      targetApiTitle = targetApiTitle.trim();
+      const filePath = this.getFileNameForTitle(targetApiTitle);
+      this.onApiClick( {
+        'apiName': targetApiTitle,
+        'component': this.mainCategory.category,
+        'apiFilePath' : filePath,
+        'selectedApiEleRef': this.mainCategoryEleRef
+      });
+    }
+  }
+
+  getFileNameForTitle(title: string) {
+    const tempApis = this.mainCategory.api_list;
+      for (const api of tempApis) {
+        const apiTitle = api.title;
+        if (apiTitle === title) {
+          return api.apiFilePath;
+        }
+      }
+  }
+
+  removeSelectedElement() {
+    const selectedApiElement = this.mainCategoryEleRef.nativeElement.getElementsByClassName('selected');
+    if (selectedApiElement && selectedApiElement.length && selectedApiElement.length > 0) {
+      for (const selectedElement of selectedApiElement) {
+        selectedElement.className = '';
+      }
+    }
+  }
 }
