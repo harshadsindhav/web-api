@@ -37,11 +37,6 @@
           <div class="row api-list-navigation">
             <div>
               <div class="list-group">
-                <!--
-                <div *ngIf="apiCategories.api_list.length > 0">
-                  <p *ngFor="let api of apiCategories.api_list">{{api.title}}</p>
-                </div>
-              -->
                 <div *ngFor="let category of apiCategories.sub_categories">
                   <app-main-category (onApiClickFromGrandChild)="onApiClickFromGrandChild($event)" [searchText]="searchtext" [mainCategory]="category"
                     [mainCategoryEleRef]="eleRef"></app-main-category>

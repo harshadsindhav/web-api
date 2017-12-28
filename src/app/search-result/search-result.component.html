@@ -6,7 +6,7 @@
       <p>No records found !!</p>
     </div>
     <div id="result-item" *ngFor="let resultApi of searchResults">
-      <a class="search-item-heading" (click)="renderSearchedApi(resultApi)" >{{resultApi.apiName}}</a>
+      <a class="search-item-heading" (click)="renderSearchedApi(resultApi)" >{{resultApi.component}} : {{resultApi.apiName}}</a>
       <p class="search-item-body">{{resultApi.matchedText}}</p>
       <br color="red">
     </div>
