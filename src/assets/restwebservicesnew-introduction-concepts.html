@@ -406,8 +406,7 @@ public class SabaRestApiClientJava {
           <h3 class="title topictitle3" id="ariaid-title11">Status Codes</h3>
           <div class="body">
             <div class="p">The following are the status codes that the REST web services listed in this document return.
-              <table class="table frame-all"
-                id="topic_qjc_4yv_cn__table_shx_rvw_rh">
+              <table class="table frame-all" id="topic_qjc_4yv_cn__table_shx_rvw_rh">
                 <caption>
                   <span class="table--title-label">Table 1. </span>
                   <span class="title">Status Codes</span>
@@ -666,7 +665,8 @@ public class SabaRestApiClientJava {
           <div class="body">
             <p class="p">REST APIs will not return data with , and ; or any other special characters in their names or class IDs. Some
               Web browsers do not support special characters. Special characters need to encoded before passing as a q param
-              value.</p>
+              value.
+            </p>
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title14" id="topic_qjv_vby_v5">
@@ -695,7 +695,8 @@ public class SabaRestApiClientJava {
 {
 	"displayName": "Common"
 }</code></pre>Here, the lookup field name is "displayName" and the lookup field value is "Common", which is the name of the
-              domain.</div>
+              domain.
+            </div>
             <p class="p">
               <strong class="ph b">Example:</strong>
             </p>
@@ -1126,8 +1127,7 @@ public class SabaRestApiClientJava {
             </div>
             <div class="p">The Output JSON contains company_id, username, fname, lname, jobtype_id fields of the person/profile object.
               Using Field Selectors inner fields of the company_id and jobtype_id objects are also part of this output.
-              <div
-                class="note note note_note">
+              <div class="note note note_note">
                 <span class="note__title">Note:</span> Field Selectors is only supported for those objects that have id and displayName fields. To
                 find out which objects have id and displayName fields, make a GET call.
                 <p class="p">
@@ -1152,9 +1152,9 @@ public class SabaRestApiClientJava {
                   <li class="li">
                     <strong class="ph b">location</strong> is used as a string field and hence does not support Field Selectors.</li>
                 </ul>
+              </div>
+              <u class="ph u">Field Selectors is not supported on the Attachment, Enrollment, Class and LearningEvent components.</u>
             </div>
-            <u class="ph u">Field Selectors is not supported on the Attachment, Enrollment, Class and LearningEvent components.</u>
-          </div>
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title19" id="topic_wmx_kk1_lt">
@@ -1166,7 +1166,7 @@ public class SabaRestApiClientJava {
               <div class="note note note_note">
                 <span class="note__title">Note:</span>
                 <p class="p">To enable this feature and configure the limit, submit a support request. For assistance, contact Saba support.
-                  </p>
+                </p>
               </div>By default this feature is disabled. It can be enabled for a site by setting
               <strong class="ph b">Allow search REST call result limit</strong> to true under under
               <strong class="ph b">System</strong> &gt;
@@ -1200,9 +1200,8 @@ public class SabaRestApiClientJava {
               default value.</p>
             <p class="p">When the
               <strong class="ph b">count</strong> parameter (passed to the REST API) is greater than the limit set on the number of records,
-              <strong
-                class="ph b">itemsPerPage</strong> in the REST call response will based on the limit otherwise on the
-                <strong class="ph b">count</strong>. </p>
+              <strong class="ph b">itemsPerPage</strong> in the REST call response will based on the limit otherwise on the
+              <strong class="ph b">count</strong>. </p>
             <p class="p">If the resulted record size is greater than the default size limit and the
               <strong class="ph b">startPage</strong> (passed to the REST API) is greater than the maximum page number of the specified record
               limit, the Search REST API returns records of the maximum page number based on the specified record limit.
@@ -1417,8 +1416,8 @@ public class SabaRestApiClientJava {
 
                 <br>
                 <div class="imageleft">
-                  <img class="image imageleft" id="topic_x5y_s2n_pw__image_mgb_g4k_hw" longdesc="" src="images/fieldetails.png"
-                    width="600" alt="Details of a field">
+                  <img class="image imageleft" id="topic_x5y_s2n_pw__image_mgb_g4k_hw" longdesc="" src="images/fieldetails.png" width="600"
+                    alt="Details of a field">
                 </div>
                 <br>
               </figure>

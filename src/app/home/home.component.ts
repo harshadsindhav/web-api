@@ -5,6 +5,7 @@ import { Http, ResponseContentType } from '@angular/http';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { ApiDocService } from '../services/apidoc.service';
+import { WebApiUtil } from './../web-api-util';
 
 @Component({
   selector: 'app-home',
@@ -13,33 +14,24 @@ import { ApiDocService } from '../services/apidoc.service';
 })
 export class HomeComponent implements OnInit {
 
+  kApiDetailPage = 'apiDetailPage';
+  kSearchResultPage = 'searchResultPage';
+  kComponentApiPage = 'component-api-page';
+
   apiCategories: any;
-  searchtext: string = '';
-  globalSearchText: string = '';
-  iframeurl: string = './assets/preface-integrationstudio.html';
+  searchtext = '';
+  globalSearchText = '';
+  iframeurl: string = WebApiUtil.getIndexPageURL();
   myurl: any;
-  categoryExpanded: boolean = true;
-  contentPageName: string = 'apiDetailPage';
+  categoryExpanded = true;
+  contentPageName: string = this.kApiDetailPage;
   resultApis: any[] = [];
   apiNameMapping: any[];
   componentName: string;
   currentApi: any;
-  isComponentApiDetail: boolean = false;
-  isUserNavigation: boolean = true;
-
-  kApiDetailPage: string = 'apiDetailPage';
-  kSearchResultPage: string = 'searchResultPage';
-  kComponentApiPage: string = 'component-api-page';
-
-  kIntroductionFileName = 'restwebservicesnew-introduction-concepts';
-  kAboutThisGuideFileName = 'preface-integrationstudio';
-  kAuthenticationFileName = 'restwebservices-authentication-concepts';
-  kSabaCopyRightFileName = 'saba-copyright-topic';
-  kContactSabaFileName = 'preface-common3-how-to-contact-saba';
-
-  readonly kapiFilePath: string = 'apiFilePath';
-  readonly kTitle: string = 'title';
-
+  isComponentApiDetail = false;
+  isUserNavigation = true;
+  iframeHeight: any;
   ngOnInit() {
     this.readFileNameMapping();
   }
@@ -51,41 +43,41 @@ export class HomeComponent implements OnInit {
   }
 
   navigationItemOnClick(event) {
-    console.log('testt');
-    let navItemName = event.target.innerHTML;
+    const navItemName = event.target.innerHTML;
     if (navItemName && navItemName === 'Introduction') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
-      this.myurl = this.getSafeURL('./assets//' + this.kIntroductionFileName + '.html');
+      this.myurl = this.getSafeURL(WebApiUtil.getFileURL(WebApiUtil.kIntroductionFileName));
     } else if (navItemName === 'About This Guide') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
-      this.myurl = this.getSafeURL('./assets/' + this.kAboutThisGuideFileName + '.html');
+      this.myurl = this.getSafeURL(WebApiUtil.getFileURL(WebApiUtil.kAboutThisGuideFileName));
     } else if (navItemName === 'Authentication') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
-      this.myurl = this.getSafeURL('./assets/' + this.kAuthenticationFileName + '.html');
+      this.myurl = this.getSafeURL(WebApiUtil.getFileURL(WebApiUtil.kAuthenticationFileName));
     } else if (navItemName === 'Limitations on Warranties and Liability') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
-      this.myurl = this.getSafeURL('./assets/' + this.kSabaCopyRightFileName + '.html');
+      this.myurl = this.getSafeURL(WebApiUtil.getFileURL(WebApiUtil.kSabaCopyRightFileName));
     } else if (navItemName === 'How to Contact Saba') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
-      this.myurl = this.getSafeURL('./assets/' + this.kContactSabaFileName + '.html');
+      this.myurl = this.getSafeURL(WebApiUtil.getFileURL(WebApiUtil.kContactSabaFileName));
     }
     this.isUserNavigation = true;
   }
 
   onApiClickFromGrandChild(targetApi: any) {
-    console.log(targetApi);
     if (targetApi) {
-      let targetApiTitle = targetApi.apiName.trim();
+      const targetApiTitle = targetApi.apiName.trim();
       this.currentApi = targetApi;
       this.isComponentApiDetail = false;
       this.isUserNavigation = false;
-      this.myurl = this.getSafeURL("./assets/" + targetApi.apiFilePath);
+      this.myurl = this.getSafeURL(WebApiUtil.kAssetRoot + targetApi.apiFilePath);
       this.contentPageName = this.kApiDetailPage;
+      //let iframeElement = this.eleRef.nativeElement.getElementById('myiframetest');
+      //iframeElement.style.height = iframeElement.contentWindow.document.body.scrollHeight + 'pxs';
     }
   }
 
@@ -99,18 +91,31 @@ export class HomeComponent implements OnInit {
   }
 
   public searchInAllApis() {
-    for (let apiEntry of this.apiNameMapping) {
+    this.resultApis = [];
+    let counter = 0;
+    for (const apiEntry of this.apiNameMapping) {
       if (apiEntry.apiName) {
         this.apiDocService.readFile(apiEntry.apiFilePath)
           .subscribe(response => {
-            let fileBody = response.text();
-            if (fileBody.toLowerCase().includes(this.globalSearchText.toLowerCase())) {
+            const fileBody = response.text();
+            const div = document.createElement('div');
+            div.innerHTML = fileBody;
+            let strippedFileBody = div.innerText;
+            if (strippedFileBody.toLowerCase().includes(this.globalSearchText.toLowerCase())) {
+              strippedFileBody = strippedFileBody.replace('"', '');
+              const searchTextIndex = strippedFileBody.toLowerCase().indexOf(this.globalSearchText.toLowerCase());
+              const temp = '"' + '<font style="background-color:yellow;background-color: yellow"> '
+              + this.globalSearchText + ' </font>' + '"';
+              let matchedText = strippedFileBody.substring(searchTextIndex - 100, searchTextIndex + 100);
+              matchedText = matchedText.replace(this.globalSearchText, temp);
               this.resultApis.push({
                 'apiName': apiEntry.apiName,
                 'apiFilePath': apiEntry.apiFilePath,
                 'component': apiEntry.component,
-                'module': apiEntry.module
+                'module': apiEntry.module,
+                'matchedText': matchedText.trim()
               });
+              counter++;
             }
             this.contentPageName = this.kSearchResultPage;
           });

@@ -41,7 +41,7 @@ export class ChildCategoryComponent implements OnInit {
   @Input() mainCategoryEleRef: ElementRef;
   @Output() onApiClick = new EventEmitter<any>();
 
-  stateIcon: string = 'fa fa-angle-down';
+  stateIcon = 'fa fa-angle-down';
 
   constructor(private eleRef: ElementRef) {
     this.state = 'closed';
@@ -59,7 +59,7 @@ export class ChildCategoryComponent implements OnInit {
       this.removeSelectedApiElement();
       event.target.className = 'selected';
       targetApiTitle = targetApiTitle.trim();
-      let filePath = this.getFileNameForTitle(targetApiTitle);
+      const filePath = this.getFileNameForTitle(targetApiTitle);
       this.onApiClick.emit({
         'apiName': targetApiTitle,
         'component': this.apis.category,
@@ -70,11 +70,9 @@ export class ChildCategoryComponent implements OnInit {
   }
 
   getFileNameForTitle(title: string) {
-    let tempApis = this.apis.api_list;
-      console.log(this.apis.api_list);
-      for (let api of tempApis) {
-        let apiTitle = api.title;
-        console.log(apiTitle);
+    const tempApis = this.apis.api_list;
+      for (const api of tempApis) {
+        const apiTitle = api.title;
         if (apiTitle === title) {
           return api.apiFilePath;
         }
@@ -82,12 +80,11 @@ export class ChildCategoryComponent implements OnInit {
   }
 
   removeSelectedApiElement() {
-    let selectedElements = this.mainCategoryEleRef.nativeElement.getElementsByClassName('selected');
+    const selectedElements = this.mainCategoryEleRef.nativeElement.getElementsByClassName('selected');
     if (selectedElements && selectedElements.length && selectedElements.length > 0) {
-      for (let element of selectedElements) {
+      for (const element of selectedElements) {
         element.className = '';
       }
     }
   }
-
 }

@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 @Component({
   selector: 'app-root',
@@ -6,11 +6,5 @@ import { HomeComponent } from './home/home.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
-  @ViewChild(HomeComponent) homeComp: HomeComponent;
 
-  performSearch() {
-    console.log('perform search');
-    this.homeComp.searchInAllApis();
-  }
 }
