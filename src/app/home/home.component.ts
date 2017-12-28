@@ -47,7 +47,6 @@ export class HomeComponent implements OnInit {
     if (navItemName && navItemName === 'Introduction') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
-      console.log(WebApiUtil.getFileURL(WebApiUtil.kIntroductionFileName));
       this.myurl = this.getSafeURL(WebApiUtil.getFileURL(WebApiUtil.kIntroductionFileName));
     } else if (navItemName === 'About This Guide') {
       this.contentPageName = this.kApiDetailPage;
@@ -109,7 +108,6 @@ export class HomeComponent implements OnInit {
               + this.globalSearchText + ' </font>' + '"';
               let matchedText = strippedFileBody.substring(searchTextIndex - 100, searchTextIndex + 100);
               matchedText = matchedText.replace(this.globalSearchText, temp);
-              console.log(matchedText);
               this.resultApis.push({
                 'apiName': apiEntry.apiName,
                 'apiFilePath': apiEntry.apiFilePath,

@@ -14,7 +14,6 @@ App component CSS starts
       #saba-navbar {
         display: block;
         padding-left: 10px;
-        margin-bottom: 5px;
         .nav-banner-heading {
           margin-top: 20px;
         }
@@ -56,6 +55,10 @@ App component CSS starts
             }
           }
         }
+      }
+      .navbar {
+        border-bottom: 10px solid #78BE20;
+        margin-bottom: 10px;
       }
     }
     .user-nav {
