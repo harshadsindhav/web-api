@@ -1,11 +1,25 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import {  Component,
+          OnInit,
+          ElementRef,
+          ViewContainerRef,
+          ComponentFactory,
+          ComponentFactoryResolver,
+          ComponentRef,
+          ViewChild
+        } from '@angular/core';
 import { Observable } from 'Rxjs/Rx';
-import { FormBuilder, FormGroup, Validators, FormControl, NgForm } from '@angular/forms';
-import { Http, ResponseContentType } from '@angular/http';
+import {  FormBuilder,
+          FormGroup,
+          Validators,
+          FormControl,
+          NgForm } from '@angular/forms';
+import {  Http,
+          ResponseContentType } from '@angular/http';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { ApiDocService } from '../services/apidoc.service';
 import { WebApiUtil } from './../web-api-util';
+import { ApiTemplateComponent } from './../api-template/api-template.component';
 
 @Component({
   selector: 'app-home',
@@ -13,6 +27,7 @@ import { WebApiUtil } from './../web-api-util';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  @ViewChild('apiDetailContainer', {read: ViewContainerRef }) container;
 
   kApiDetailPage = 'apiDetailPage';
   kSearchResultPage = 'searchResultPage';
@@ -36,10 +51,9 @@ export class HomeComponent implements OnInit {
     this.readFileNameMapping();
   }
 
-  constructor(private apiDocService: ApiDocService, private senitizer: DomSanitizer,
+  constructor(private resolver: ComponentFactoryResolver, private apiDocService: ApiDocService, private senitizer: DomSanitizer,
     private route: ActivatedRoute, private eleRef: ElementRef) {
-    this.myurl = this.getSafeURL(this.iframeurl);
-    this.apiCategories = this.route.snapshot.data['apiListing'];
+      this.apiCategories = this.route.snapshot.data['apiListing'];
   }
 
   navigationItemOnClick(event) {
@@ -47,23 +61,23 @@ export class HomeComponent implements OnInit {
     if (navItemName && navItemName === 'Introduction') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
-      this.myurl = this.getSafeURL(WebApiUtil.getFileURL(WebApiUtil.kIntroductionFileName));
+      this.loadDynamicComponent(WebApiUtil.getFileURL(WebApiUtil.kIntroductionFileName));
     } else if (navItemName === 'About This Guide') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
-      this.myurl = this.getSafeURL(WebApiUtil.getFileURL(WebApiUtil.kAboutThisGuideFileName));
+      this.loadDynamicComponent(WebApiUtil.getFileURL(WebApiUtil.kAboutThisGuideFileName));
     } else if (navItemName === 'Authentication') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
-      this.myurl = this.getSafeURL(WebApiUtil.getFileURL(WebApiUtil.kAuthenticationFileName));
+      this.loadDynamicComponent(WebApiUtil.getFileURL(WebApiUtil.kAuthenticationFileName));
     } else if (navItemName === 'Limitations on Warranties and Liability') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
-      this.myurl = this.getSafeURL(WebApiUtil.getFileURL(WebApiUtil.kSabaCopyRightFileName));
+      this.loadDynamicComponent(WebApiUtil.getFileURL(WebApiUtil.kSabaCopyRightFileName));
     } else if (navItemName === 'How to Contact Saba') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
-      this.myurl = this.getSafeURL(WebApiUtil.getFileURL(WebApiUtil.kContactSabaFileName));
+      this.loadDynamicComponent(WebApiUtil.getFileURL(WebApiUtil.kContactSabaFileName));
     }
     this.isUserNavigation = true;
   }
@@ -74,11 +88,21 @@ export class HomeComponent implements OnInit {
       this.currentApi = targetApi;
       this.isComponentApiDetail = false;
       this.isUserNavigation = false;
-      this.myurl = this.getSafeURL(WebApiUtil.kAssetRoot + targetApi.apiFilePath);
       this.contentPageName = this.kApiDetailPage;
-      //let iframeElement = this.eleRef.nativeElement.getElementById('myiframetest');
-      //iframeElement.style.height = iframeElement.contentWindow.document.body.scrollHeight + 'pxs';
+      this.loadDynamicComponent(WebApiUtil.getFileURL(targetApi.apiFilePath));
     }
+  }
+
+  loadDynamicComponent(fileurl) {
+    if (this.container) {
+      this.container.clear();
+    }
+    const factory: ComponentFactory<any> = this.resolver.resolveComponentFactory(ApiTemplateComponent);
+    const containerRef = this.container.createComponent(factory);
+    this.apiDocService.readFile(fileurl)
+      .subscribe(response => {
+        containerRef.location.nativeElement.innerHTML = response.text();
+      });
   }
 
   getSafeURL(url: string) {
@@ -95,7 +119,7 @@ export class HomeComponent implements OnInit {
     let counter = 0;
     for (const apiEntry of this.apiNameMapping) {
       if (apiEntry.apiName) {
-        this.apiDocService.readFile(apiEntry.apiFilePath)
+        this.apiDocService.readFile(WebApiUtil.kAssetRoot + apiEntry.apiFilePath)
           .subscribe(response => {
             const fileBody = response.text();
             const div = document.createElement('div');

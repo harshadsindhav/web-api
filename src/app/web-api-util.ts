@@ -4,11 +4,11 @@ export class WebApiUtil {
 
   public static readonly kIntroductionTitle: string = 'Introduction';
 
-  public static readonly kIntroductionFileName: string = 'restwebservicesnew-introduction-concepts';
-  public static readonly kAboutThisGuideFileName: string = 'preface-integrationstudio';
-  public static readonly kAuthenticationFileName: string = 'restwebservices-authentication-concepts';
-  public static  readonly kSabaCopyRightFileName: string = 'saba-copyright-topic';
-  public static readonly kContactSabaFileName: string = 'preface-common3-how-to-contact-saba';
+  public static readonly kIntroductionFileName: string = 'restwebservicesnew-introduction-concepts.html';
+  public static readonly kAboutThisGuideFileName: string = 'preface-integrationstudio.html';
+  public static readonly kAuthenticationFileName: string = 'restwebservices-authentication-concepts.html';
+  public static  readonly kSabaCopyRightFileName: string = 'saba-copyright-topic.html';
+  public static readonly kContactSabaFileName: string = 'preface-common3-how-to-contact-saba.html';
 
   public static readonly kTitle: string = 'title';
 
@@ -23,6 +23,6 @@ export class WebApiUtil {
   }
 
   public static getFileURL(filePath: string): string {
-    return this.kAssetRoot + filePath + WebApiUtil.kHTMLFile;
+    return this.kAssetRoot + filePath;
   }
 }
