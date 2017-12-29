@@ -9,7 +9,7 @@ import { ApiDocService } from '../services/apidoc.service';
 export class ComponentApisComponent implements OnInit {
   @Input() apiDetail: any;
   @Input() apiNameMapping: any[];
-  @Input() isComponentApiDetail: boolean = false;
+  @Input() isComponentApiDetail = false;
   apis: any[] = [];
   categories: any[] = [];
   @Output() getApiDetail = new EventEmitter<any>();
@@ -20,13 +20,10 @@ export class ComponentApisComponent implements OnInit {
 
   ngOnInit() {
     if (this.apiNameMapping) {
-      console.log(this.apiDetail);
-      console.log(this.isComponentApiDetail);
-      for (let entry of this.apiNameMapping) {
+      for (const entry of this.apiNameMapping) {
         if (this.isComponentApiDetail && this.apiDetail && this.apiDetail.component &&
           this.apiDetail.component === entry.component) {
           this.apis.push(entry);
-          console.log('result found');
         } else {
         if (this.apiDetail && this.apiDetail.module && this.apiDetail.module.toLowerCase() === entry.module.toLowerCase() &&
           this.isUnique(entry)) {
@@ -39,7 +36,7 @@ export class ComponentApisComponent implements OnInit {
 
   private isUnique(entry: any): boolean {
     if (entry) {
-      for (let categoryEntry of this.categories) {
+      for (const categoryEntry of this.categories) {
         if (entry.module && entry.component === categoryEntry.component) {
             return false;
         }
@@ -59,8 +56,6 @@ export class ComponentApisComponent implements OnInit {
   }
 
   getModuleComponents(apiDetail: any) {
-    console.log('getmodule components');
-    console.log(apiDetail);
     this.isComponentApiDetail = false;
     this.apiDetail = apiDetail;
     this.ngOnInit();

@@ -31,7 +31,6 @@ import { ApiTemplateComponent } from './api-template/api-template.component';
     SearchResultComponent,
     ComponentApisComponent,
     HttpMethodDirective,
-    IFrameResizerDirective,
     ApiTemplateComponent
   ],
   imports: [
