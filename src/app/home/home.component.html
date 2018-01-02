@@ -1,76 +1,66 @@
 <div id="main-container">
-  <div class="nav-header">
-    <div class="nav-banner">
-      <!--<img alt="Brand" src="../assets/images/logo.jpg"> -->
-      <div id="saba-navbar" class="navbar">
-        <div>
-          <img alt="Brand" src="./assets/images/sabalogo.png">
+  <div class="nav-header navbar">
+    <div>
+      <img alt="Brand" src="./assets/images/sabalogo.png">
+    </div>
+    <div class="nav-banner-heading">
+      <div class="web-api-subtitle">
+        <h3>Rest API Documentation</h3>
+      </div>
+      <div class="global-search-placeholder">
+        <div class="global-search-text-area">
+          <input class="form-control" placeholder="Search globally here" type="text" [(ngModel)]="globalSearchText">
         </div>
-        <div class="nav-banner-heading">
-          <div class="web-api-subtitle">
-            <h3>Rest API Documentation</h3>
-          </div>
-          <div class="global-search-placeholder">
-            <div class="global-search-text-area">
-              <input class="form-control" placeholder="Search globally here" type="text" [(ngModel)]="globalSearchText">
-            </div>
-            <div class="global-search-icon-area">
-              <i class="fa fa-search" aria-hidden="true" (click)="searchInAllApis()"></i>
-            </div>
-          </div>
+        <div class="global-search-icon-area">
+          <i class="fa fa-search" aria-hidden="true" (click)="searchInAllApis()"></i>
         </div>
       </div>
     </div>
   </div>
-  <div>
-    <div>
-      <div class="api-reference-main">
-        <div class="left-navigation">
-          <!--<h2>Search APIS</h2>-->
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="input-group">
-                <input type="input" class="form-control" placeholder="Search API" [(ngModel)]="searchtext">
-              </div>
-            </div>
-          </div>
-          <div class="row api-list-navigation">
-            <div>
-              <div class="list-group">
-                <div *ngFor="let category of apiCategories.sub_categories">
-                  <app-main-category (onApiClickFromGrandChild)="onApiClickFromGrandChild($event)" [searchText]="searchtext" [mainCategory]="category"
-                    [mainCategoryEleRef]="eleRef"></app-main-category>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content-data">
-          <div *ngIf="contentPageName === kSearchResultPage">
-            <app-search-result [searchResults]="resultApis" (searchedApi)="searchedApi($event)"></app-search-result>
-          </div>
-          <div *ngIf="contentPageName === kComponentApiPage">
-            <app-component-apis (getApiDetail)="onApiClickFromGrandChild($event)" [apiNameMapping]="apiNameMapping" [isComponentApiDetail]="isComponentApiDetail"
-              [apiDetail]="currentApi"></app-component-apis>
-          </div>
-          <div *ngIf="contentPageName === 'apiDetailPage'">
-            <div class="category-breadcrum" *ngIf="!isUserNavigation">
-              <ol class="breadcrumb">
-                <li *ngIf="isNotEmpty(currentApi.module)">
-                  <a (click)="displayModuleComponents($event)">{{currentApi.module}}</a>
-                </li>
-                <li *ngIf="isNotEmpty(currentApi.component)">
-                  <a (click)="displayComponentApis($event)">{{currentApi.component}}</a>
-                </li>
-                <li *ngIf="isNotEmpty(currentApi.apiName)">
-                  <a>{{currentApi.apiName}}</a>
-                </li>
-              </ol>
-            </div>
-          </div>
-          <ng-template #apiDetailContainer></ng-template>
+  <div class="api-reference-main">
+    <div class="left-navigation">
+      <div class="row">
+        <div class="col-lg-12">
+          <input type="input" class="form-control" placeholder="Search API" [(ngModel)]="searchtext">
         </div>
       </div>
+      <div class="row api-list-navigation">
+        <div class="list-group">
+          <div *ngFor="let category of apiCategories.sub_categories">
+            <app-main-category (onApiClickFromGrandChild)="onApiClickFromGrandChild($event)" [searchText]="searchtext" [mainCategory]="category"
+              [mainCategoryEleRef]="eleRef"></app-main-category>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-data">
+      <div class="welcome-content" *ngIf="contentPageName === kWelcomePage">
+        <h2>REST API Reference</h2>
+        <p>Saba Cloud | Update 40 | Feb 2018</p>
+      </div>
+      <div *ngIf="contentPageName === kSearchResultPage">
+        <app-search-result [searchResults]="resultApis" (searchedApi)="searchedApi($event)"></app-search-result>
+      </div>
+      <div *ngIf="contentPageName === kComponentApiPage">
+        <app-component-apis (getApiDetail)="onApiClickFromGrandChild($event)" [apiNameMapping]="apiNameMapping" [isComponentApiDetail]="isComponentApiDetail"
+          [apiDetail]="currentApi"></app-component-apis>
+      </div>
+      <div *ngIf="contentPageName === 'apiDetailPage'">
+        <div class="category-breadcrum" *ngIf="!isUserNavigation">
+          <ol class="breadcrumb">
+            <li *ngIf="isNotEmpty(currentApi.module)">
+              <a (click)="displayModuleComponents($event)">{{currentApi.module}}</a>
+            </li>
+            <li *ngIf="isNotEmpty(currentApi.component)">
+              <a (click)="displayComponentApis($event)">{{currentApi.component}}</a>
+            </li>
+            <li *ngIf="isNotEmpty(currentApi.apiName)">
+              <a>{{currentApi.apiName}}</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <ng-template #apiDetailContainer></ng-template>
     </div>
   </div>
 </div>

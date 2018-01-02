@@ -32,6 +32,7 @@ export class HomeComponent implements OnInit {
   kApiDetailPage = 'apiDetailPage';
   kSearchResultPage = 'searchResultPage';
   kComponentApiPage = 'component-api-page';
+  kWelcomePage = 'welcome-page';
 
   apiCategories: any;
   searchtext = '';
@@ -54,6 +55,7 @@ export class HomeComponent implements OnInit {
   constructor(private resolver: ComponentFactoryResolver, private apiDocService: ApiDocService, private senitizer: DomSanitizer,
     private route: ActivatedRoute, private eleRef: ElementRef) {
       this.apiCategories = this.route.snapshot.data['apiListing'];
+      this.contentPageName = this.kWelcomePage;
   }
 
   navigationItemOnClick(event) {

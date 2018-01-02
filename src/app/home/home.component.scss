@@ -1,72 +1,54 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
 #main-container {
   font-family: inherit;
   margin: 0px 50px;
   .nav-header {
     display: grid;
-    .nav-banner {
-      //display: inline-block;
-      #saba-navbar {
-        display: block;
-        padding-left: 10px;
-        .nav-banner-heading {
-          margin-top: 20px;
-        }
-        img {
-          float: left;
-          margin-top: 8px;
-          margin-right: 10px;
-        }
-        .web-api-subtitle {
-          float: left;
-          padding-top: 10px;
-        }
-        h2 {
-          margin-top: 10px;
-          margin-bottom: 0px;
-        }
-        h3 {
-          margin: 0px;
-          padding: 0px 0px 10px 0px;
-        }
-        .global-search-placeholder {
-          float: right;
-          width: 240px;
-          margin-right: 20px;
-          input {
-            width: 220px;
-            border-radius: 4px;
-          }
-          .global-search-text-area {
-            float: left;
-          }
-          .global-search-icon-area {
-            float: right;
-            padding-top: 7px;
-            width: 20px;
-            padding-left: 5px;
-            i {
-              cursor: pointer;
-            }
-          }
-        }
-      }
-      .navbar {
-        border-bottom: 10px solid #78BE20;
-        margin-bottom: 10px;
-      }
+    display: block;
+    padding-left: 10px;
+    .nav-banner-heading {
+      margin-top: 20px;
     }
-    .user-nav {
-      border-top: 10px solid #78BE20;
-      ul {
-        display: -webkit-inline-box;
-        margin: 5px 0px;
-        li a {
+    img {
+      float: left;
+      margin-top: 8px;
+      margin-right: 10px;
+    }
+    .web-api-subtitle {
+      float: left;
+      padding-top: 10px;
+    }
+    h2 {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+    h3 {
+      margin: 0px;
+      padding: 0px 0px 10px 0px;
+    }
+    .global-search-placeholder {
+      float: right;
+      width: 240px;
+      margin-right: 20px;
+      input {
+        width: 220px;
+        border-radius: 4px;
+      }
+      .global-search-text-area {
+        float: left;
+      }
+      .global-search-icon-area {
+        float: right;
+        padding-top: 7px;
+        width: 20px;
+        padding-left: 5px;
+        i {
           cursor: pointer;
         }
       }
     }
+    border-bottom: 10px solid #78BE20;
+    margin-bottom: 10px;
   }
   .left-navigation {
     float: left;
@@ -74,12 +56,10 @@
     div.row {
       padding-bottom: 10px;
     }
-    .input-group {
-      input {
-        width: 100%;
-      }
-      width:250px;
+    input {
+      width: 100%;
     }
+    width:280px;
     .api-list-navigation {
       margin-left: 5px;
       overflow-y: scroll;
@@ -94,28 +74,10 @@
     }
   }
   .content-data {
-    margin-left: 300px;
-
-  }
-  .section {
-    color: black;
-    font-size: 14px;
-    table {
-      margin-left: 0px !important;
-      width: 100%;
-    }
-  }
-
-  #footer-panel {
-    margin-top: 38px;
-  }
-  .panel-footer ul {
-    text-align: center;
-    margin-top: 5px;
-    li {
-      display: inline-block;
-      margin: 0px 40px;
-      text-align: center;
+    margin-left: 320px;
+    .welcome-content {
+      padding-top:150px;
+      padding-left:20px;
     }
   }
 
@@ -132,34 +94,4 @@
     content: "> ";
     padding: 0 5px;
   }
-  /* Global table styling */
-  table {
-    line-height: 28px;
-  }
-  h5 {
-    font-weight: bold;
-    color: darkcyan;
-    letter-spacing: 1px;
-  }
-
-  table thead tr {
-    border-bottom: 1px dashed;
-  }
-  table tbody tr td:nth-child(3),
-  table tbody tr td:nth-child(4),
-  table tbody tr td:nth-child(5) {
-    text-align: center;
-  }
-  table thead tr th:nth-child(3),
-  table thead tr th:nth-child(4),
-  table thead tr th:nth-child(5) {
-    text-align: center;
-  }
-  table thead tr th {
-    font-weight: 300;
-  }
-}
-
-.body {
-  color:blue;
 }
