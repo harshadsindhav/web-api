@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeResolver } from './home/home.resolver';
 import { ApiDocService } from './services/apidoc.service';
 import { CategoryfilterPipe} from './custompipes/categoryfilter.pipe';
+import { ApifilterPipe} from './custompipes/apifilter.pipe';
 import { MainCategoryComponent } from './main-category/main-category.component';
 import { ChildCategoryComponent } from './child-category/child-category.component';
 import { SearchResultComponent } from './search-result/search-result.component';
@@ -31,7 +32,8 @@ import { ApiTemplateComponent } from './api-template/api-template.component';
     SearchResultComponent,
     ComponentApisComponent,
     HttpMethodDirective,
-    ApiTemplateComponent
+    ApiTemplateComponent,
+    ApifilterPipe
   ],
   imports: [
     BrowserModule,

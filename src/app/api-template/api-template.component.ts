@@ -4,7 +4,7 @@ import { Component, OnInit, Input } from '@angular/core';
   selector: 'app-api-template',
   template: `<div>
         </div>`,
-  styleUrls: []
+  styleUrls: ['api-template.component.scss']
 })
 export class ApiTemplateComponent implements OnInit {
 
