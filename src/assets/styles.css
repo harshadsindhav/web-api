@@ -16,12 +16,6 @@ section h5 {
 	margin-botton:5px;
 }
 
-.breadcrumb > li + li:before {
-    color: #ccc;
-    content: "> ";
-    padding: 0 5px;
-}
-
 table thead tr {
   border-bottom: 1px dashed;
 }

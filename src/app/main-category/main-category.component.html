@@ -6,7 +6,7 @@
   <div [@slideHeight]="state">
     <div *ngIf="mainCategory.api_list.length > 0">
       <div class="api-listing">
-        <p (click)="showApiDetail($event)" *ngFor="let api of mainCategory.api_list">{{api.title}}</p>
+        <p (click)="showApiDetail($event)" *ngFor="let api of mainCategory.api_list | apifilter : searchText">{{api.title}}</p>
       </div>
     </div>
     <div *ngFor="let subCategory of mainCategory.sub_categories | categoryfilter : searchText">

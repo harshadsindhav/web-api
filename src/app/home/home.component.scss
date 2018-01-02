@@ -94,20 +94,8 @@
     }
   }
   .content-data {
-    margin-left: 300px; //display: inline-block;
-    //width : 70%;
-    overflow: hidden;
-    .iframe-area {
-      iframe {
-        width: 100%; //height : 1000px !important;
-        //height: -webkit-fill-available;
-        height: 1000px;
-        border: none;
-         ::-webkit-scrollbar {
-          display: none;
-        }
-      }
-    }
+    margin-left: 300px;
+
   }
   .section {
     color: black;
@@ -170,4 +158,8 @@
   table thead tr th {
     font-weight: 300;
   }
+}
+
+.body {
+  color:blue;
 }

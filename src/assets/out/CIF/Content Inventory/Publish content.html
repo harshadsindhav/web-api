@@ -26,7 +26,7 @@
   <h4 class="title topictitle2" id="ariaid-title5">PUBLISH CONTENT</h4>
   <div class="body refbody"> 
    <section class="section">
-    <h5 class="title sectiontitle">Overview</h5>
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Overview</h5>
     <p class="p">Creates content in the Saba repository based on the location specified in the metadata.</p>This Web service supports the following content formats:
     <ol class="ol" id="reference_orc_npx_fp__ol_xd1_tqy_45"> 
      <li class="li">URL </li> 
@@ -37,15 +37,15 @@
     </ol>It consumes content type: form-data i.e. the request body should contain form-data. It produces response in application/json format. 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Method</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Method</h5> 
     <p class="p">POST</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Requires OAuth</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Requires OAuth</h5> 
     <p class="p">No</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">URL</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL</h5> 
     <div class="p">
      https://
      <var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/contentinventory/contentimport
@@ -57,12 +57,12 @@
     </div> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Calling Options</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Calling Options</h5> 
     <p class="p">The request body requires the following input:</p> 
     <ol class="ol" id="reference_orc_npx_fp__ol_xl2_zqy_45"> 
      <li class="li"><strong class="ph b">detail</strong>: The Detail object must be of type 'text'.<p class="p"><strong class="ph b">List of attributes for the Detail object:</strong></p>
       <div class="p"> 
-       <table id="reference_orc_npx_fp__table_p1p_sry_45">
+       <table id="reference_orc_npx_fp__table_p1p_sry_45" style="line-height:28px;">
         <caption></caption>
         <colgroup>
          <col>
@@ -191,7 +191,7 @@
      <li class="li">For URL, the file attachment will be ignored.</li> 
     </ol> 
     <p class="p">The content format type is decided at run time based on the value of attribute isURL, isAICC and type of file attachments in request. The default Content player template is set based on the content format type.</p> 
-    <table id="reference_orc_npx_fp__table_yrc_npx_fp">
+    <table id="reference_orc_npx_fp__table_yrc_npx_fp" style="line-height:28px;">
      <caption>
       <span class="table--title-label">Table 3. </span>
       <span class="title">Calling Options</span>
@@ -225,7 +225,7 @@
     </table> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Request Body (Form data)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Request Body (Form data)</h5> 
     <pre class="pre codeblock"><code>Content-Type: form-data,
 Detail: 
 	{
@@ -252,7 +252,7 @@ Detail:
 }</code></pre> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Request Body (For File)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Request Body (For File)</h5> 
     <pre class="pre codeblock"><code>{
     "contentName": "URL test7", 
     "isURL": false, 
@@ -260,7 +260,7 @@ Detail:
 }  </code></pre> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Request Body (For URL)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Request Body (For URL)</h5> 
     <pre class="pre codeblock"><code>{  
    "contentName":"testAICC",
    "isAICC":false,
@@ -275,7 +275,7 @@ Detail:
 }</code></pre> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Return Values</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Return Values</h5> 
     <pre class="pre codeblock"><code>Content-Type: application/json
 {
   "success": true,

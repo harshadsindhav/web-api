@@ -128,7 +128,7 @@ export class HomeComponent implements OnInit {
             if (strippedFileBody.toLowerCase().includes(this.globalSearchText.toLowerCase())) {
               strippedFileBody = strippedFileBody.replace('"', '');
               const searchTextIndex = strippedFileBody.toLowerCase().indexOf(this.globalSearchText.toLowerCase());
-              const temp = '"' + '<font style="background-color:yellow;background-color: yellow"> '
+              const temp = '"' + '<font style="background-color:yellow;"> '
               + this.globalSearchText + ' </font>' + '"';
               let matchedText = strippedFileBody.substring(searchTextIndex - 100, searchTextIndex + 100);
               matchedText = matchedText.replace(this.globalSearchText, temp);
@@ -146,11 +146,18 @@ export class HomeComponent implements OnInit {
       }
     }
   }
+
   displayComponentApis(event) {
+    if (this.container) {
+      this.container.clear();
+    }
     this.isComponentApiDetail = true;
     this.contentPageName = this.kComponentApiPage;
   }
   displayModuleComponents(event) {
+    if (this.container) {
+      this.container.clear();
+    }
     this.isComponentApiDetail = false;
     this.contentPageName = this.kComponentApiPage;
   }
@@ -160,5 +167,11 @@ export class HomeComponent implements OnInit {
       .subscribe(response => {
         this.apiNameMapping = response;
       });
+  }
+  isNotEmpty(value: any) {
+    if (value  && value.length > 0) {
+      return true;
+    }
+    return false;
   }
 }

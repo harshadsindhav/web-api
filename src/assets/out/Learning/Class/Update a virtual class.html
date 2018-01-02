@@ -26,7 +26,7 @@
   <h4 class="title topictitle2" id="ariaid-title15">UPDATE A VIRTUAL CLASS</h4>
   <div class="body refbody"> 
    <section class="section">
-    <h5 class="title sectiontitle">Overview</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Overview</h5> 
     <div class="p">
      Updates a Virtual Class Class.
      <div class="note note note_note">
@@ -35,15 +35,15 @@
     </div> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Requires OAuth</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Requires OAuth</h5> 
     <p class="p">No</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Method</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Method</h5> 
     <p class="p">PUT</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">URL</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL</h5> 
     <div class="p">
      https://
      <var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/offering/:offeringId
@@ -55,7 +55,7 @@
     </div> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">URL (User-friendly)</h5>You can use a user-friendly URL which accepts the 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL (User-friendly)</h5>You can use a user-friendly URL which accepts the 
     <strong class="ph b">offeringNumber</strong> instead of the internal Offering's ID.
     <div class="p">
      https://
@@ -70,8 +70,8 @@
     </div>
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Calling Options</h5> 
-    <table id="reference_m3w_pnx_fp__table_ijw_pnx_fp">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Calling Options</h5> 
+    <table id="reference_m3w_pnx_fp__table_ijw_pnx_fp" style="line-height:28px;">
      <caption>
       <span class="table--title-label">Table 11. </span>
       <span class="title">Calling Options</span>
@@ -370,7 +370,7 @@
     </table> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Request Body</h5>
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Request Body</h5>
     <pre class="pre codeblock"><code>{
     "@type": "com.saba.learning.services.offering.OfferingDetail",
     "abstract": "",
@@ -581,7 +581,7 @@
     </div>The following table provides details about the 
     <strong class="ph b">vleInfo</strong> attributes:
     <div class="p"> 
-     <table id="reference_m3w_pnx_fp__table_x4r_jj3_lx">
+     <table id="reference_m3w_pnx_fp__table_x4r_jj3_lx" style="line-height:28px;">
       <caption></caption>
       <colgroup>
        <col>
@@ -671,7 +671,7 @@
       </tbody>
      </table> 
     </div>The lookup support is now available for this REST API.
-    <table id="reference_m3w_pnx_fp__table_jvh_rsn_kx">
+    <table id="reference_m3w_pnx_fp__table_jvh_rsn_kx" style="line-height:28px;">
      <caption></caption>
      <colgroup>
       <col>
@@ -738,15 +738,15 @@
     </table>
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Sample Request Body (without replacing all existing sessions)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Sample Request Body (without replacing all existing sessions)</h5> 
     <pre class="pre codeblock"><code><strong class="ph b"> "replaceExistingSessions":false, "offeringSessions":[ "java.util.List", [ { "@type":"java.util.Map", "startDate":"12.12.2016", "startTime":"15:00", "endTime":"15:20", "action":"add" } ] ]</strong></code></pre> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Sample Request Body (replacing all existing sessions)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Sample Request Body (replacing all existing sessions)</h5> 
     <pre class="pre codeblock"><code><strong class="ph b"> "replaceExistingSessions":true, "offeringSessions":[ "java.util.List", [ { "@type":"java.util.Map", "startDate":"12.12.2016", "startTime":"15:00", "endTime":"15:20", "action":"add" }, { "@type":"java.util.Map", "startDate":"12.12.2016", "startTime":"18:00", "endTime":"18:20", "action":"add" } ] ]</strong></code></pre> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Sample Request Body (updating and deleting existing session)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Sample Request Body (updating and deleting existing session)</h5> 
     <pre class="pre codeblock"><code><strong class="ph b"> "replaceExistingSessions":false, "offeringSessions":[ "java.util.List", [ { "@type":"java.util.Map", "startDate":"12.12.2016", "startTime":"15:00", "endTime":"15:20", "action":"update", "id":"timel000000000001144" }, { "@type":"java.util.Map", "id":"timel000000000001146", "action":"delete" } ] ]</strong></code></pre> 
    </section> 
   </div>

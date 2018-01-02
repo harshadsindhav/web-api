@@ -26,28 +26,28 @@
   <h4 class="title topictitle2" id="ariaid-title5">SEARCH ALL THE CERTIFICATIONS/CURRICULA ASSIGNED TO A LEARNER BASED ON THE STATUS, TIMESTAMP</h4>
   <div class="body refbody"> 
    <section class="section">
-    <h5 class="title sectiontitle">Overview</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Overview</h5> 
     <p class="p">Search all the certifications assigned to a learner based on the status or timestamps.</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Requires OAuth</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Requires OAuth</h5> 
     <p class="p">No</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Method</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Method</h5> 
     <p class="p">GET</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">URL</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL</h5> 
     <p class="p">http://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/learning/heldlearningevent?type=:type&amp;q=(:criteria)&amp;count=:count&amp;startPage=:startPage</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">URL (To search across all held CERTIFICATIONS/CURRICULA regardless of the learner)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL (To search across all held CERTIFICATIONS/CURRICULA regardless of the learner)</h5> 
     <p class="p">http://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/learning/heldlearningevent?type=:type&amp;q=(:criteria)&amp;count=:count&amp;startPage=:startPage<strong class="ph b">&amp;isAdmin=true</strong></p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Calling Options</h5> 
-    <table id="get-search-all-the-certifications-assigned-to-a-learner-based-on-the-status-N1313B__table_bn3_gcm_wq">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Calling Options</h5> 
+    <table id="get-search-all-the-certifications-assigned-to-a-learner-based-on-the-status-N1313B__table_bn3_gcm_wq" style="line-height:28px;">
      <caption>
       <span class="table--title-label">Table 4. </span>
       <span class="title">Calling Options</span>
@@ -153,7 +153,7 @@
     </table> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Return Values</h5>
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Return Values</h5>
     <strong class="ph b">Certification:</strong>
     <pre class="pre codeblock"><code>{
   "facets": [],
@@ -698,7 +698,7 @@
     </div>
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Search for all held learnings using isAdmin</h5>
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Search for all held learnings using isAdmin</h5>
     <strong class="ph b">For example:</strong>
     <p class="p">http://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/learning/heldlearningevent?type=certification&amp;count=10&amp;startPage=1&amp;isAdmin=true</p>
     <div class="p">
@@ -828,7 +828,7 @@
     </div>
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Search for held learnings using isAdmin for a particular learner </h5>
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Search for held learnings using isAdmin for a particular learner </h5>
     <strong class="ph b">For example:</strong>
     <p class="p">http://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/learning/heldlearningevent</p>
     <p class="p"> ?type=certification&amp;count=10&amp;startPage=1&amp;isAdmin=true&amp;q=(assignee%3D%3Dpersn000000000013501)</p>
@@ -870,7 +870,7 @@
     </div>
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Example (Student Certifications that have changed between two timestamps)</h5>
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Example (Student Certifications that have changed between two timestamps)</h5>
     <p class="p">To find out all the student certifications that have changed between two timestamps (for example based on <strong class="ph b">updated_on</strong>):</p>https://
     <var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/learning/heldlearningevent?type=certification&amp;q=(updated_on%3Dge%3D2002-01-29 01:29:32 AM,updated_on%3Dle%3D2012-01-29 01:29:32 AM)
     <p class="p"><strong class="ph b">Return Values:</strong></p>

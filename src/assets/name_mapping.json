@@ -1,4 +1,36 @@
 [  
+	{  
+      "apiFilePath":".\\out\\Introduction\\Before you begin.html",
+      "apiName":"Before you begin",
+      "component":"Introduction",
+      "method":"",
+      "module":"",
+      "url":""
+   },
+   {  
+      "apiFilePath":".\\out\\Introduction\\Usage.html",
+      "apiName":"Usage",
+      "component":"Introduction",
+      "method":"",
+      "module":"",
+      "url":""
+   },
+   {  
+      "apiFilePath":".\\out\\Introduction\\Example (a typical client side program).html",
+      "apiName":"Example",
+      "component":"Introduction",
+      "method":"",
+      "module":"",
+      "url":""
+   },
+   {  
+      "apiFilePath":".\\out\\Introduction\\Some Quick Info.html",
+      "apiName":"Some Quick Info",
+      "component":"Introduction",
+      "method":"",
+      "module":"",
+      "url":""
+   },
    {  
       "apiFilePath":".\\out\\People\\Getting started with the People web services\\Extracting metadata of the available attributes.html",
       "apiName":"Extracting metadata of the available attributes",

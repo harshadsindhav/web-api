@@ -24,18 +24,39 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
   <link href="./../../../styles.css" rel="stylesheet">
+  <style>
+	table {
+		line-height:28px;
+	}
+
+	h5 {
+		font-weight : bold;
+		color : darkcyan;
+		letter-spacing: 1px;
+	}
+	article .topic {
+		margin-top:20px;
+	}
+	tr th {
+		text-align:center;
+	}
+	tr td {
+		padding-left:10px;
+	}
+
+  </style>
  </head>
 
 <body id="d0e2818">
   <main role="main">
     <article role="article" aria-labelledby="ariaid-title1">
       <article class="topic nested1" aria-labelledby="ariaid-title8" id="d0eee2818">
-        <h2 class="title topictitle2" id="ariaid-title8">Using OAuth 2.0</h2>
+        <h4 class="title topictitle2" id="ariaid-title8" style="font-weight : bold;">Using OAuth 2.0</h2>
         <div class="body">
           <p class="p">This section describes the steps involved in using the OAuth Authentication flow.</p>
         </div>
         <article class="topic nested2" aria-labelledby="ariaid-title9" id="id_3bbc1d60-0b65-4d1c-a85d-4f5c3c268529">
-          <h3 class="title topictitle3" id="ariaid-title9">Overview</h3>
+          <h5 class="title topictitle3" id="ariaid-title9">Overview</h5>
           <div class="body">
             <div class="p">Saba uses OAuth2 as its authentication method. OAuth is an authentication protocol that allows users to approve
               application to act on their behalf without sharing their password. More information about OAuth2 can be found
@@ -49,7 +70,7 @@
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title10" id="d0ess1">
-          <h3 class="title topictitle3" id="ariaid-title10">Getting a Consumer key</h3>
+          <h5 class="title topictitle3" id="ariaid-title10">Getting a Consumer key</h5>
           <div class="body">
             <div class="p">Before you can start making Saba API requests, you need to get a Consumer key and the Consumer Secret from the
               <strong class="ph b">Provider</strong>, in this case being Saba. This is provided by Saba support.
@@ -97,7 +118,7 @@
           </article>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title12" id="topic_nzg_kzb_1s">
-          <h3 class="title topictitle3" id="ariaid-title12">Getting the Authorization code</h3>
+          <h5 class="title topictitle3" id="ariaid-title12">Getting the Authorization code</h5>
           <div class="body">
             <p class="p">This Authorization code is client specific and hence all the users will share and send the same authorization
               code in subsequent calls to get the access token.</p>
@@ -119,43 +140,40 @@
             <div class="body">
               <p class="p">The authorize web service is passed the following
                 <strong class="ph b">header</strong> parameters:</p>
-              <table class="table frame-all" id="topic_ufx_xzb_1s__table_zfx_xzb_1s">
+              <table id="topic_ufx_xzb_1s__table_zfx_xzb_1s">
                 <caption>
                   <span class="table--title-label">Table 2. </span>
                   <span class="title">Authorize Web Service Calling Parameters</span>
                 </caption>
-                <colgroup>
-                  <col style="width:26%">
-                  <col style="width:74%">
-                </colgroup>
+                
                 <thead class="thead">
-                  <tr class="row rowsep-1">
+                  <tr>
                     <th class="entry colsep-1 rowsep-1" id="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__1">Header Parameters Passed</th>
                     <th class="entry colsep-1 rowsep-1" id="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__2">Description</th>
                   </tr>
                 </thead>
                 <tbody class="tbody">
-                  <tr class="row rowsep-0">
-                    <td class="entry colsep-1 rowsep-1" headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__1 ">
+                  <tr>
+                    <td headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__1 ">
                       <p class="p">
                         <code class="ph codeph">client_id</code>
                       </p>
                     </td>
-                    <td class="entry colsep-1 rowsep-1" headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__2 ">
+                    <td headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__2 ">
                       <p class="p">The Saba site name. </p>
                     </td>
                   </tr>
-                  <tr class="row">
-                    <td class="entry colsep-1 rowsep-1" headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__1 ">
+                  <tr>
+                    <td headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__1 ">
                       <code class="ph codeph">client_secret</code>
                     </td>
-                    <td class="entry colsep-1 rowsep-1" headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__2 ">The Consumer secret that you received from Saba Support.</td>
+                    <td headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__2 ">The Consumer secret that you received from Saba Support.</td>
                   </tr>
-                  <tr class="row">
-                    <td class="entry colsep-1 rowsep-1" headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__1 ">
+                  <tr>
+                    <td headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__1 ">
                       <code class="ph codeph">response_type</code>
                     </td>
-                    <td class="entry colsep-1 rowsep-1" headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__2 ">
+                    <td headers="topic_ufx_xzb_1s__table_zfx_xzb_1s__entry__2 ">
                       <p class="p">The type of response:
                         <strong class="ph b">code</strong>
                       </p>
@@ -200,7 +218,7 @@
           </article>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title16" id="topic_qgm_dbc_1s">
-          <h3 class="title topictitle3" id="ariaid-title16">Getting the Access Token</h3>
+          <h5 class="title topictitle3" id="ariaid-title16">Getting the Access Token</h5>
           <div class="body">
             <div class="p">To get the access token you need to invoke the Get Access Token API using one of the following options:
               <ul class="ul"
@@ -416,7 +434,7 @@
           </article>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title25" id="d0e28355">
-          <h3 class="title topictitle3" id="ariaid-title25">Invoking REST APIs</h3>
+          <h5 class="title topictitle3" id="ariaid-title25">Invoking REST APIs</h5>
           <div class="body">
             <div class="p">You can invoke Rest APIs using one of the following methods:
               <ol class="ol" id="d0e28355__ol_o5g_hlc_1s">

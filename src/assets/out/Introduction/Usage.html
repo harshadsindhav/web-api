@@ -21,6 +21,27 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
   <link href="./../../../styles.css" rel="stylesheet">
+    <style>
+	table {
+		line-height:28px;
+	}
+
+	h5 {
+		font-weight : bold;
+		color : darkcyan;
+		letter-spacing: 1px;
+	}
+	article .topic {
+		margin-top:20px;
+	}
+	tr th {
+		text-align:center;
+	}
+	tr td {
+		padding-left:10px;
+	}
+
+  </style>
   <title>Introduction</title>
 </head>
 
@@ -28,7 +49,7 @@
   <main role="main">
     <article role="article" aria-labelledby="ariaid-title1">
       <article class="topic nested1" aria-labelledby="ariaid-title3" id="d0e52">
-        <h2 class="title topictitle2" id="ariaid-title3">Usage</h2>
+        <h4 class="title topictitle2" id="ariaid-title3">Usage</h4>
         <div class="body">
           <p class="p">Saba web services are based on
             <strong class="ph b">REpresentational State Transfer</strong> &nbsp;(
@@ -39,7 +60,7 @@
           </p>
         </div>
         <article class="topic nested2" aria-labelledby="ariaid-title4" id="d0e64">
-          <h3 class="title topictitle3" id="ariaid-title4">Authentication</h3>
+          <h5 class="title topictitle3" id="ariaid-title4">Authentication</h5>
           <div class="body">
             <p class="p">Saba web services respond to requests from client code only if the requests are accompanied by authentication
               -- that is, by proof that the request is being made by a user with a valid Saba user ID and password.</p>
@@ -50,7 +71,7 @@
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title5" id="topic_n52_wmz_wp">
-          <h3 class="title topictitle3" id="ariaid-title5">URL Format</h3>
+          <h5 class="title topictitle3" id="ariaid-title5">URL Format</h5>
           <div class="body">
             <div class="p">
               <pre class="pre codeblock"><code><strong class="ph b">{protocol}</strong>://<strong class="ph b">{hostname}</strong>-api.sabacloud.com /<strong class="ph b">{version}</strong>/<strong class="ph b">{endpoint}</strong></code></pre>
@@ -93,7 +114,7 @@
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title6" id="d0e89">
-          <h3 class="title topictitle3" id="ariaid-title6">Calling Saba RESTful Web Services from Java</h3>
+          <h5 class="title topictitle3" id="ariaid-title6">Calling Saba RESTful Web Services from Java</h5>
           <div class="body">
             <p class="p">The following code snippet shows how the authentication service is invoked from Java:
             </p>
@@ -180,14 +201,14 @@ public static void main (String args[]) {
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title7" id="topic_d5g_mzb_xt">
-          <h3 class="title topictitle3" id="ariaid-title7">Enabling REST Web Services in Saba</h3>
+          <h5 class="title topictitle3" id="ariaid-title7">Enabling REST Web Services in Saba</h5>
           <div class="body">
             <p class="p">By default the REST Web Services are disabled. To enable REST Web Services in Saba, submit a support request.
               For assistance, contact Saba Support. </p>
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title8" id="topic_fd4_xfm_w5">
-          <h3 class="title topictitle3" id="ariaid-title8">Using custom fields with the supported data types and values</h3>
+          <h5 class="title topictitle3" id="ariaid-title8">Using custom fields with the supported data types and values</h5>
           <div class="body">
             <p class="p">The following are a few examples that depict how to use the custom fields with the supported data types and values:</p>
             <div class="p">

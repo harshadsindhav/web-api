@@ -4,7 +4,7 @@
       <!--<img alt="Brand" src="../assets/images/logo.jpg"> -->
       <div id="saba-navbar" class="navbar">
         <div>
-          <img alt="Brand" src="../assets/images/sabalogo.png">
+          <img alt="Brand" src="./assets/images/sabalogo.png">
         </div>
         <div class="nav-banner-heading">
           <div class="web-api-subtitle">
@@ -53,16 +53,16 @@
             <app-component-apis (getApiDetail)="onApiClickFromGrandChild($event)" [apiNameMapping]="apiNameMapping" [isComponentApiDetail]="isComponentApiDetail"
               [apiDetail]="currentApi"></app-component-apis>
           </div>
-          <div class="iframe-area" *ngIf="contentPageName === 'apiDetailPage'">
+          <div *ngIf="contentPageName === 'apiDetailPage'">
             <div class="category-breadcrum" *ngIf="!isUserNavigation">
               <ol class="breadcrumb">
-                <li>
+                <li *ngIf="isNotEmpty(currentApi.module)">
                   <a (click)="displayModuleComponents($event)">{{currentApi.module}}</a>
                 </li>
-                <li>
+                <li *ngIf="isNotEmpty(currentApi.component)">
                   <a (click)="displayComponentApis($event)">{{currentApi.component}}</a>
                 </li>
-                <li>
+                <li *ngIf="isNotEmpty(currentApi.apiName)">
                   <a>{{currentApi.apiName}}</a>
                 </li>
               </ol>

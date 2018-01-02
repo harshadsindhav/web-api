@@ -26,7 +26,7 @@
   <h4 class="title topictitle2" id="ariaid-title3">FIND DETAILS OF RECURRING COURSE COMPLETIONS (Using POST - Range based search)</h4>
   <div class="body refbody"> 
    <section class="section">
-    <h5 class="title sectiontitle">Overview</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Overview</h5> 
     <div class="p">
      Returns the details of the recurring course completions along with the ID, Name and the Deeplink URL based on the provided range based search criteria.
      <div class="note note note_note">
@@ -35,20 +35,20 @@
     </div> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Requires OAuth</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Requires OAuth</h5> 
     <p class="p">No</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Method</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Method</h5> 
     <p class="p">POST</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">URL</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL</h5> 
     <p class="p">https://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/recurringcompletions/searchQuery?count=:count&amp;startPage=:startPage &amp;f=(:csvAttributesValue)&amp;includeDetails=:includeDetails</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Calling Options</h5> 
-    <table id="reference_z25_vnx_fp__table_if5_vnx_fp">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Calling Options</h5> 
+    <table id="reference_z25_vnx_fp__table_if5_vnx_fp" style="line-height:28px;">
      <caption>
       <span class="table--title-label">Table 2. </span>
       <span class="title">Calling Options</span>
@@ -124,7 +124,7 @@
    </section> 
    <section class="section">
     The following are the supported search criteria and display attributes:
-    <table id="reference_z25_vnx_fp__table_xnq_vnq_qx">
+    <table id="reference_z25_vnx_fp__table_xnq_vnq_qx" style="line-height:28px;">
      <caption></caption>
      <colgroup>
       <col style="width:11.961722488038278%">
@@ -221,7 +221,7 @@
     </table>
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Request Body</h5>
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Request Body</h5>
     <pre class="pre codeblock"><code>{
  "conditions" :[
     {
@@ -233,7 +233,7 @@
 }</code></pre>The output for not-yet-completed recurring courses will be very different from the output of completed recurring courses.&nbsp;
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Return Values (Completed recurring courses using includeDetails=false)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Return Values (Completed recurring courses using includeDetails=false)</h5> 
     <pre class="pre codeblock"><code>{  
    "status_description":"Not Evaluated",
    "person":{  
@@ -252,7 +252,7 @@
 }</code></pre> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Return Values (Not-yet-completed recurring courses using includeDetails=false)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Return Values (Not-yet-completed recurring courses using includeDetails=false)</h5> 
     <pre class="pre codeblock"><code>{  
    "assignedStatusDescription":"Assigned",
    "person":{  
@@ -272,7 +272,7 @@
     </div> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Return Values (Completed recurring courses using includeDetails=true)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Return Values (Completed recurring courses using includeDetails=true)</h5> 
     <pre class="pre codeblock"><code>{  
    "updated_by":"uone",
    "updated_on":"2016-07-29T04:14:14.000+0000",
@@ -319,7 +319,7 @@
 }</code></pre> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle">Return Values (Not-yet-completed recurring courses using includeDetails=true)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Return Values (Not-yet-completed recurring courses using includeDetails=true)</h5> 
     <pre class="pre codeblock"><code>{  
    "assignedBy":"One User",
    "assigned_on":"2016-09-02T05:51:19UTC",

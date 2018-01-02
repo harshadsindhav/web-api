@@ -21,6 +21,27 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
   <link href="./../../../styles.css" rel="stylesheet">
+    <style>
+	table {
+		line-height:28px;
+	}
+
+	h5 {
+		font-weight : bold;
+		color : darkcyan;
+		letter-spacing: 1px;
+	}
+	article .topic {
+		margin-top:20px;
+	}
+	tr th {
+		text-align:center;
+	}
+	tr td {
+		padding-left:10px;
+	}
+
+  </style>
   <title>Introduction</title>
 </head>
 
@@ -28,9 +49,9 @@
   <main role="main">
     <article role="article" aria-labelledby="ariaid-title1">
 <article class="topic nested1" aria-labelledby="ariaid-title10" id="topic_k4y_wt4_cq">
-        <h2 class="title topictitle2" id="ariaid-title10">Some Quick Info</h2>
+        <h4 class="title topictitle2" id="ariaid-title10">Some Quick Info</h4>
         <article class="topic nested2" aria-labelledby="ariaid-title11" id="topic_qjc_4yv_cn">
-          <h3 class="title topictitle3" id="ariaid-title11">Status Codes</h3>
+          <h5 class="title topictitle3" id="ariaid-title11">Status Codes</h5>
           <div class="body">
             <div class="p">The following are the status codes that the REST web services listed in this document return.
               <table class="table frame-all"
@@ -97,7 +118,7 @@
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title12" id="topic_tqy_xt4_cq">
-          <h3 class="title topictitle3" id="ariaid-title12">Search REST APIs</h3>
+          <h5 class="title topictitle3" id="ariaid-title12">Search REST APIs</h5>
           <div class="body">
             <p class="p">
               <strong class="ph b">Date fields</strong>
@@ -289,7 +310,7 @@
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title13" id="topic_y4y_xt4_cq">
-          <h3 class="title topictitle3" id="ariaid-title13">Special Characters</h3>
+          <h5 class="title topictitle3" id="ariaid-title13">Special Characters</h5>
           <div class="body">
             <p class="p">REST APIs will not return data with , and ; or any other special characters in their names or class IDs. Some
               Web browsers do not support special characters. Special characters need to encoded before passing as a q param
@@ -297,14 +318,14 @@
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title14" id="topic_qjv_vby_v5">
-          <h3 class="title topictitle3" id="ariaid-title14">Encoding space for the criteria parameter value</h3>
+          <h5 class="title topictitle3" id="ariaid-title14">Encoding space for the criteria parameter value</h5>
           <div class="body">
             <p class="p">Space need to encoded before passing as a param value using %20. For example: 25
               <strong class="ph b">%20</strong>Cert instead of 25 Cert.</p>
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title15" id="topic_fny_xt4_cq">
-          <h3 class="title topictitle3" id="ariaid-title15">POST methods - Duplicate records</h3>
+          <h5 class="title topictitle3" id="ariaid-title15">POST methods - Duplicate records</h5>
           <div class="body">
             <p class="p">For components where instead of name _no is the unique key&nbsp;[For example: loc_no for Location, Facility_no
               for Facility], in such cases REST APIs will create multiple records, if you use the same INPUT JSON (Request
@@ -312,7 +333,7 @@
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title16" id="topic_ryt_1hy_1q">
-          <h3 class="title topictitle3" id="ariaid-title16">Using Lookup fields</h3>
+          <h5 class="title topictitle3" id="ariaid-title16">Using Lookup fields</h5>
           <div class="body">
             <p class="p">You can use lookup fields for all the components. The lookup feature allows using a more user friendly name instead
               of internal IDs.&nbsp;</p>
@@ -695,7 +716,7 @@
           </article>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title18" id="topic_qt3_jhx_qr">
-          <h3 class="title topictitle3" id="ariaid-title18">Retrieving additional details using Field Selectors</h3>
+          <h5 class="title topictitle3" id="ariaid-title18">Retrieving additional details using Field Selectors</h5>
           <div class="body">
             <p class="p">Most of the GET REST APIs have a standard output. For example, a GET call to retrieve the details of a particular
               employee ( https://&lt;hostname&gt;/v1/people/emplo000000000049029) returns the company details via the company_id
@@ -785,7 +806,7 @@
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title19" id="topic_wmx_kk1_lt">
-          <h3 class="title topictitle3" id="ariaid-title19">Restricting the number of records returned by a REST API</h3>
+          <h5 class="title topictitle3" id="ariaid-title19">Restricting the number of records returned by a REST API</h5>
           <div class="body">
             <div class="p">Too many records returned by the Search REST APIs results in multiple REST API calls and frequent timeouts. To
               improve the performance of the REST APIs, you can set a limit on the number of records the Search REST APIs
@@ -906,7 +927,7 @@
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title20" id="topic_ob1_v2r_yq">
-          <h3 class="title topictitle3" id="ariaid-title20">Deprecated URLs</h3>
+          <h5 class="title topictitle3" id="ariaid-title20">Deprecated URLs</h5>
           <div class="body">
             <div class="p">The following URLs are deprecated and will be discontinued in the next few updates. Hence it is advisable to
               use the new URL.
@@ -1029,7 +1050,7 @@
           </div>
         </article>
         <article class="topic nested2" aria-labelledby="ariaid-title21" id="topic_x5y_s2n_pw">
-          <h3 class="title topictitle3" id="ariaid-title21">Field length of the data fields</h3>
+          <h5 class="title topictitle3" id="ariaid-title21">Field length of the data fields</h5>
           <div class="body">
             <div class="p">You can find out the field length/size of the data fields returned by the REST APIs by looking at the attributes
               listing under

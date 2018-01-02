@@ -62,6 +62,9 @@ export class MainCategoryComponent implements OnInit {
     targetApi.module = this.mainCategory.category;
     this.onApiClickFromGrandChild.emit(targetApi);
   }
+  onSelfApiClick(targetApi: any) {
+    this.onApiClickFromGrandChild.emit(targetApi);
+  }
   showApiDetail(event) {
     let targetApiTitle = event.target.innerHTML;
     if (targetApiTitle) {
@@ -69,9 +72,10 @@ export class MainCategoryComponent implements OnInit {
       event.target.className = 'selected';
       targetApiTitle = targetApiTitle.trim();
       const filePath = this.getFileNameForTitle(targetApiTitle);
-      this.onApiClick( {
+      this.onSelfApiClick( {
         'apiName': targetApiTitle,
         'component': this.mainCategory.category,
+        'module': '',
         'apiFilePath' : filePath,
         'selectedApiEleRef': this.mainCategoryEleRef
       });
