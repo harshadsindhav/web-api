@@ -3,7 +3,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule} from '@angular/http';
-import { RouterModule} from '@angular/router';
+import { RouterModule
+        } from '@angular/router';
 
 import { STOREROUTES} from './routing';
 
@@ -17,9 +18,10 @@ import { MainCategoryComponent } from './main-category/main-category.component';
 import { ChildCategoryComponent } from './child-category/child-category.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { ComponentApisComponent } from './component-apis/component-apis.component';
-import { HttpMethodDirective } from './http-method.directive';
+import { HttpMethodDirective } from './customdirectives/http-method.directive';
 import { ConfigResolver } from './config-resolver';
 import { ApiTemplateComponent } from './api-template/api-template.component';
+import { SearchResultDecoratorDirective } from './customdirectives/search-result-decorator.directive';
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import { ApiTemplateComponent } from './api-template/api-template.component';
     ComponentApisComponent,
     HttpMethodDirective,
     ApiTemplateComponent,
-    ApifilterPipe
+    ApifilterPipe,
+    SearchResultDecoratorDirective
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,7 @@ import { ApiTemplateComponent } from './api-template/api-template.component';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    RouterModule.forRoot(STOREROUTES)
+    RouterModule.forRoot(STOREROUTES, {useHash: true})
   ],
   providers: [ApiDocService, HomeResolver, ConfigResolver],
   entryComponents: [ ApiTemplateComponent ],

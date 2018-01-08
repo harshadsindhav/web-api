@@ -20,6 +20,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ApiDocService } from '../services/apidoc.service';
 import { WebApiUtil } from './../web-api-util';
 import { ApiTemplateComponent } from './../api-template/api-template.component';
+import { environment } from './../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -48,30 +49,25 @@ export class HomeComponent implements OnInit {
   isComponentApiDetail = false;
   isUserNavigation = true;
   iframeHeight: any;
-  ngOnInit() {
-    this.readFileNameMapping();
-  }
+
 
   constructor(private resolver: ComponentFactoryResolver, private apiDocService: ApiDocService, private senitizer: DomSanitizer,
     private route: ActivatedRoute, private eleRef: ElementRef) {
+      console.log('Is Prod Mode: ' + environment.production);
       this.apiCategories = this.route.snapshot.data['apiListing'];
       this.contentPageName = this.kWelcomePage;
   }
 
+  ngOnInit() {
+    this.readFileNameMapping();
+  }
+
   navigationItemOnClick(event) {
     const navItemName = event.target.innerHTML;
-    if (navItemName && navItemName === 'Introduction') {
-      this.contentPageName = this.kApiDetailPage;
-      this.isComponentApiDetail = false;
-      this.loadDynamicComponent(WebApiUtil.getFileURL(WebApiUtil.kIntroductionFileName));
-    } else if (navItemName === 'About This Guide') {
+    if (navItemName === 'About This Guide') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
       this.loadDynamicComponent(WebApiUtil.getFileURL(WebApiUtil.kAboutThisGuideFileName));
-    } else if (navItemName === 'Authentication') {
-      this.contentPageName = this.kApiDetailPage;
-      this.isComponentApiDetail = false;
-      this.loadDynamicComponent(WebApiUtil.getFileURL(WebApiUtil.kAuthenticationFileName));
     } else if (navItemName === 'Limitations on Warranties and Liability') {
       this.contentPageName = this.kApiDetailPage;
       this.isComponentApiDetail = false;
@@ -130,20 +126,22 @@ export class HomeComponent implements OnInit {
             if (strippedFileBody.toLowerCase().includes(this.globalSearchText.toLowerCase())) {
               strippedFileBody = strippedFileBody.replace('"', '');
               const searchTextIndex = strippedFileBody.toLowerCase().indexOf(this.globalSearchText.toLowerCase());
-              const temp = '"' + '<font style="background-color:yellow;"> '
-              + this.globalSearchText + ' </font>' + '"';
+              //const temp = '<font style="background-color:yellow;"> ' + this.globalSearchText + ' </font>';
               let matchedText = strippedFileBody.substring(searchTextIndex - 100, searchTextIndex + 100);
-              matchedText = matchedText.replace(this.globalSearchText, temp);
+              //matchedText = matchedText.replace(this.globalSearchText, temp);
               this.resultApis.push({
                 'apiName': apiEntry.apiName,
                 'apiFilePath': apiEntry.apiFilePath,
                 'component': apiEntry.component,
                 'module': apiEntry.module,
-                'matchedText': matchedText.trim()
+                'matchedText': matchedText
               });
               counter++;
             }
             this.contentPageName = this.kSearchResultPage;
+            if (this.container) {
+              this.container.clear();
+            }
           });
       }
     }

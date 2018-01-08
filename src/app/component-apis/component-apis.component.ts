@@ -20,6 +20,7 @@ export class ComponentApisComponent implements OnInit {
 
   ngOnInit() {
     if (this.apiNameMapping) {
+      this.apis = [];
       for (const entry of this.apiNameMapping) {
         if (this.isComponentApiDetail && this.apiDetail && this.apiDetail.component &&
           this.apiDetail.component === entry.component) {

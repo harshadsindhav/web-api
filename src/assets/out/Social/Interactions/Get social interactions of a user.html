@@ -2,8 +2,8 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
-  <meta name="copyright" content="(C) Copyright 2017">
-  <meta name="DC.rights.owner" content="(C) Copyright 2017">
+  <meta name="copyright" content="(C) Copyright 2018">
+  <meta name="DC.rights.owner" content="(C) Copyright 2018">
   <meta name="DC.Type" content="topic">
   <meta name="DC.Coverage" content="DRAFT">
   <meta name="DC.subject" content="foundation, restful web services, like or dislike a resource, foundation components, like or dislike a resource, delete likes or dislikes of a resource, delete likes or dislikes of a resource, get comment details of a resource, get comment details of a resource, get like details of a resource, get like details of a resource, post a comment on a resource, post a comment on a resource, get social interactions of a user, get social interactions of a user">
@@ -20,34 +20,34 @@
   <title>Interactions</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
-  <link href="./../../../styles.css" rel="stylesheet">
+  <style>table tbody tr td:first-child { padding-left:10px; }table thead tr th:first-child {padding-left:10px;}table {border:1px solid #c1baba; width:100%;}section { padding-top:10px;}section p { margin:0px;}table thead {border-bottom: 1px solid #c1baba}</style>
  </head>
  <body>
   <h4 class="title topictitle2" id="ariaid-title7">GET SOCIAL INTERACTIONS OF A USER</h4>
   <div class="body refbody"> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Overview</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Overview</h5> 
     <p class="p">Retrieves the social interactions such as clicks, likes, comments and shares of a user.</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Requires OAuth</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Requires OAuth</h5> 
     <p class="p">No</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Method</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Method</h5> 
     <p class="p">GET</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">URL</h5> 
     <p class="p">https://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/social/metrics/:personId?resource=(:resources)&amp;from_date=:from_date&amp;to_date=:to_date </p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL (using lookup)</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">URL (using lookup)</h5> 
     <p class="p">https://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/social/metrics/username=&lt;username&gt;?resource=(:resources)&amp;from_date=:from_date&amp;to_date=:to_date </p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Calling Options</h5> 
-    <table id="reference_g3g_qgq_xw__table_w3g_qgq_xw" style="line-height:28px;">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Calling Options</h5> 
+    <table id="reference_g3g_qgq_xw__table_w3g_qgq_xw" style="line-height:28px;border:1px solid #c1baba;">
      <caption>
       <span class="table--title-label">Table 6. </span>
       <span class="title">Calling Options</span>
@@ -121,7 +121,7 @@
     </table> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Detail of metrics fields for each resource type in output</h5> The following are the fields for each resource type in output:
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Detail of metrics fields for each resource type in output</h5> The following are the fields for each resource type in output:
     <ol class="ol" id="reference_g3g_qgq_xw__ol_ksg_nhq_xw"> 
      <li class="li">Connections 
       <ol class="ol" type="a" id="reference_g3g_qgq_xw__ol_kl4_nhq_xw"> 
@@ -197,7 +197,7 @@
     </ol>
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Return Values</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Return Values</h5> 
     <pre class="pre codeblock"><code>{  
    "followers":10,
    "followed":5,

@@ -2,8 +2,8 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
-  <meta name="copyright" content="(C) Copyright 2017">
-  <meta name="DC.rights.owner" content="(C) Copyright 2017">
+  <meta name="copyright" content="(C) Copyright 2018">
+  <meta name="DC.rights.owner" content="(C) Copyright 2018">
   <meta name="DC.Type" content="reference">
   <meta name="DC.Coverage" content="DRAFT">
   <meta name="DC.subject" content="learning, restful web services, get all categories, learning components, get the details of a particular category, get the details of a particular category, get the details of a particular category along with its hierarchy (sub-categories), get the details of a particular category along with its hierarchy (sub-categories), remove a category, add categories to a course, add categories to a course, add categories to a course (lookup based), add categories to a course (lookup based), remove category from a course, remove category from a course, create a new category, update category, find the details of the categories, find the details of the categories, add tags to category, remove tags from category, remove tags from category">
@@ -20,35 +20,35 @@
   <title>Categories</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
-  <link href="./../../../styles.css" rel="stylesheet">
+  <style>table tbody tr td:first-child { padding-left:10px; }table thead tr th:first-child {padding-left:10px;}table {border:1px solid #c1baba; width:100%;}section { padding-top:10px;}section p { margin:0px;}table thead {border-bottom: 1px solid #c1baba}</style>
  </head>
  <body>
   <h4 class="title topictitle2" id="ariaid-title3">GET DETAILS OF A PARTICULAR CATEGORY</h4>
   <div class="body refbody"> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Overview</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Overview</h5> 
     <p class="p">Returns complete information about a category based on the category's ID that is passed as a parameter value.</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Requires OAuth</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Requires OAuth</h5> 
     <p class="p">No</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Method</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Method</h5> 
     <p class="p">GET</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">URL</h5> 
     <p class="p">https://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/learning/category/:id</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL (User-friendly)</h5>You can use a user-friendly URL which accepts the 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">URL (User-friendly)</h5>You can use a user-friendly URL which accepts the 
     <strong class="ph b">name</strong> instead of the internal Category's ID.
     <p class="p">https://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/learning/category/name%3D<em class="ph i">&lt;CategoryName&gt;</em></p>
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Calling Options</h5> 
-    <table id="reference_snh_lnx_fp__table_b4h_lnx_fp" style="line-height:28px;">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Calling Options</h5> 
+    <table id="reference_snh_lnx_fp__table_b4h_lnx_fp" style="line-height:28px;border:1px solid #c1baba;">
      <caption>
       <span class="table--title-label">Table 2. </span>
       <span class="title">Calling Options</span>
@@ -82,7 +82,7 @@
     </table> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Return Values</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Return Values</h5> 
     <pre class="pre codeblock"><code>{
   "name": "RJSampleCategoryInsertwithTag11",
   "language": {

@@ -1,6 +1,7 @@
 
-import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot, ActivatedRoute } from '@angular/router';
 import { ApiDocService } from './../services/apidoc.service';
+import { ConfigResolver } from './../config-resolver';
 import { Injectable,  } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 
@@ -8,11 +9,9 @@ import {Observable} from 'rxjs/Observable';
 export class HomeResolver implements Resolve<any> {
 
     constructor(private apiDocService: ApiDocService) {
-
     }
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> {
-      console.log('home resolver called');
       return this.apiDocService.readApiListing();
     }
 

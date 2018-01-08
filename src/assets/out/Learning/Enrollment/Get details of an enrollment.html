@@ -2,8 +2,8 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
-  <meta name="copyright" content="(C) Copyright 2017">
-  <meta name="DC.rights.owner" content="(C) Copyright 2017">
+  <meta name="copyright" content="(C) Copyright 2018">
+  <meta name="DC.rights.owner" content="(C) Copyright 2018">
   <meta name="DC.Type" content="reference">
   <meta name="DC.Coverage" content="DRAFT">
   <meta name="DC.subject" content="learning, restful web services, get all enrollments, learning components, find the details of the enrollments, find the details of the enrollments, search enrollments based on given criteria, search enrollments based on given criteria, search enrollments based on given criteria, get the details of an enrollment, get the details of an enrollment, get existing registration details or auto enroll user and get registration details, get existing registration details or auto enroll user and get registration details, create a new enrollment, create a new enrollment, enroll for other user/self, enroll for other user/self, enroll for other user/self with payment, enroll for other user/self with payment, mark an enrollment complete, mark an enrollment complete, cancel an enrollment, add or update the custom fields of an enrollment, add or update the custom fields of an enrollment, mark a task/registration module complete, mark a task/registration module complete">
@@ -20,25 +20,25 @@
   <title>Enrollment</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
-  <link href="./../../../styles.css" rel="stylesheet">
+  <style>table tbody tr td:first-child { padding-left:10px; }table thead tr th:first-child {padding-left:10px;}table {border:1px solid #c1baba; width:100%;}section { padding-top:10px;}section p { margin:0px;}table thead {border-bottom: 1px solid #c1baba}</style>
  </head>
  <body>
   <h4 class="title topictitle2" id="ariaid-title6">GET DETAILS OF AN ENROLLMENT</h4>
   <div class="body refbody"> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Overview</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Overview</h5> 
     <p class="p">Returns the details of the enrollment.</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Requires OAuth</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Requires OAuth</h5> 
     <p class="p">No</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Method</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Method</h5> 
     <p class="p">GET</p> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">URL</h5> 
     <div class="p">
      https://
      <var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/enrollments/:id/sections:regdetail,classdetail,actions,sessionsdetail,learningAssignments,lessonDetail
@@ -46,7 +46,7 @@
       <span class="note__title">Note:</span> lessonDetail, will return the details for content module which is attempted by user. In case the user has not attempted the content then this API will not return an empty detail. Only the active/suspended attempt details of a particular content will be returned. In case more than one active attempt is found (which is usually not the case) then an exception will be thrown.
       <p class="p">The following table indicates the attribute mapping for the lessonDetail section:</p>
       <div class="p"> 
-       <table id="reference_fzz_nnx_fp__table_irh_yly_jw" style="line-height:28px;">
+       <table id="reference_fzz_nnx_fp__table_irh_yly_jw" style="line-height:28px;border:1px solid #c1baba;">
         <caption></caption>
         <colgroup>
          <col>
@@ -75,7 +75,7 @@
           <td class="entry" headers="reference_fzz_nnx_fp__table_irh_yly_jw__entry__1 "> Lesson Status</td> 
           <td class="entry" headers="reference_fzz_nnx_fp__table_irh_yly_jw__entry__2 "> lessonStatus <p class="p"> The following are the possible values:</p>
            <div class="p"> 
-            <table id="reference_fzz_nnx_fp__table_tyb_fmy_jw" style="line-height:28px;">
+            <table id="reference_fzz_nnx_fp__table_tyb_fmy_jw" style="line-height:28px;border:1px solid #c1baba;">
              <caption></caption>
              <colgroup>
               <col>
@@ -134,7 +134,7 @@
           <td class="entry" headers="reference_fzz_nnx_fp__table_irh_yly_jw__entry__1 "> Completion status </td> 
           <td class="entry" headers="reference_fzz_nnx_fp__table_irh_yly_jw__entry__2 "> completionStatus <p class="p"> The following are the possible values:</p>
            <div class="p"> 
-            <table id="reference_fzz_nnx_fp__table_zrk_gmy_jw" style="line-height:28px;">
+            <table id="reference_fzz_nnx_fp__table_zrk_gmy_jw" style="line-height:28px;border:1px solid #c1baba;">
              <caption></caption>
              <colgroup>
               <col>
@@ -172,14 +172,14 @@
     </div> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL (User-friendly)</h5>You can use a user-friendly URL which accepts the 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">URL (User-friendly)</h5>You can use a user-friendly URL which accepts the 
     <strong class="ph b">reg_no</strong> instead of the internal Registration's ID.
     <p class="p">https://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/enrollments/reg_no%3D<em class="ph i">&lt;RegistrationNo&gt;</em></p>
     <p class="p">/sections:regdetail,classdetail,actions,sessionsdetail,learningAssignments,lessonDetail</p>
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Calling Options</h5> 
-    <table id="reference_fzz_nnx_fp__table_d11_4nx_fp" style="line-height:28px;">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Calling Options</h5> 
+    <table id="reference_fzz_nnx_fp__table_d11_4nx_fp" style="line-height:28px;border:1px solid #c1baba;">
      <caption>
       <span class="table--title-label">Table 4. </span>
       <span class="title">Calling Options</span>
@@ -213,7 +213,7 @@
     </table> 
    </section> 
    <section class="section">
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Return Values</h5> 
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Return Values</h5> 
     <pre class="pre codeblock"><code>{
     "@type": "com.saba.learning.services.registration.ClassRegistrationDetail",
     "instructors": null,

@@ -6,7 +6,8 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class ConfigResolver implements Resolve<any> {
 
-  constructor(private _http: Http) {}
+  constructor(private _http: Http, ) {
+  }
 
   resolve(router: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     return this._http.get('./assets/config.json')

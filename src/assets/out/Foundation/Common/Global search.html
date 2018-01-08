@@ -1,66 +1,66 @@
 <html>
- <head> 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-  <meta charset="UTF-8"> 
-  <meta name="copyright" content="(C) Copyright 2017"> 
-  <meta name="DC.rights.owner" content="(C) Copyright 2017"> 
-  <meta name="DC.Type" content="topic"> 
-  <meta name="DC.Coverage" content="DRAFT"> 
-  <meta name="DC.subject" content="foundation, restful web services, global search, foundation components"> 
-  <meta name="keywords" content="foundation, restful web services, global search, foundation components"> 
-  <meta name="DC.Relation" scheme="URI" content="../developer/part-foundation.html"> 
-  <meta name="prodname" content="REST API Reference"> 
-  <meta name="version" content=""> 
-  <meta name="release" content=""> 
-  <meta name="modification" content=""> 
-  <meta name="DC.Creator" content=""> 
-  <meta name="DC.Format" content="XHTML"> 
-  <meta name="DC.Identifier" content="d0e656"> 
-  <link rel="stylesheet" type="text/css" href="../commonltr.css"> 
-  <title>Common</title> 
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="copyright" content="(C) Copyright 2018">
+  <meta name="DC.rights.owner" content="(C) Copyright 2018">
+  <meta name="DC.Type" content="topic">
+  <meta name="DC.Coverage" content="DRAFT">
+  <meta name="DC.subject" content="foundation, restful web services, global search, foundation components">
+  <meta name="keywords" content="foundation, restful web services, global search, foundation components">
+  <meta name="DC.Relation" scheme="URI" content="../developer/part-foundation.html">
+  <meta name="prodname" content="REST API Reference">
+  <meta name="version" content="">
+  <meta name="release" content="">
+  <meta name="modification" content="">
+  <meta name="DC.Creator" content="">
+  <meta name="DC.Format" content="XHTML">
+  <meta name="DC.Identifier" content="d0e656">
+  <link rel="stylesheet" type="text/css" href="../commonltr.css">
+  <title>Common</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
-  <link href="./../../../styles.css" rel="stylesheet">
+  <style>table tbody tr td:first-child { padding-left:10px; }table thead tr th:first-child {padding-left:10px;}table {border:1px solid #c1baba; width:100%;}section { padding-top:10px;}section p { margin:0px;}table thead {border-bottom: 1px solid #c1baba}</style>
  </head>
  <body>
   <h4 class="title topictitle2" id="ariaid-title2">GLOBAL SEARCH</h4>
   <div class="body refbody"> 
-   <section class="section"> 
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Overview</h5> 
+   <section class="section">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Overview</h5> 
     <div class="p">
-     This API is very similar to the global search functionality available on UI. It helps locating resources in Saba and returns result details similar to those on UI based on the resource type.&nbsp; 
-     <div class="note note note_note"> 
+     This API is very similar to the global search functionality available on UI. It helps locating resources in Saba and returns result details similar to those on UI based on the resource type.&nbsp;
+     <div class="note note note_note">
       <span class="note__title">Note:</span> The maximum page size will be restricted to 100 records. At max 500 records can be fetched using this API.
-     </div> 
+     </div>
     </div> 
    </section> 
-   <section class="section"> 
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Requires OAuth</h5> 
+   <section class="section">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Requires OAuth</h5> 
     <p class="p">No</p> 
    </section> 
-   <section class="section"> 
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Method</h5> 
+   <section class="section">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Method</h5> 
     <p class="p">POST</p> 
    </section> 
-   <section class="section"> 
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">URL</h5> 
-    <p class="p">https:// <var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/globalsearch?count=&lt;count&gt;&amp;startpage=&lt;startpage&gt;</p> 
+   <section class="section">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">URL</h5> 
+    <p class="p">https://<var class="keyword varname">&lt;hostname-api.sabacloud.com&gt;</var>/v1/globalsearch?count=&lt;count&gt;&amp;startpage=&lt;startpage&gt;</p> 
    </section> 
-   <section class="section"> 
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Calling Options</h5> 
-    <table id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl" style="line-height:28px;"> 
-     <caption> 
-      <span class="table--title-label">Table 1. </span> 
-      <span class="title">Calling Options</span> 
-      <span class="desc tabledesc">Calling Options</span> 
-     </caption> 
-     <colgroup> 
-      <col style="width:20%"> 
-      <col style="width:25%"> 
-      <col style="width:20%"> 
-      <col style="width:20%"> 
-      <col style="width:15%"> 
-     </colgroup> 
+   <section class="section">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Calling Options</h5> 
+    <table id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl" style="line-height:28px;border:1px solid #c1baba;">
+     <caption>
+      <span class="table--title-label">Table 1. </span>
+      <span class="title">Calling Options</span>
+      <span class="desc tabledesc">Calling Options</span>
+     </caption>
+     <colgroup>
+      <col style="width:20%">
+      <col style="width:25%">
+      <col style="width:20%">
+      <col style="width:20%">
+      <col style="width:15%">
+     </colgroup>
      <thead class="thead"> 
       <tr> 
        <th class="entry colsep-1 rowsep-1" id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__1">Name</th> 
@@ -69,11 +69,11 @@
        <th class="entry colsep-1 rowsep-1" id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__4">Data Type</th> 
        <th class="entry colsep-1 rowsep-1" id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__5">Required?</th> 
       </tr> 
-     </thead> 
+     </thead>
      <tbody class="tbody"> 
       <tr> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__1 ">searchText</td> 
-       <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__2 ">Required in case searchContext is set as ALL </td> 
+       <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__2 ">Required in case searchContext is set as ALL</td> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__3 "></td> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__4 ">string</td> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__5 ">Yes</td> 
@@ -87,7 +87,7 @@
       </tr> 
       <tr> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__1 ">learningEventType</td> 
-       <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__2 ">Used for learning advance search. Possible value are listed in the <strong class="ph b">Possible values of learning event type attribute </strong> table below. </td> 
+       <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__2 ">Used for learning advance search. Possible value are listed in the <strong class="ph b">Possible values of learning event type attribute</strong> table below. </td> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__3 "></td> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__4 ">string</td> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__5 ">No</td> 
@@ -108,7 +108,7 @@
       </tr> 
       <tr> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__1 ">location</td> 
-       <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__2 ">Used for learning / job requisition advance search. </td> 
+       <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__2 ">Used for learning / job requisition advance search.</td> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__3 "></td> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__4 ">string</td> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__5 ">No</td> 
@@ -141,17 +141,17 @@
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__4 ">string</td> 
        <td class="entry colsep-1 rowsep-1" headers="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_sk4_zkc_rl__entry__5 ">No</td> 
       </tr> 
-     </tbody> 
+     </tbody>
     </table> 
    </section> 
    <section class="section"> 
-    <p class="p"> <strong class="ph b">Possible values of search context attribute</strong> </p> 
-    <table id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_pz2_bk4_3y" style="line-height:28px;"> 
-     <caption></caption> 
-     <colgroup> 
-      <col> 
-      <col> 
-     </colgroup> 
+    <p class="p"><strong class="ph b">Possible values of search context attribute</strong></p> 
+    <table id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_pz2_bk4_3y" style="line-height:28px;border:1px solid #c1baba;">
+     <caption></caption>
+     <colgroup>
+      <col>
+      <col>
+     </colgroup>
      <tbody class="tbody"> 
       <tr> 
        <td class="entry"> <strong class="ph b">Possible value </strong> </td> 
@@ -229,17 +229,17 @@
        <td class="entry"> PERSON</td> 
        <td class="entry"> People </td> 
       </tr> 
-     </tbody> 
+     </tbody>
     </table> 
    </section> 
    <section class="section"> 
-    <p class="p"> <strong class="ph b">Possible values of learning event type attribute</strong> </p> 
-    <table id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_dtt_2k4_3y" style="line-height:28px;"> 
-     <caption></caption> 
-     <colgroup> 
-      <col> 
-      <col> 
-     </colgroup> 
+    <p class="p"><strong class="ph b">Possible values of learning event type attribute</strong></p> 
+    <table id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_dtt_2k4_3y" style="line-height:28px;border:1px solid #c1baba;">
+     <caption></caption>
+     <colgroup>
+      <col>
+      <col>
+     </colgroup>
      <tbody class="tbody"> 
       <tr> 
        <td class="entry"> <strong class="ph b">Possible value </strong> </td> 
@@ -265,17 +265,17 @@
        <td class="entry"> PACKAGE </td> 
        <td class="entry"> Package </td> 
       </tr> 
-     </tbody> 
+     </tbody>
     </table> 
    </section> 
    <section class="section"> 
-    <p class="p"> <strong class="ph b">Possible value of sort by attribute</strong> </p> 
-    <table id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_y5k_fk4_3y" style="line-height:28px;"> 
-     <caption></caption> 
-     <colgroup> 
-      <col> 
-      <col> 
-     </colgroup> 
+    <p class="p"><strong class="ph b">Possible value of sort by attribute</strong></p> 
+    <table id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__table_y5k_fk4_3y" style="line-height:28px;border:1px solid #c1baba;">
+     <caption></caption>
+     <colgroup>
+      <col>
+      <col>
+     </colgroup>
      <tbody class="tbody"> 
       <tr> 
        <td class="entry"> <strong class="ph b">Possible value </strong> </td> 
@@ -313,15 +313,15 @@
        <td class="entry"> MostShared </td> 
        <td class="entry"> MostShared </td> 
       </tr> 
-     </tbody> 
+     </tbody>
     </table> 
-    <div class="note note note_note"> 
+    <div class="note note note_note">
      <span class="note__title">Note:</span> 
      <p class="p">The default sort value will be <strong class="ph b">Relevance</strong>.</p> 
     </div> 
    </section> 
-   <section class="section"> 
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Request Body</h5> 
+   <section class="section">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Request Body</h5> 
     <pre class="pre codeblock"><code>{
 	"searchText": "test",
 	"searchContext": "LEARNINGEVENT",
@@ -335,8 +335,8 @@
 	"sortBy":"AlphaAZ"
 }</code></pre> 
    </section> 
-   <section class="section"> 
-    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;margin-top:15px">Return Values</h5> 
+   <section class="section">
+    <h5 class="title sectiontitle" style="color : darkcyan;letter-spacing: 1px;margin-bottom:5px;">Return Values</h5> 
     <pre class="pre codeblock"><code>{  
    "hasMoreResults":true,
    "itemsPerPage":2,
@@ -359,7 +359,7 @@
       }
    ]
 }</code></pre> 
-    <div class="note note note_note"> 
+    <div class="note note note_note">
      <span class="note__title">Note:</span> 
      <p class="p">The <strong class="ph b">href</strong> attribute in the output JSON will be populated for the below listed objects. For rest of object it's value will be null:</p> 
      <ul class="ul" id="get-find-the-details-of-the-attachment-for-a-given-id-N116AC__ul_mqf_lk4_3y"> 

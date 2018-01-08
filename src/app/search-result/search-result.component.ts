@@ -18,4 +18,9 @@ export class SearchResultComponent implements OnInit {
     this.searchedApi.emit(resultApi);
   }
 
+  getComponentName(resultApi: any): string {
+    if (resultApi) {
+      return resultApi.module === 'People' ? resultApi.module : resultApi.component;
+    }
+  }
 }

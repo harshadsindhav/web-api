@@ -8,7 +8,7 @@ import 'rxjs/add/operator/do';
 
 @Injectable()
 export class ApiDocService {
-    kNameMappingFile = './assets/name_mapping.json';
+    kNameMappingFile = './assets/apiFileNameListing.json';
     kApiListingFile = './assets/sabaapis.json';
 
     constructor(private _http: Http) {
