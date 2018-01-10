@@ -33,35 +33,13 @@
         </div>
       </div>
     </div>
+    <!--
     <div class="content-data">
-      <div class="welcome-content" *ngIf="contentPageName === kWelcomePage">
-        <h2>REST API Reference</h2>
-        <p>Saba Cloud | Update 40 | Feb 2018</p>
-      </div>
-      <div *ngIf="contentPageName === kSearchResultPage">
-        <app-search-result [searchResults]="resultApis" (searchedApi)="searchedApi($event)"></app-search-result>
-      </div>
-      <div *ngIf="contentPageName === kComponentApiPage">
-        <app-component-apis (getApiDetail)="onApiClickFromGrandChild($event)" [apiNameMapping]="apiNameMapping" [isComponentApiDetail]="isComponentApiDetail"
-          [apiDetail]="currentApi"></app-component-apis>
-      </div>
-      <div *ngIf="contentPageName === 'apiDetailPage'">
-        <div class="category-breadcrum" *ngIf="!isUserNavigation">
-          <ol class="breadcrumb">
-            <li *ngIf="isNotEmpty(currentApi.module)">
-              <a (click)="displayModuleComponents($event)">{{currentApi.module}}</a>
-            </li>
-            <li *ngIf="isNotEmpty(currentApi.component)">
-              <a (click)="displayComponentApis($event)">{{currentApi.component}}</a>
-            </li>
-            <li *ngIf="isNotEmpty(currentApi.apiName)">
-              <a>{{currentApi.apiName}}</a>
-            </li>
-          </ol>
-        </div>
-      </div>
-      <ng-template #apiDetailContainer></ng-template>
+      <a [routerLink]="['apidetail']" [queryParams]="{ id: 99 }">Go to Page 99</a>
+      <a [routerLink]="['apidetail']" [queryParams]="{ id: 1001 }">Go to Page 1001</a>
+      <router-outlet></router-outlet>
     </div>
+  -->
   </div>
   <div class="row footer-content">
     <div class="panel panel-default" id="footer-panel">

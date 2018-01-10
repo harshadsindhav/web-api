@@ -22,6 +22,7 @@ import { HttpMethodDirective } from './customdirectives/http-method.directive';
 import { ConfigResolver } from './config-resolver';
 import { ApiTemplateComponent } from './api-template/api-template.component';
 import { SearchResultDecoratorDirective } from './customdirectives/search-result-decorator.directive';
+import { ApiDetailComponent } from './api-detail/api-detail.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { SearchResultDecoratorDirective } from './customdirectives/search-result
     HttpMethodDirective,
     ApiTemplateComponent,
     ApifilterPipe,
-    SearchResultDecoratorDirective
+    SearchResultDecoratorDirective,
+    ApiDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,7 @@ import { SearchResultDecoratorDirective } from './customdirectives/search-result
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    RouterModule.forRoot(STOREROUTES, {useHash: true})
+    RouterModule.forRoot(STOREROUTES)
   ],
   providers: [ApiDocService, HomeResolver, ConfigResolver],
   entryComponents: [ ApiTemplateComponent ],

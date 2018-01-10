@@ -1,0 +1,28 @@
+<h2>Api Detail Component {{}}</h2>
+<div class="welcome-content" *ngIf="contentPageName === kWelcomePage">
+  <h2>REST API Reference</h2>
+  <p>Saba Cloud | Update 40 | Feb 2018</p>
+</div>
+<div *ngIf="contentPageName === kSearchResultPage">
+  <app-search-result [searchResults]="resultApis" (searchedApi)="searchedApi($event)"></app-search-result>
+</div>
+<div *ngIf="contentPageName === kComponentApiPage">
+  <app-component-apis (getApiDetail)="onApiClickFromGrandChild($event)" [apiNameMapping]="apiNameMapping" [isComponentApiDetail]="isComponentApiDetail"
+    [apiDetail]="currentApi"></app-component-apis>
+</div>
+<div *ngIf="contentPageName === 'apiDetailPage'">
+  <div class="category-breadcrum" *ngIf="!isUserNavigation">
+    <ol class="breadcrumb">
+      <li *ngIf="isNotEmpty(currentApi.module)">
+        <a (click)="displayModuleComponents($event)">{{currentApi.module}}</a>
+      </li>
+      <li *ngIf="isNotEmpty(currentApi.component)">
+        <a (click)="displayComponentApis($event)">{{currentApi.component}}</a>
+      </li>
+      <li *ngIf="isNotEmpty(currentApi.apiName)">
+        <a>{{currentApi.apiName}}</a>
+      </li>
+    </ol>
+  </div>
+</div>
+<ng-template #apiDetailContainer></ng-template>
