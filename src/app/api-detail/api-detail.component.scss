@@ -1,0 +1,21 @@
+.content-data {
+  margin-left: 320px;
+  .welcome-content {
+    padding-top: 150px;
+    padding-left: 20px;
+  }
+}
+
+/* Global breadcrumb saperator CSS */
+.breadcrumb li a {
+  cursor: pointer;
+}
+.breadcrumb li:last-child>a {
+  color: grey;
+  pointer-events: none;
+}
+.breadcrumb>li+li:before {
+  color: #ccc;
+  content: "> ";
+  padding: 0 5px;
+}

@@ -6,11 +6,13 @@ import { ApiDetailComponent } from './api-detail/api-detail.component'
 import { ConfigResolver } from './config-resolver';
 export const  STOREROUTES: Routes = [
     {
-        path : 'home',
+        path : 'apireference',
         component : HomeComponent,
         children: [
           { path: '', redirectTo: 'apidetail', pathMatch: 'full' },
-          { path: 'apidetail', component: ApiDetailComponent },
+          { path: 'apidetail',
+            component: ApiDetailComponent
+          },
         ],
         resolve : {
             configResolver: ConfigResolver,
@@ -18,6 +20,6 @@ export const  STOREROUTES: Routes = [
         }
     },
     {
-        path : '', redirectTo : 'home', pathMatch : 'full'
+        path : '', redirectTo : 'apireference', pathMatch : 'full'
     }
 ];

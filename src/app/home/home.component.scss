@@ -62,6 +62,7 @@
       }
       width:280px;
       .api-list-navigation {
+        border-bottom:1px solid #dbdbdb;
         margin-left: 5px;
         overflow-y: scroll;
         height: 1000px;
@@ -72,13 +73,6 @@
             font-size: 12px;
           }
         }
-      }
-    }
-    .content-data {
-      margin-left: 320px;
-      .welcome-content {
-        padding-top: 150px;
-        padding-left: 20px;
       }
     }
   }
@@ -100,19 +94,4 @@
       }
     }
   }
-
-  /* Global breadcrumb saperator CSS */
-  .breadcrumb li a {
-    cursor: pointer;
-  }
-  .breadcrumb li:last-child>a {
-    color: grey;
-    pointer-events: none;
-  }
-  .breadcrumb>li+li:before {
-    color: #ccc;
-    content: "> ";
-    padding: 0 5px;
-  }
-
 }
